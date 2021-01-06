@@ -18,8 +18,7 @@ USER root
 
 # 3) install packages
 #RUN pip install --no-cache-dir networkx scipy python-louvain geopandas babypandas
-RUN Rscript -e "if (!requireNamespace('BiocManager', quietly = TRUE)) install.packages('BiocManager', repos = 'http://cran.us.r-project.org')
-BiocManager::install('compcodeR', ask=FALSE)"
+RUN Rscript -e "if (!requireNamespace('BiocManager', quietly = TRUE)) install.packages('BiocManager', repos = 'http://cran.us.r-project.org') BiocManager::install('compcodeR', ask=FALSE)"
 
 
 
