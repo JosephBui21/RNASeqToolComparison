@@ -1,0 +1,12 @@
+name: r-bio
+channels:
+- conda-forge
+- defaults
+- bioconda
+- r
+- anaconda
+dependencies:
+- bioconductor-compcodeR
+- r-essentials
+- python=3.8
+- pip
