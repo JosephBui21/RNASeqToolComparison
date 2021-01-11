@@ -43,7 +43,7 @@ USER root
 #COPY py-bio.yaml /tmp
 #RUN conda env create --file /tmp/py-bio.yaml && \
     #conda run -n py-bio /bin/bash -c "ipython kernel install --name=py-bio"
-conda install -c bioconda bioconductor-compcoder
+RUN conda install -c bioconda bioconductor-compcoder
 
 
  
