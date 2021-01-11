@@ -4,13 +4,13 @@ USER root
 
 # install linux packages
 #RUN apt-get update && \
-    apt-get install tk-dev \
-                    tcl-dev \
-                    cmake \
-                    wget \
-                    default-jdk \
-                    libbz2-dev \
-                    -y
+    #apt-get install tk-dev \
+     #               tcl-dev \
+      #              cmake \
+       #             wget \
+        #            default-jdk \
+         #           libbz2-dev \
+          #          -y
 
 # build conda environment with required r packages & install RStudio into it 
 #COPY r-bio.yaml /tmp
