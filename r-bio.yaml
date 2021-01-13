@@ -7,6 +7,13 @@ channels:
 - anaconda
 dependencies:
 - bioconductor-compcodeR
+- bioconductor-deseq2
+- bioconductor-ABSSeq
+- bioconductor-edgeR
+- bioconductor-metaseqR
+- bioconductor-BitSeq
+- bioconductor-baySeq
+- bioconductor-sSeq
 - r-essentials
 - python=3.8
 - pip
