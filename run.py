@@ -3,7 +3,7 @@ import sys
 import os
 import json
 sys.path.insert(0, 'src')
-from etl import create_synthetic_data
+from etl import run_rscript
 
 
 def main(targets):
@@ -11,7 +11,7 @@ def main(targets):
         with open('config/build-params.json') as fh:
             data_cfg = json.load(fh)
 
-        synthetic_data = create_synthetic_data(**data_cfg)
+        synthetic_data = run_rscript(**data_cfg)
     return
 
 if __name__ == '__main__':
