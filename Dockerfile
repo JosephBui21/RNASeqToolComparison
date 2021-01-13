@@ -56,6 +56,8 @@ COPY py-bio.yaml /tmp
 RUN conda env create --file /tmp/py-bio.yaml && \
     conda run -n py-bio /bin/bash -c "ipython kernel install --name=py-bio"
 
+RUN conda update -n base conda
+
 
 RUN conda install -c conda-forge bash_kernel
 
