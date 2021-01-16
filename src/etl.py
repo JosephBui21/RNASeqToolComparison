@@ -6,8 +6,5 @@ def run_rscript(data, n_vars, samples_per_cond, n_diffexp, output_file):
     return
 
 def run_rscript_test(string):
-    print(os.getcwd())
-    curr = os.getcwd()
-    path = os.path.join(curr, 'src/test.R')
-    print(path)
-    subprocess.call(['Rscript', path , string])
+    os.system("/opt/conda/envs/r-bio/bin/Rscript src/test.R " + string)
+    return
