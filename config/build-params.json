@@ -3,5 +3,5 @@
     "n_vars" : 1000,
     "samples_per_cond" : 5,
     "n_diffexp" : 100,
-    "output_file" : "out"
+    "output_file" : "out/example.rds"
 }

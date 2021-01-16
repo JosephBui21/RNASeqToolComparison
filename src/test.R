@@ -1,4 +1,4 @@
+print('hello world')
+#myArgs <- commandArgs(trailingOnly = TRUE)
 
-myArgs <- commandArgs(trailingOnly = TRUE)
-
-print(myArgs[1])
+#print(myArgs[1])
