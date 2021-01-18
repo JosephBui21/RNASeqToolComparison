@@ -2,5 +2,6 @@
     "data" : "dataExample",
     "n_vars" : 1000,
     "samples_per_cond" : 5,
-    "n_diffexp" : 100
+    "n_diffexp" : 100,
+    "output_file": "data1.rds"
 }

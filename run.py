@@ -10,8 +10,8 @@ def main(targets):
     if 'build' in targets:
         with open('config/build-params.json') as fh:
             data_cfg = json.load(fh)
-
         synthetic_data = run_rscript(**data_cfg)
+    
     if 'test' in targets:
         with open('config/test-params.json') as fh:
             t_data_cfg = json.load(fh)
