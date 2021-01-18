@@ -1,7 +1,10 @@
 {
-    "data" : "dataExample",
-    "n_vars" : 1000,
-    "samples_per_cond" : 5,
-    "n_diffexp" : 100,
-    "output_file": "data1.rds"
+    "data1" : "synData1",
+    "n_vars1" : 1000,
+    "samples_per_cond1" : 5,
+    "n_diffexp1" : 200,
+    "output_file1": "data/SyntheticData1/data1.rds",
+    "data2" : "synData2",
+    "n_diffexp2" : 500,
+    "output_file2": "data/SyntheticData2/data2.rds"
 }
