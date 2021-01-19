@@ -7,4 +7,5 @@ In this project, we want to compare distinct differential gene expression analys
 * Use the command `launch.sh -i buijoseph21/rna-seq-tool-comparison:v1` in order to have the necessary software from `compcodeR` (e.g., `generateSyntheticData`, `runDiffExp`, `runComparison`) to generate the synthetic data & perform differential gene expression analysis
 
 ## Building the project using `run.py`
-* Use the command `python run.py build` to generate the synthetic data in the `data/SyntheticData{N}`, where N represents the dataset number, using `generateSyntheticData` 
+* Use the command `python run.py build` to generate the synthetic data in `data/data<N>.rds`, where N represents the dataset number, using `generateSyntheticData`
+* Use the command `python run.py analysis` to perform `DESeq2` and `edgeR.exact` on the synthetic data created in `data` folder which returns the results in `out/data<N>_<tool>.rds`, where N represents the dataset number & tool represents the software

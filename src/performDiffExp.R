@@ -1,9 +1,24 @@
+#command arguments from config/analysis-params.json which specifies what tool is being used & file directories
+myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
-# #Run DESeq2 on synthetic data #1
-# deseq2_data1 <- runDiffExp(data.file = file.path('out', myArgs[5]), result.extent = "DESeq2", Rmdfunction = "DESeq2.createRmd", output.directory = file.path('out'), fit.type = "parametric", test = "Wald", beta.prior = TRUE, independent.filtering = TRUE, cooks.cutoff = TRUE, impute.outliers = TRUE)
 
-# #Run edgeR on synthetic data #1
-# edgeR_data1 <- runDiffExp(data.file = file.path('out', myArgs[5]), result.extent = "edgeR.exact", Rmdfunction = "edgeR.exact.createRmd", output.directory = file.path('out'), norm.method = "TMM", disp.type = "tagwise", trend.method = "movingave")
+indir <- myArgs[1]
+data <- myArgs[2]
+tool <- myArgs[3]
+rmdFunc <- myArgs[4]
+outdir <- myArgs[5]
+
+if (tool == 'DESeq2') {
+    #Run DESeq2 on synthetic data
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), fit.type = "parametric", test = "Wald", beta.prior = TRUE, independent.filtering = TRUE, cooks.cutoff = TRUE, impute.outliers = TRUE)
+    }
+
+if (tool == 'edgeR.exact') {
+    #Run edgeR on synthetic data
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM", disp.type = "tagwise", trend.method = "movingave")
+    }
+
+
 
 # #Compare the two tools
 # file.table <- data.frame(input.files = file.path('out', c("data1_DESeq2.rds", "data1_edgeR.exact.rds")), stringsAsFactors = FALSE)
@@ -14,16 +29,3 @@ library('compcodeR')
 # runComparison(file.table = file.table, parameters = params, output.directory = 'out')
 #Run DESeq2 on synthetic data #1
 #runDiffExp(data.file = '~/Downloads/', result.extent = "DESeq2", Rmdfunction = "DESeq2.createRmd", output.directory = )
-
-
-
-
-#Run edgeR on synthetic data #1
-
-
-
-#Create synthetic data #2
-
-#Run DESeq2 on synthetic data #2
-
-#Run edgeR on synthetic data #2

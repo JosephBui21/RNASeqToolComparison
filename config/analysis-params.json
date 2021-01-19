@@ -1,0 +1,10 @@
+{
+    "in_dir" : "data",
+    "synData1" : "data1.rds",
+    "diffExp1" : "DESeq2",
+    "Rmdfunc1" : "DESeq2.createRmd",
+    "out_dir" : "out",
+    "synData2" : "data2.rds",
+    "diffExp2" : "edgeR.exact",
+    "Rmdfunc2" : "edgeR.exact.createRmd"
+}
