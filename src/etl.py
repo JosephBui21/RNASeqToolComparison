@@ -1,8 +1,8 @@
 import os
 import shutil
 
-def run_create_data_rscript(data, n_vars, samples_per_cond, n_diffexp, output_file):
-    os.system("/opt/conda/envs/r-bio/bin/Rscript src/syntheticDataFunc.R " + data + ' ' + str(n_vars) + ' ' + str(samples_per_cond) + ' ' + str(n_diffexp) + ' ' + output_file)
+def run_create_data_rscript(data, n_vars, samples_per_cond, n_diffexp, upregulated_ratio, output_file):
+    os.system("/opt/conda/envs/r-bio/bin/Rscript src/syntheticDataFunc.R " + data + ' ' + str(n_vars) + ' ' + str(samples_per_cond) + ' ' + str(n_diffexp) + ' ' + str(upregulated_ratio) + ' ' + output_file)
     return
 
 def run_rscript_test(string):

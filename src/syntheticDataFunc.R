@@ -5,5 +5,4 @@ myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 
 #tmpdir <- normalizePath(tempdir(), winslash = "/")
-
-syntheticData <- generateSyntheticData(dataset = myArgs[1], n.vars = strtoi(myArgs[2]), samples.per.cond = strtoi(myArgs[3]), n.diffexp = strtoi(myArgs[4]), output.file = myArgs[5])
+syntheticData <- generateSyntheticData(dataset = myArgs[1], n.vars = strtoi(myArgs[2]), samples.per.cond = strtoi(myArgs[3]), n.diffexp = strtoi(myArgs[4]), fraction.upregulated = strtoi(myArgs[5]), output.file = myArgs[6])
