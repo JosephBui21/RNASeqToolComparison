@@ -12,7 +12,7 @@ dependencies:
 - bioconductor-edgeR
 - bioconductor-metaseqR
 - bioconductor-sSeq
-- rpanel
+- tcltk-rpanel
 - r-essentials
 - python=3.8
 - pip
