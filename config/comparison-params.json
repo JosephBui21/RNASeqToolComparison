@@ -1,0 +1,5 @@
+{
+    "in_dir" : "out",
+    "deseq2" : "baseline0_0_DESeq2.rds",
+    "edgeR" : "baseline0_0_edgeR.rds"
+}

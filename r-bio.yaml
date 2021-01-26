@@ -11,9 +11,8 @@ dependencies:
 - bioconductor-ABSSeq
 - bioconductor-edgeR
 - bioconductor-metaseqR
-- bioconductor-BitSeq
-- bioconductor-baySeq
 - bioconductor-sSeq
+- rpanel
 - r-essentials
 - python=3.8
 - pip

@@ -4,7 +4,7 @@ import os
 import json
 sys.path.insert(0, 'src')
 from etl import run_create_data_rscript, run_rscript_test
-from analysis import run_diff_exp_rscript
+from analysis import run_diff_exp_rscript, run_comparison_rscript
 import logging
 
 logging.basicConfig(filename="log.txt", filemode='a',
@@ -97,7 +97,13 @@ def main(targets):
                                            analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
                                            analysis_cfg.get('out_dir'))
         logging.info("Finished performing edgeR on sythetic dataset 4...")
-        
+    
+    if 'compare' in targets:
+        with open('config/comparison-params.json') as fh:
+            compare_data_cfg = json.load(fh)
+        #comparison of DESeq2 & edgeR on baseline data with 0 differentially expressed
+        deseq2_edgeR_b_0_0 = run_comparison_rscript(compare_data_cfg.get('in_dir'), compare_data_cfg.get('deseq2'),
+                                                    compare_data_cfg.get('edgeR'))
         
     
     

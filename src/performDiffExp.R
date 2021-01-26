@@ -1,4 +1,4 @@
-#command arguments from config/analysis-params.json which specifies what tool is being used & file directories
+#command arguments from config/analysis-params.json which specifies what tool is being used & in/out file directories
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 
