@@ -1,10 +1,12 @@
 {
     "in_dir" : "data",
-    "synData1" : "data1.rds",
+    "synData1" : "baseline0_0.rds",
     "diffExp1" : "DESeq2",
     "Rmdfunc1" : "DESeq2.createRmd",
     "out_dir" : "out",
-    "synData2" : "data2.rds",
+    "synData2" : "baseline1250_0.rds",
     "diffExp2" : "edgeR.exact",
-    "Rmdfunc2" : "edgeR.exact.createRmd"
+    "Rmdfunc2" : "edgeR.exact.createRmd",
+    "synData3" : "baseline625_625.rds",
+    "synData4" : "baseline4000_0.rds"
 }

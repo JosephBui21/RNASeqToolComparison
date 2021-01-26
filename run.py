@@ -5,6 +5,12 @@ import json
 sys.path.insert(0, 'src')
 from etl import run_create_data_rscript, run_rscript_test
 from analysis import run_diff_exp_rscript
+import logging
+
+logging.basicConfig(filename="log.txt", filemode='a',
+ format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+ datefmt='%H:%M:%S',
+ level=logging.DEBUG)
 
 def main(targets):
     #Create synthetic data with parameters represents different number of samples per condition, truly differentially expressed genes, etc.
@@ -31,24 +37,67 @@ def main(targets):
             analysis_cfg = json.load(fh)
         
         #Run DESeq2 on synthetic_data1 from above
-        deseq2_data1 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData1'),
+        logging.info("Performing DESeq2 on baseline data with 0 genes differentially expressed...")
+        deseq2_baseline0_0 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData1'),
                                             analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
                                             analysis_cfg.get('out_dir'))
-        
-        #Run edgeR on synthetic_data1 from above
-        edgeR_data1 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData1'), 
-                                           analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
-                                           analysis_cfg.get('out_dir'))
+        logging.info("Finished performing DESeq2 on synthetic dataset 1...")
         
         #Run DESeq2 on synthetic_data2 from above
-        deseq2_data2 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData2'),
+        logging.info("Performing DESeq2 on baseline data with 1250 genes differentially expressed in condition 2 " + 
+                    "& 0 in condition 1...")
+        deseq2_baseline1250_0 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData2'),
                                             analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
                                             analysis_cfg.get('out_dir'))
+        logging.info("Finished performing DESeq2 on synthetic dataset 2...")
         
-        #Run edgeR on synthetic_data2 from above
-        edgeR_data1 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData2'), 
+        #Run DESeq2 on synthetic_data3 from above
+        logging.info("Performing DESeq2 on baseline data with 625 genes differentially expressed in condition 2 " + 
+                    "& 625 in condition 1...")
+        deseq2_baseline625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData3'),
+                                            analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
+                                            analysis_cfg.get('out_dir'))
+        logging.info("Finished performing DESeq2 on synthetic dataset 3...")
+        
+        #Run DESeq2 on synthetic_data4 from above
+        logging.info("Performing DESeq2 on baseline data with 4000 genes differentially expressed in condition 2 " + 
+                    "& 0 in condition 1...")
+        deseq2_baseline4000_0 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData4'),
+                                            analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
+                                            analysis_cfg.get('out_dir'))
+        logging.info("Finished performing DESeq2 on synthetic dataset 4...")
+        
+        #Run edgeR on synthetic_data1 from above
+        logging.info("Performing edgeR on baseline data with 0 genes differentially expressed...")
+        edgeR_baseline0_0 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData1'), 
                                            analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
                                            analysis_cfg.get('out_dir'))
+        logging.info("Finished performing edgeR on sythetic dataset 1...")
+        
+        #Run edgeR on synthetic_data2 from above
+        logging.info("Performing edgeR on baseline data with 1250 genes differentially expressed in condition 2 " +
+                    "& 0 in condition 1")
+        edgeR_baseline1250_0 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData2'), 
+                                           analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
+                                           analysis_cfg.get('out_dir'))
+        logging.info("Finished performing edgeR on sythetic dataset 2...")
+        
+        #Run edgeR on synthetic_data3 from above
+        logging.info("Performing edgeR on baseline data with 625 genes differentially expressed in condition 2 " +
+                    "& 625 in condition 1")
+        edgeR625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData3'), 
+                                           analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
+                                           analysis_cfg.get('out_dir'))
+        logging.info("Finished performing edgeR on sythetic dataset 3...")
+        
+        #Run edgeR on synthetic_data4 from above
+        logging.info("Performing edgeR on baseline data with 4000 genes differentially expressed in condition 2 " +
+                    "& 0 in condition 1")
+        edgeR4000_0 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData4'), 
+                                           analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
+                                           analysis_cfg.get('out_dir'))
+        logging.info("Finished performing edgeR on sythetic dataset 4...")
+        
         
     
     
