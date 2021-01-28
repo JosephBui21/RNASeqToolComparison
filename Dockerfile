@@ -19,7 +19,9 @@ RUN apt-get update && \
                     man \
                     man-db \
                     manpages-posix \
+                    bwidget \
                     -y
+
 
 # build conda environment with required r packages
 COPY r-bio.yaml /tmp
