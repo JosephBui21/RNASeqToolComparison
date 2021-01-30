@@ -1,5 +1,9 @@
 {
-    "in_dir" : "out",
-    "deseq2" : "baseline0_0_DESeq2.rds",
-    "edgeR" : "baseline0_0_edgeR.rds"
+    "dir" : "out",
+    "baseline0_0_DESeq2" : "baseline0_0_DESeq2.rds",
+    "baseline0_0_edgeR" : "baseline0_0_edgeR.rds",
+    "num_samples_per_cond" : 5,
+    "inclusive_reps" : 1,
+    "synData1" : "data/baseline0_0.rds",
+    "alpha" : "0.05"
 }

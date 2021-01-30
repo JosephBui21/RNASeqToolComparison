@@ -8,5 +8,7 @@
     "diffExp2" : "edgeR.exact",
     "Rmdfunc2" : "edgeR.exact.createRmd",
     "synData3" : "baseline625_625.rds",
-    "synData4" : "baseline4000_0.rds"
+    "synData4" : "baseline4000_0.rds",
+    "diffExp3" : "voom.limma",
+    "Rmdfunc3" : "voom.limma.createRmd"
 }

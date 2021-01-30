@@ -18,6 +18,11 @@ if (tool == 'edgeR.exact') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM", disp.type = "tagwise", trend.method = "movingave")
     }
 
+if (tool == 'voom.limma') {
+    #Run voom limma on synthetic data
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
+    }
+
 
 
 # #Compare the two tools
