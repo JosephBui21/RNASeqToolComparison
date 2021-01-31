@@ -23,6 +23,15 @@ if (tool == 'voom.limma') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
     }
 
+if (tool == 'baySeq') {
+    #Run baySeq on synthetic data
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "edgeR", equaldisp = TRUE)
+    }
+
+if (tool == 'EBSeq') {
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "median")
+    }
+
 
 
 # #Compare the two tools

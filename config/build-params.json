@@ -31,9 +31,9 @@
     "output_file8" : "data/single0_0.rds",
     "data9" : "single625_625",
     "output_file9" : "data/single625_625.rds",
-	"data10": "random0_0",
-	"data_11": "random625_625",
-	"output_file10" : "data/random0_0.rds",
-	"output_file11" : "data/random625_625.rds",
-	"random_outlier": "0.025"
+    "data10": "random0_0",
+    "data11": "random625_625",
+    "output_file10" : "data/random0_0.rds",
+    "output_file11" : "data/random625_625.rds",
+    "random_outlier": "0.025"
 }

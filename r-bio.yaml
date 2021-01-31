@@ -12,6 +12,7 @@ dependencies:
 - bioconductor-edgeR
 - bioconductor-metaseqR
 - bioconductor-sSeq
+- bioconductor-EBSeq
 - r-essentials
 - python=3.8
 - pip

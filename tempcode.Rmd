@@ -1,0 +1,16 @@
+### EBSeq
+Data file: data/random625_625.rds
+```{r, echo = TRUE, eval = TRUE, include = TRUE, message = TRUE, error = TRUE, warning = TRUE}
+require(EBSeq)
+cdata <- readRDS('data/random625_625.rds')
+is.valid <- check_compData(cdata)
+if (!(is.valid == TRUE)) stop('Not a valid compData object.')
+sizes <- MedianNorm(count.matrix(cdata))
+EBSeq.test <- EBTest(Data = count.matrix(cdata), Conditions = factor(sample.annotations(cdata)$condition), sizeFactors = sizes, maxround = 10)
+EBSeq.ppmat <- GetPPMat(EBSeq.test)
+EBSeq.posteriors.DE <- EBSeq.ppmat[, 'PPDE']
+EBSeq.lfdr <- 1 - EBSeq.ppmat[, 'PPDE']
+EBSeq.FDR <- rep(NA, length(EBSeq.lfdr))
+for (l in 1:length(EBSeq.FDR)) {
+EBSeq.FDR[l] <- mean(EBSeq.lfdr[which(EBSeq.lfdr <= EBSeq.lfdr[l])])
+}
