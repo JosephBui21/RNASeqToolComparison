@@ -2,9 +2,10 @@
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 
-
-file.table <- data.frame(input.files = file.path(myArgs[1], c(myArgs[2], myArgs[3])), stringAsFactors = FALSE)
-
-params <- list(incl.nbr.samples = strtoi(myArgs[4]), incl.replicates = strtoi(myArgs[5]), incl.dataset = myArgs[6], incl.de.methods = NULL, fdr.threshold = as.numeric(myArgs[7]), tpr.threshold = as.numeric(myArgs[7]), typeI.threshold = as.numeric(myArgs[7]), ma.threshold = as.numeric(myArgs[7]), overlap.thresold = as.numeric(myArgs[7]), fracsign.threshold = as.numeric(myArgs[7]), mcc.threshold = as.numeric(myArgs[7]), nbrtpfp.threshold = as.numeric(myArgs[7]), comparisons = c("auc", "fdr", "tpr", "ma", "correlation"))
-
-runComparison(file.table = file.table, parameters = params, output.directory = file.path(myArgs[1]))
+print('1')
+file.table <- data.frame(input.files = file.path(myArgs[1], c(myArgs[2], myArgs[3], myArgs[4], myArgs[5])), stringAsFactors = FALSE)
+print('2')
+params <- list(incl.nbr.samples = strtoi(myArgs[6]), incl.replicates = strtoi(myArgs[7]), incl.dataset = myArgs[8], incl.de.methods = NULL, fdr.threshold = as.numeric(myArgs[9]), tpr.threshold = as.numeric(myArgs[9]), typeI.threshold = as.numeric(myArgs[9]), ma.threshold = as.numeric(myArgs[9]), overlap.thresold = as.numeric(myArgs[9]), fracsign.threshold = as.numeric(myArgs[9]), mcc.threshold = as.numeric(myArgs[9]), nbrtpfp.threshold = as.numeric(myArgs[9]), comparisons = c("auc", "fdr", "tpr", "ma", "correlation"))
+print('3')
+runComparison(file.table = file.table, parameters = params, output.directory = file.path(myArgs[1], myArgs[10]))
+print('4')

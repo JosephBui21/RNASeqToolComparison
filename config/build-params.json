@@ -2,6 +2,7 @@
     "data1" : "baseline0_0",
     "n_vars" : 12500,
     "samples_per_cond" : 5,
+    "repl_id" : 1,
     "type1" : "none",
     "type2" : "single",
     "type3" : "random",
