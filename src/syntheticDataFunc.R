@@ -23,3 +23,8 @@ if (outlier_type == 'none') {
 if (outlier_type == 'single') {
     syntheticData <- generateSyntheticData(dataset = data, n.vars = num_vars, samples.per.cond = samples_per_cond, n.diffexp = num_diff_exp, fraction.upregulated = ratio_upregulated, fraction.non.overdispersed = dispersion_num, single.outlier.high.prob = outlier_ratio, single.outlier.low.prob = outlier_ratio, output.file = output_dir)
     }
+	
+#create the synthetic data which selects a random sample & multiplies the corresponding count with a factor between 5 & 10
+if (outlier_type == 'random') {
+    syntheticData <- generateSyntheticData(dataset = data, n.vars = num_vars, samples.per.cond = samples_per_cond, n.diffexp = num_diff_exp, fraction.upregulated = ratio_upregulated, fraction.non.overdispersed = dispersion_num, random.outlier.high.prob = outlier_ratio, random.outlier.low.prob = outlier_ratio, output.file = output_dir)
+    }
