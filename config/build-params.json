@@ -8,6 +8,7 @@
     "type3" : "random",
     "regular_dispersion" : 0,
     "poisson_dispersion" : 6250,
+    "seqdepth" : "1e7",
     "outlier0" : 0,
     "n_diffexp0" : 0,
     "output_file1" : "data/baseline0_0.rds",
