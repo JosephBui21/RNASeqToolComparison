@@ -9,3 +9,4 @@ In this project, we want to compare distinct differential gene expression analys
 ## Building the project using `run.py`
 * Use the command `python run.py build` to generate the synthetic data in `data/data<N>.rds`, where N represents the dataset number, using `generateSyntheticData`
 * Use the command `python run.py analysis` to perform `DESeq2` and `edgeR.exact` on the synthetic data created in `data` folder which returns the results in `out/data<N>_<tool>.rds`, where N represents the dataset number & tool represents the software
+* Use the command `python run.py compare` to compare the tools...

@@ -28,8 +28,16 @@ if (tool == 'baySeq') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "edgeR", equaldisp = TRUE)
     }
 
-if (tool == 'EBSeq') {
-    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "median")
+if (tool == 'NBPSeq') {
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
+    }
+
+if (tool == 'NOISeq') {
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
+    }
+
+if (tool == 'TCC') {
+    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM", test.method = "edger", iteration = 3, normFDR = 0.1, floorPDEG = 0.05)
     }
 
 

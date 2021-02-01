@@ -1,88 +1,132 @@
-09:30:15,469 root INFO Performing DESeq2 on synthetic data #1
-09:34:59,525 root INFO Finished performing DESeq2 on synthetic data #1
-09:34:59,525 root INFO Performing edgeR on synthetic data #1
-09:35:07,1 root INFO Finished performing edgeR on synthetic data #1
-09:35:07,2 root INFO Performing voom.limma on synthetic data #1
-09:35:13,594 root INFO Finished performing voom.limma on synthetic data #1
-09:35:13,594 root INFO Performing baySeq on synthetic data #1
-09:48:01,732 root INFO Finished performing baySeq on synthetic data #1
-09:48:05,607 root INFO Performing DESeq2 on synthetic data #2
-09:53:08,511 root INFO Finished performing DESeq2 on synthetic data #2
-09:53:08,512 root INFO Performing edgeR on synthetic data #2
-09:53:15,987 root INFO Finished performing edgeR on synthetic data #2
-09:53:15,988 root INFO Performing voom.limma on synthetic data #2
-09:53:22,584 root INFO Finished performing voom.limma on synthetic data #2
-09:53:22,584 root INFO Performing baySeq on synthetic data #2
-10:05:41,964 root INFO Finished performing baySeq on synthetic data #2
-10:05:45,707 root INFO Performing DESeq2 on synthetic data #3
-10:10:25,949 root INFO Finished performing DESeq2 on synthetic data #3
-10:10:25,949 root INFO Performing edgeR on synthetic data #3
-10:10:33,897 root INFO Finished performing edgeR on synthetic data #3
-10:10:33,897 root INFO Performing voom.limma on synthetic data #3
-10:10:40,592 root INFO Finished performing voom.limma on synthetic data #3
-10:10:40,593 root INFO Performing baySeq on synthetic data #3
-10:22:48,260 root INFO Finished performing baySeq on synthetic data #3
-10:22:51,801 root INFO Performing DESeq2 on synthetic data #4
-10:27:34,49 root INFO Finished performing DESeq2 on synthetic data #4
-10:27:34,50 root INFO Performing edgeR on synthetic data #4
-10:27:42,98 root INFO Finished performing edgeR on synthetic data #4
-10:27:42,99 root INFO Performing voom.limma on synthetic data #4
-10:27:48,400 root INFO Finished performing voom.limma on synthetic data #4
-10:27:48,401 root INFO Performing baySeq on synthetic data #4
-10:40:06,625 root INFO Finished performing baySeq on synthetic data #4
-10:40:10,397 root INFO Performing DESeq2 on synthetic data #5
-10:44:47,347 root INFO Finished performing DESeq2 on synthetic data #5
-10:44:47,347 root INFO Performing edgeR on synthetic data #5
-10:44:54,873 root INFO Finished performing edgeR on synthetic data #5
-10:44:54,873 root INFO Performing voom.limma on synthetic data #5
-10:45:01,990 root INFO Finished performing voom.limma on synthetic data #5
-10:45:01,990 root INFO Performing baySeq on synthetic data #5
-10:56:59,873 root INFO Finished performing baySeq on synthetic data #5
-10:57:03,771 root INFO Performing DESeq2 on synthetic data #6
-10:57:40,574 root INFO Finished performing DESeq2 on synthetic data #6
-10:57:40,575 root INFO Performing edgeR on synthetic data #6
-10:57:47,478 root INFO Finished performing edgeR on synthetic data #6
-10:57:47,479 root INFO Performing voom.limma on synthetic data #6
-10:57:54,100 root INFO Finished performing voom.limma on synthetic data #6
-10:57:54,100 root INFO Performing baySeq on synthetic data #6
-11:10:19,474 root INFO Finished performing baySeq on synthetic data #6
-11:10:22,901 root INFO Performing DESeq2 on synthetic data #7
-11:10:59,512 root INFO Finished performing DESeq2 on synthetic data #7
-11:10:59,513 root INFO Performing edgeR on synthetic data #7
-11:11:06,874 root INFO Finished performing edgeR on synthetic data #7
-11:11:06,874 root INFO Performing voom.limma on synthetic data #7
-11:11:13,267 root INFO Finished performing voom.limma on synthetic data #7
-11:11:13,268 root INFO Performing baySeq on synthetic data #7
-11:23:29,967 root INFO Finished performing baySeq on synthetic data #7
-11:23:33,691 root INFO Performing DESeq2 on synthetic data #8
-11:27:28,138 root INFO Finished performing DESeq2 on synthetic data #8
-11:27:28,139 root INFO Performing edgeR on synthetic data #8
-11:27:35,974 root INFO Finished performing edgeR on synthetic data #8
-11:27:35,975 root INFO Performing voom.limma on synthetic data #8
-11:27:43,407 root INFO Finished performing voom.limma on synthetic data #8
-11:27:43,408 root INFO Performing baySeq on synthetic data #8
-11:39:54,367 root INFO Finished performing baySeq on synthetic data #8
-11:39:58,291 root INFO Performing DESeq2 on synthetic data #9
-11:44:59,604 root INFO Finished performing DESeq2 on synthetic data #9
-11:44:59,604 root INFO Performing edgeR on synthetic data #9
-11:45:07,704 root INFO Finished performing edgeR on synthetic data #9
-11:45:07,704 root INFO Performing voom.limma on synthetic data #9
-11:45:14,519 root INFO Finished performing voom.limma on synthetic data #9
-11:45:14,520 root INFO Performing baySeq on synthetic data #9
-11:59:18,935 root INFO Finished performing baySeq on synthetic data #9
-11:59:22,487 root INFO Performing DESeq2 on synthetic data #10
-12:03:49,932 root INFO Finished performing DESeq2 on synthetic data #10
-12:03:49,932 root INFO Performing edgeR on synthetic data #10
-12:03:57,779 root INFO Finished performing edgeR on synthetic data #10
-12:03:57,780 root INFO Performing voom.limma on synthetic data #10
-12:04:04,266 root INFO Finished performing voom.limma on synthetic data #10
-12:04:04,266 root INFO Performing baySeq on synthetic data #10
-12:17:12,927 root INFO Finished performing baySeq on synthetic data #10
-12:17:16,381 root INFO Performing DESeq2 on synthetic data #11
-12:20:38,53 root INFO Finished performing DESeq2 on synthetic data #11
-12:20:38,54 root INFO Performing edgeR on synthetic data #11
-12:20:46,597 root INFO Finished performing edgeR on synthetic data #11
-12:20:46,597 root INFO Performing voom.limma on synthetic data #11
-12:20:53,779 root INFO Finished performing voom.limma on synthetic data #11
-12:20:53,780 root INFO Performing baySeq on synthetic data #11
-12:33:52,567 root INFO Finished performing baySeq on synthetic data #11
+00:51:00,955 root INFO Performing DESeq2 on synthetic data #1
+00:55:33,158 root INFO Finished performing DESeq2 on synthetic data #1
+00:55:33,159 root INFO Performing edgeR on synthetic data #1
+00:55:40,580 root INFO Finished performing edgeR on synthetic data #1
+00:55:40,580 root INFO Performing voom.limma on synthetic data #1
+00:55:47,805 root INFO Finished performing voom.limma on synthetic data #1
+00:55:47,806 root INFO Performing baySeq on synthetic data #1
+01:07:58,566 root INFO Finished performing baySeq on synthetic data #1
+01:08:02,313 root INFO Performing NOISeq on synthetic data #1
+01:09:20,886 root INFO Finished performing NOISeq on synthetic data #1
+01:09:20,887 root INFO Performing TCC on synthetic data #1
+01:09:24,403 root INFO Finished performing TCC on synthetic data #1
+01:09:24,404 root INFO Performing DESeq2 on synthetic data #2
+01:13:35,796 root INFO Finished performing DESeq2 on synthetic data #2
+01:13:35,796 root INFO Performing edgeR on synthetic data #2
+01:13:43,191 root INFO Finished performing edgeR on synthetic data #2
+01:13:43,192 root INFO Performing voom.limma on synthetic data #2
+01:13:49,877 root INFO Finished performing voom.limma on synthetic data #2
+01:13:49,878 root INFO Performing baySeq on synthetic data #2
+01:27:46,511 root INFO Finished performing baySeq on synthetic data #2
+01:27:50,189 root INFO Performing NOISeq on synthetic data #2
+01:29:27,884 root INFO Finished performing NOISeq on synthetic data #2
+01:29:27,885 root INFO Performing TCC on synthetic data #2
+01:29:31,599 root INFO Finished performing TCC on synthetic data #2
+01:29:31,600 root INFO Performing DESeq2 on synthetic data #3
+01:34:57,635 root INFO Finished performing DESeq2 on synthetic data #3
+01:34:57,636 root INFO Performing edgeR on synthetic data #3
+01:35:05,278 root INFO Finished performing edgeR on synthetic data #3
+01:35:05,279 root INFO Performing voom.limma on synthetic data #3
+01:35:11,907 root INFO Finished performing voom.limma on synthetic data #3
+01:35:11,908 root INFO Performing baySeq on synthetic data #3
+01:47:35,928 root INFO Finished performing baySeq on synthetic data #3
+01:47:39,574 root INFO Performing NOISeq on synthetic data #3
+01:49:29,746 root INFO Finished performing NOISeq on synthetic data #3
+01:49:29,747 root INFO Performing TCC on synthetic data #3
+01:49:33,592 root INFO Finished performing TCC on synthetic data #3
+01:49:33,593 root INFO Performing DESeq2 on synthetic data #4
+01:55:10,655 root INFO Finished performing DESeq2 on synthetic data #4
+01:55:10,655 root INFO Performing edgeR on synthetic data #4
+01:55:18,469 root INFO Finished performing edgeR on synthetic data #4
+01:55:18,470 root INFO Performing voom.limma on synthetic data #4
+01:55:25,95 root INFO Finished performing voom.limma on synthetic data #4
+01:55:25,96 root INFO Performing baySeq on synthetic data #4
+02:08:13,368 root INFO Finished performing baySeq on synthetic data #4
+02:08:17,590 root INFO Performing NOISeq on synthetic data #4
+02:09:55,390 root INFO Finished performing NOISeq on synthetic data #4
+02:09:55,390 root INFO Performing TCC on synthetic data #4
+02:09:58,998 root INFO Finished performing TCC on synthetic data #4
+02:09:58,999 root INFO Performing DESeq2 on synthetic data #5
+02:14:17,113 root INFO Finished performing DESeq2 on synthetic data #5
+02:14:17,113 root INFO Performing edgeR on synthetic data #5
+02:14:24,481 root INFO Finished performing edgeR on synthetic data #5
+02:14:24,482 root INFO Performing voom.limma on synthetic data #5
+02:14:31,603 root INFO Finished performing voom.limma on synthetic data #5
+02:14:31,604 root INFO Performing baySeq on synthetic data #5
+02:26:59,779 root INFO Finished performing baySeq on synthetic data #5
+02:27:03,902 root INFO Performing NOISeq on synthetic data #5
+02:28:35,778 root INFO Finished performing NOISeq on synthetic data #5
+02:28:35,779 root INFO Performing TCC on synthetic data #5
+02:28:39,208 root INFO Finished performing TCC on synthetic data #5
+02:28:39,208 root INFO Performing DESeq2 on synthetic data #6
+02:29:20,955 root INFO Finished performing DESeq2 on synthetic data #6
+02:29:20,955 root INFO Performing edgeR on synthetic data #6
+02:29:28,902 root INFO Finished performing edgeR on synthetic data #6
+02:29:28,903 root INFO Performing voom.limma on synthetic data #6
+02:29:35,393 root INFO Finished performing voom.limma on synthetic data #6
+02:29:35,394 root INFO Performing baySeq on synthetic data #6
+02:42:19,436 root INFO Finished performing baySeq on synthetic data #6
+02:42:23,298 root INFO Performing NOISeq on synthetic data #6
+02:43:48,3 root INFO Finished performing NOISeq on synthetic data #6
+02:43:48,3 root INFO Performing TCC on synthetic data #6
+02:43:51,289 root INFO Finished performing TCC on synthetic data #6
+02:43:51,290 root INFO Performing DESeq2 on synthetic data #7
+02:44:25,232 root INFO Finished performing DESeq2 on synthetic data #7
+02:44:25,233 root INFO Performing edgeR on synthetic data #7
+02:44:32,898 root INFO Finished performing edgeR on synthetic data #7
+02:44:32,899 root INFO Performing voom.limma on synthetic data #7
+02:44:39,668 root INFO Finished performing voom.limma on synthetic data #7
+02:44:39,669 root INFO Performing baySeq on synthetic data #7
+02:57:09,843 root INFO Finished performing baySeq on synthetic data #7
+02:57:13,494 root INFO Performing NOISeq on synthetic data #7
+02:58:33,420 root INFO Finished performing NOISeq on synthetic data #7
+02:58:33,420 root INFO Performing TCC on synthetic data #7
+02:58:36,510 root INFO Finished performing TCC on synthetic data #7
+02:58:36,510 root INFO Performing DESeq2 on synthetic data #8
+03:02:54,716 root INFO Finished performing DESeq2 on synthetic data #8
+03:02:54,716 root INFO Performing edgeR on synthetic data #8
+03:03:02,604 root INFO Finished performing edgeR on synthetic data #8
+03:03:02,604 root INFO Performing voom.limma on synthetic data #8
+03:03:09,392 root INFO Finished performing voom.limma on synthetic data #8
+03:03:09,392 root INFO Performing baySeq on synthetic data #8
+03:16:17,682 root INFO Finished performing baySeq on synthetic data #8
+03:16:20,793 root INFO Performing NOISeq on synthetic data #8
+03:17:48,8 root INFO Finished performing NOISeq on synthetic data #8
+03:17:48,8 root INFO Performing TCC on synthetic data #8
+03:17:51,968 root INFO Finished performing TCC on synthetic data #8
+03:17:51,969 root INFO Performing DESeq2 on synthetic data #9
+03:22:16,255 root INFO Finished performing DESeq2 on synthetic data #9
+03:22:16,256 root INFO Performing edgeR on synthetic data #9
+03:22:23,975 root INFO Finished performing edgeR on synthetic data #9
+03:22:23,975 root INFO Performing voom.limma on synthetic data #9
+03:22:31,165 root INFO Finished performing voom.limma on synthetic data #9
+03:22:31,165 root INFO Performing baySeq on synthetic data #9
+03:35:31,96 root INFO Finished performing baySeq on synthetic data #9
+03:35:35,92 root INFO Performing NOISeq on synthetic data #9
+03:37:02,777 root INFO Finished performing NOISeq on synthetic data #9
+03:37:02,778 root INFO Performing TCC on synthetic data #9
+03:37:06,287 root INFO Finished performing TCC on synthetic data #9
+03:37:06,288 root INFO Performing DESeq2 on synthetic data #10
+03:40:51,504 root INFO Finished performing DESeq2 on synthetic data #10
+03:40:51,504 root INFO Performing edgeR on synthetic data #10
+03:41:00,599 root INFO Finished performing edgeR on synthetic data #10
+03:41:00,599 root INFO Performing voom.limma on synthetic data #10
+03:41:08,81 root INFO Finished performing voom.limma on synthetic data #10
+03:41:08,81 root INFO Performing baySeq on synthetic data #10
+03:55:30,933 root INFO Finished performing baySeq on synthetic data #10
+03:55:34,993 root INFO Performing NOISeq on synthetic data #10
+03:57:02,299 root INFO Finished performing NOISeq on synthetic data #10
+03:57:02,299 root INFO Performing TCC on synthetic data #10
+03:57:06,294 root INFO Finished performing TCC on synthetic data #10
+03:57:06,294 root INFO Performing DESeq2 on synthetic data #11
+04:00:33,123 root INFO Finished performing DESeq2 on synthetic data #11
+04:00:33,123 root INFO Performing edgeR on synthetic data #11
+04:00:42,184 root INFO Finished performing edgeR on synthetic data #11
+04:00:42,185 root INFO Performing voom.limma on synthetic data #11
+04:00:49,368 root INFO Finished performing voom.limma on synthetic data #11
+04:00:49,368 root INFO Performing baySeq on synthetic data #11
+04:14:27,990 root INFO Finished performing baySeq on synthetic data #11
+04:14:32,97 root INFO Performing NOISeq on synthetic data #11
+04:15:53,503 root INFO Finished performing NOISeq on synthetic data #11
+04:15:53,503 root INFO Performing TCC on synthetic data #11
+04:15:57,898 root INFO Finished performing TCC on synthetic data #11

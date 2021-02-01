@@ -30,7 +30,7 @@ def main(targets):
         baseline625_625 = run_create_data_rscript(data_cfg.get('data3'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file3'))
         
         #Create baseline synthetic data #4 with 1250 differentially expressed genes with 4000 upregulated in condition 1 & 0 in condition 2
-        baseline4000_0 = run_create_data_rscript(data_cfg.get('data4'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file4'))
+        baseline4000_0 = run_create_data_rscript(data_cfg.get('data4'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file4'))
         
         #Create baseline synthetic data #5 with 4000 differentially expressed genes with 2000 upregulated in condition 1 & 0 in condition 2
         baseline2000_2000 = run_create_data_rscript(data_cfg.get('data5'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file5'))
@@ -64,40 +64,53 @@ def main(targets):
             synthetic_num = str(i)
             
             #Run DESeq2 on the 11 synthetic datasets above
-            logging.info("Performing DESeq2 on synthetic data #" + synthetic_num)
-            deseq2 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
-                                          analysis_cfg.get('DESeq2_dir'))
-            logging.info("Finished performing DESeq2 on synthetic data #" + synthetic_num)
+#             logging.info("Performing DESeq2 on synthetic data #" + synthetic_num)
+#             deseq2 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
+#                                           analysis_cfg.get('DESeq2_dir'))
+#             logging.info("Finished performing DESeq2 on synthetic data #" + synthetic_num)
             
             #Run edgeR.exact on the 11 synthetic datasets above
-            logging.info("Performing edgeR on synthetic data #" + synthetic_num)
-            edgeR = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
-                                          analysis_cfg.get('edgeR_dir'))
-            logging.info("Finished performing edgeR on synthetic data #" + synthetic_num)
+#             logging.info("Performing edgeR on synthetic data #" + synthetic_num)
+#             edgeR = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
+#                                           analysis_cfg.get('edgeR_dir'))
+#             logging.info("Finished performing edgeR on synthetic data #" + synthetic_num)
             
             #Run voom.limma on the 11 synthetic datasets above
-            logging.info("Performing voom.limma on synthetic data #" + synthetic_num)
-            voom_limma = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'),
-                                          analysis_cfg.get('voom_limma_dir'))
-            logging.info("Finished performing voom.limma on synthetic data #" + synthetic_num)
+#             logging.info("Performing voom.limma on synthetic data #" + synthetic_num)
+#             voom_limma = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'),
+#                                           analysis_cfg.get('voom_limma_dir'))
+#             logging.info("Finished performing voom.limma on synthetic data #" + synthetic_num)
             
             #Run baySeq on the 11 synthetic datasets above
-            logging.info("Performing baySeq on synthetic data #" + synthetic_num)
-            baySeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
-                                          analysis_cfg.get('baySeq_dir'))
-            logging.info("Finished performing baySeq on synthetic data #" + synthetic_num)
+#             logging.info("Performing baySeq on synthetic data #" + synthetic_num)
+#             baySeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
+#                                           analysis_cfg.get('baySeq_dir'))
+#             logging.info("Finished performing baySeq on synthetic data #" + synthetic_num)
             
-            #Run EBSeq on the 11 synthetic datasets above
-            logging.info("Performing EBSeq on synthetic data #" + synthetic_num)
-            EBSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+            #Run NBPSeq on the 11 synthetic datasets above
+            logging.info("Performing NBPSeq on synthetic data #" + synthetic_num)
+            NBPSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
                                           analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'),
-                                          analysis_cfg.get('EBSeq_dir'))
-            logging.info("Finished performing EBSeq on synthetic data #" + synthetic_num)
+                                          analysis_cfg.get('NBPSeq_dir'))
+            logging.info("Finished performing NBPSeq on synthetic data #" + synthetic_num)
             
+            #Run NOISeq on the 11 synthetic datasets above
+#             logging.info("Performing NOISeq on synthetic data #" + synthetic_num)
+#             NOISeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'),
+#                                           analysis_cfg.get('NOISeq_dir'))
+#             logging.info("Finished performing NOISeq on synthetic data #" + synthetic_num)
+            
+            #Run TCC on the 11 synthetic datasets above
+#             logging.info("Performing TCC on synthetic data #" + synthetic_num)
+#             TCC = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'),
+#                                           analysis_cfg.get('NBPSeq_dir'))
+#             logging.info("Finished performing TCC on synthetic data #" + synthetic_num)
     
     if 'compare' in targets:
         with open('config/comparison-params.json') as fh:
