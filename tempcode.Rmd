@@ -1,6 +1,0 @@
-### NBPSeq
-Data file: data/baseline1250_0.rds
-```{r, echo = TRUE, eval = TRUE, include = TRUE, message = FALSE, error = TRUE, warning = TRUE}
-require(edgeR)
-require(NBPSeq)
-cdata <- readRDS('data/baseline1250_0.rds')
