@@ -16,14 +16,17 @@
     "diffExp3" : "voom.limma",
     "diffExp4" : "NOISeq",
     "diffExp5" : "ttest",
+    "diffExp6" : "baySeq",
     "Rmdfunc1" : "DESeq2.createRmd",
     "Rmdfunc2" : "edgeR.exact.createRmd",
     "Rmdfunc3" : "voom.limma.createRmd",
     "Rmdfunc4" : "NOISeq.prenorm.createRmd",
     "Rmdfunc5" : "ttest.createRmd",
+    "Rmdfunc6" : "baySeq.createRmd",
     "DESeq2_dir" : "out/DESeq2",
     "edgeR_dir" : "out/edgeR.exact",
     "voom_limma_dir" : "out/voom.limma",
     "ttest_dir" : "out/ttest",
-    "NOISeq_dir" : "out/NOISeq"
+    "NOISeq_dir" : "out/NOISeq",
+    "baySeq_dir" : "out/baySeq"
 }

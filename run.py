@@ -105,6 +105,14 @@ def main(targets):
                                           analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'),
                                           analysis_cfg.get('ttest_dir'))
             logging.info("Finished performing ttest on synthetic data #" + synthetic_num)
+            
+            #Run baySeq on the 11 synthetic datasets above
+#             logging.info("Performing baySeq on synthetic data #" + synthetic_num)
+#             baySeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'),
+#                                           analysis_cfg.get('baySeq_dir'))
+#             logging.info("Finished performing baySeq on synthetic data #" + synthetic_num)
+            
     
     if 'compare' in targets:
         with open('config/comparison-params.json') as fh:

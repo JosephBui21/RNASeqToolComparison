@@ -1,110 +1,165 @@
 15:55:51,619 root INFO Performing DESeq2 on synthetic data #1
 16:00:58,167 root INFO Finished performing DESeq2 on synthetic data #1
+
 16:00:58,167 root INFO Performing edgeR on synthetic data #1
 16:01:05,818 root INFO Finished performing edgeR on synthetic data #1
+
 16:01:05,819 root INFO Performing voom.limma on synthetic data #1
 16:01:12,997 root INFO Finished performing voom.limma on synthetic data #1
+
 16:14:04,631 root INFO Performing NOISeq on synthetic data #1
 16:15:31,206 root INFO Finished performing NOISeq on synthetic data #1
+
 16:15:31,206 root INFO Performing DESeq2 on synthetic data #2
 16:20:14,638 root INFO Finished performing DESeq2 on synthetic data #2
+
 16:20:14,638 root INFO Performing edgeR on synthetic data #2
 16:20:22,199 root INFO Finished performing edgeR on synthetic data #2
+
 16:20:22,199 root INFO Performing voom.limma on synthetic data #2
 16:20:29,409 root INFO Finished performing voom.limma on synthetic data #2
+
 16:32:59,233 root INFO Performing NOISeq on synthetic data #2
 16:34:41,10 root INFO Finished performing NOISeq on synthetic data #2
+
 16:34:41,10 root INFO Performing DESeq2 on synthetic data #3
 16:39:48,548 root INFO Finished performing DESeq2 on synthetic data #3
+
 16:39:48,549 root INFO Performing edgeR on synthetic data #3
 16:39:55,895 root INFO Finished performing edgeR on synthetic data #3
+
 16:39:55,896 root INFO Performing voom.limma on synthetic data #3
 16:40:03,307 root INFO Finished performing voom.limma on synthetic data #3
+
 16:52:31,619 root INFO Performing NOISeq on synthetic data #3
 16:54:12,99 root INFO Finished performing NOISeq on synthetic data #3
+
 16:54:12,99 root INFO Performing DESeq2 on synthetic data #4
 16:59:18,392 root INFO Finished performing DESeq2 on synthetic data #4
+
 16:59:18,393 root INFO Performing edgeR on synthetic data #4
 16:59:27,271 root INFO Finished performing edgeR on synthetic data #4
+
 16:59:27,271 root INFO Performing voom.limma on synthetic data #4
 16:59:34,864 root INFO Finished performing voom.limma on synthetic data #4
+
 17:12:17,731 root INFO Performing NOISeq on synthetic data #4
 17:13:39,700 root INFO Finished performing NOISeq on synthetic data #4
+
 17:13:39,701 root INFO Performing DESeq2 on synthetic data #5
 17:18:09,382 root INFO Finished performing DESeq2 on synthetic data #5
+
 17:18:09,382 root INFO Performing edgeR on synthetic data #5
 17:18:17,178 root INFO Finished performing edgeR on synthetic data #5
+
 17:18:17,179 root INFO Performing voom.limma on synthetic data #5
 17:18:23,995 root INFO Finished performing voom.limma on synthetic data #5
+
 17:30:48,97 root INFO Performing NOISeq on synthetic data #5
 17:32:09,471 root INFO Finished performing NOISeq on synthetic data #5
+
 17:32:09,471 root INFO Performing DESeq2 on synthetic data #6
 17:32:22,829 root INFO Finished performing DESeq2 on synthetic data #6
+
 17:32:22,830 root INFO Performing edgeR on synthetic data #6
 17:32:26,405 root INFO Finished performing edgeR on synthetic data #6
+
 17:32:26,406 root INFO Performing voom.limma on synthetic data #6
 17:32:30,474 root INFO Finished performing voom.limma on synthetic data #6
+
 17:32:38,910 root INFO Performing NOISeq on synthetic data #6
 17:32:44,305 root INFO Finished performing NOISeq on synthetic data #6
+
 17:32:44,306 root INFO Performing DESeq2 on synthetic data #7
 17:33:04,463 root INFO Finished performing DESeq2 on synthetic data #7
+
 17:33:04,464 root INFO Performing edgeR on synthetic data #7
 17:33:08,497 root INFO Finished performing edgeR on synthetic data #7
+
 17:33:08,498 root INFO Performing voom.limma on synthetic data #7
 17:33:12,368 root INFO Finished performing voom.limma on synthetic data #7
+
 17:33:22,793 root INFO Performing NOISeq on synthetic data #7
 17:33:28,575 root INFO Finished performing NOISeq on synthetic data #7
+
 17:33:28,576 root INFO Performing DESeq2 on synthetic data #8
 17:37:36,464 root INFO Finished performing DESeq2 on synthetic data #8
+
 17:37:36,464 root INFO Performing edgeR on synthetic data #8
 17:37:44,405 root INFO Finished performing edgeR on synthetic data #8
+
 17:37:44,406 root INFO Performing voom.limma on synthetic data #8
 17:37:51,106 root INFO Finished performing voom.limma on synthetic data #8
+
 17:50:32,820 root INFO Performing NOISeq on synthetic data #8
 17:52:09,869 root INFO Finished performing NOISeq on synthetic data #8
+
 17:52:09,870 root INFO Performing DESeq2 on synthetic data #9
 17:55:47,444 root INFO Finished performing DESeq2 on synthetic data #9
+
 17:55:47,444 root INFO Performing edgeR on synthetic data #9
 17:55:55,583 root INFO Finished performing edgeR on synthetic data #9
+
 17:55:55,584 root INFO Performing voom.limma on synthetic data #9
 17:56:02,494 root INFO Finished performing voom.limma on synthetic data #9
+
 18:08:37,788 root INFO Performing NOISeq on synthetic data #9
 18:10:17,488 root INFO Finished performing NOISeq on synthetic data #9
+
 18:10:17,489 root INFO Performing DESeq2 on synthetic data #10
 18:13:55,326 root INFO Finished performing DESeq2 on synthetic data #10
+
 18:13:55,326 root INFO Performing edgeR on synthetic data #10
 18:14:02,998 root INFO Finished performing edgeR on synthetic data #10
+
 18:14:02,999 root INFO Performing voom.limma on synthetic data #10
 18:14:10,176 root INFO Finished performing voom.limma on synthetic data #10
+
 18:27:48,890 root INFO Performing NOISeq on synthetic data #10
 18:29:15,614 root INFO Finished performing NOISeq on synthetic data #10
+
 18:29:15,615 root INFO Performing DESeq2 on synthetic data #11
 18:32:44,428 root INFO Finished performing DESeq2 on synthetic data #11
+
 18:32:44,429 root INFO Performing edgeR on synthetic data #11
 18:32:52,712 root INFO Finished performing edgeR on synthetic data #11
+
 18:32:52,713 root INFO Performing voom.limma on synthetic data #11
 18:32:59,398 root INFO Finished performing voom.limma on synthetic data #11
+
 18:46:07,697 root INFO Performing NOISeq on synthetic data #11
 18:47:34,389 root INFO Finished performing NOISeq on synthetic data #11
+
 22:28:00,947 root INFO Performing ttest on synthetic data #1
 22:28:09,982 root INFO Finished performing ttest on synthetic data #1
+
 22:28:09,983 root INFO Performing ttest on synthetic data #2
 22:28:19,189 root INFO Finished performing ttest on synthetic data #2
+
 22:28:19,189 root INFO Performing ttest on synthetic data #3
 22:28:28,575 root INFO Finished performing ttest on synthetic data #3
+
 22:28:28,575 root INFO Performing ttest on synthetic data #4
 22:28:37,395 root INFO Finished performing ttest on synthetic data #4
+
 22:28:37,395 root INFO Performing ttest on synthetic data #5
 22:28:46,218 root INFO Finished performing ttest on synthetic data #5
+
 22:28:46,218 root INFO Performing ttest on synthetic data #6
 22:28:55,30 root INFO Finished performing ttest on synthetic data #6
+
 22:28:55,30 root INFO Performing ttest on synthetic data #7
 22:29:02,811 root INFO Finished performing ttest on synthetic data #7
+
 22:29:02,812 root INFO Performing ttest on synthetic data #8
 22:29:13,24 root INFO Finished performing ttest on synthetic data #8
+
 22:29:13,24 root INFO Performing ttest on synthetic data #9
 22:29:22,633 root INFO Finished performing ttest on synthetic data #9
+
 22:29:22,633 root INFO Performing ttest on synthetic data #10
 22:29:31,683 root INFO Finished performing ttest on synthetic data #10
+
 22:29:31,683 root INFO Performing ttest on synthetic data #11
 22:29:40,666 root INFO Finished performing ttest on synthetic data #11
+

@@ -1,6 +1,7 @@
 #command arguments from config/analysis-params.json which specifies what tool is being used & in/out file directories
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
+library('baySeq')
 
 indir <- myArgs[1]
 data <- myArgs[2]
@@ -18,7 +19,7 @@ if (tool == 'edgeR.exact') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM", disp.type = "tagwise", trend.method = "movingave")
     }
 
-if (tool == 'voom.limma') {
+if (tool == 'voom.limma' | tool == 'ttest' | tool == 'NOISeq') {
     #Run voom limma on synthetic data
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
     }
@@ -28,9 +29,9 @@ if (tool == 'baySeq') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "edgeR", equaldisp = TRUE)
     }
 
-if (tool == 'ttest' | tool == 'NOISeq') {
-    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
-    }
+# if (tool == 'ttest' | tool == 'NOISeq') {
+#     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
+#     }
 
 
 
