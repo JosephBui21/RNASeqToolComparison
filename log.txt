@@ -86,26 +86,25 @@
 18:32:59,398 root INFO Finished performing voom.limma on synthetic data #11
 18:46:07,697 root INFO Performing NOISeq on synthetic data #11
 18:47:34,389 root INFO Finished performing NOISeq on synthetic data #11
-22:17:16,262 root INFO Performing ttest on synthetic data #1
-22:18:03,810 root INFO Performing ttest on synthetic data #1
-22:18:12,819 root INFO Finished performing ttest on synthetic data #1
-22:18:12,820 root INFO Performing ttest on synthetic data #2
-22:18:21,972 root INFO Finished performing ttest on synthetic data #2
-22:18:21,973 root INFO Performing ttest on synthetic data #3
-22:18:31,525 root INFO Finished performing ttest on synthetic data #3
-22:18:31,526 root INFO Performing ttest on synthetic data #4
-22:18:40,963 root INFO Finished performing ttest on synthetic data #4
-22:18:40,964 root INFO Performing ttest on synthetic data #5
-22:18:49,506 root INFO Finished performing ttest on synthetic data #5
-22:18:49,507 root INFO Performing ttest on synthetic data #6
-22:18:58,718 root INFO Finished performing ttest on synthetic data #6
-22:18:58,718 root INFO Performing ttest on synthetic data #7
-22:19:06,583 root INFO Finished performing ttest on synthetic data #7
-22:19:06,583 root INFO Performing ttest on synthetic data #8
-22:19:15,866 root INFO Finished performing ttest on synthetic data #8
-22:19:15,867 root INFO Performing ttest on synthetic data #9
-22:19:25,216 root INFO Finished performing ttest on synthetic data #9
-22:19:25,217 root INFO Performing ttest on synthetic data #10
-22:19:34,111 root INFO Finished performing ttest on synthetic data #10
-22:19:34,112 root INFO Performing ttest on synthetic data #11
-22:19:43,307 root INFO Finished performing ttest on synthetic data #11
+22:28:00,947 root INFO Performing ttest on synthetic data #1
+22:28:09,982 root INFO Finished performing ttest on synthetic data #1
+22:28:09,983 root INFO Performing ttest on synthetic data #2
+22:28:19,189 root INFO Finished performing ttest on synthetic data #2
+22:28:19,189 root INFO Performing ttest on synthetic data #3
+22:28:28,575 root INFO Finished performing ttest on synthetic data #3
+22:28:28,575 root INFO Performing ttest on synthetic data #4
+22:28:37,395 root INFO Finished performing ttest on synthetic data #4
+22:28:37,395 root INFO Performing ttest on synthetic data #5
+22:28:46,218 root INFO Finished performing ttest on synthetic data #5
+22:28:46,218 root INFO Performing ttest on synthetic data #6
+22:28:55,30 root INFO Finished performing ttest on synthetic data #6
+22:28:55,30 root INFO Performing ttest on synthetic data #7
+22:29:02,811 root INFO Finished performing ttest on synthetic data #7
+22:29:02,812 root INFO Performing ttest on synthetic data #8
+22:29:13,24 root INFO Finished performing ttest on synthetic data #8
+22:29:13,24 root INFO Performing ttest on synthetic data #9
+22:29:22,633 root INFO Finished performing ttest on synthetic data #9
+22:29:22,633 root INFO Performing ttest on synthetic data #10
+22:29:31,683 root INFO Finished performing ttest on synthetic data #10
+22:29:31,683 root INFO Performing ttest on synthetic data #11
+22:29:40,666 root INFO Finished performing ttest on synthetic data #11

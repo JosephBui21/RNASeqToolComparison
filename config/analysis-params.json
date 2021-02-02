@@ -24,6 +24,6 @@
     "DESeq2_dir" : "out/DESeq2",
     "edgeR_dir" : "out/edgeR.exact",
     "voom_limma_dir" : "out/voom.limma",
-    "NOISeq_dir" : "out/NOISeq",
-    "ttest_dir" : "out/ttest"
+    "ttest_dir" : "out/ttest",
+    "NOISeq_dir" : "out/NOISeq"
 }

@@ -28,7 +28,7 @@ if (tool == 'baySeq') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "edgeR", equaldisp = TRUE)
     }
 
-if (tool == 'NOISeq' | tool == 'ttest') {
+if (tool == 'ttest' | tool == 'NOISeq') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
     }
 
