@@ -10,9 +10,9 @@ dependencies:
 - bioconductor-deseq2
 - bioconductor-ABSSeq
 - bioconductor-edgeR
-- bioconductor-metaseqR
-- bioconductor-sSeq
-- bioconductor-EBSeq
+- bioconductor-limma
+- bioconductor-baySeq
+- bioconductor-PoissonSeq
 - r-essentials
 - python=3.8
 - pip
