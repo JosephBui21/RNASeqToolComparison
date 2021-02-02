@@ -2,6 +2,8 @@
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 library('baySeq')
+#install.packages('PoissonSeq')
+library("PoissonSeq")
 
 indir <- myArgs[1]
 data <- myArgs[2]
@@ -33,12 +35,36 @@ if (tool == 'baySeq') {
 #     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
 #     }
 
+if (tool == 'PoissonSeq') {
+    #reformat compcode data to work for PoissonSeq
+    path <- paste("~/RNASeqToolComparison",indir,data, sep="/")
+    temp_data <- readRDS(path)
+    n <- temp_data@count.matrix
+    y <- c(1,1,1,1,1,2,2,2,2,2)
+    type <-'twoclass'
+    pair <- FALSE
+    transformed_data <- list(n=n, y=y, type=type, pair=pair)
+    pois_res <- PS.Main(transformed_data)
+    ordered_pois_res <- pois_res[order(pois_res['gname'], decreasing=FALSE),]
+    labels <- matrix(c(temp_data@variable.annotations$differential.expression, c(1:NROW(n))), ncol=2)
+    colnames(labels) <- c("actual", "gene_number")
+    results <- merge(x=labels, y=pois_res, by.x="gene_number", by.y="gname", all.x=TRUE)
+    result_df <- as.data.frame(results)
+    result_df$prediction <- ifelse(result_df$pval < 0.05, 1, 0)
+    result_df$prediction[is.na(result_df$prediction)] <- 0
+    result_df$dif <- abs(result_df$actual - result_df$prediction)
+
+    filename <- paste(substr(data, 0, nchar(data)-4),"_", tool, ".rds",sep="")
+    out <- paste(outdir, filename,  sep="/")
+    saveRDS(result_df, out)
+}
+
 
 
 # #Compare the two tools
 # file.table <- data.frame(input.files = file.path('out', c("data1_DESeq2.rds", "data1_edgeR.exact.rds")), stringsAsFactors = FALSE)
 # params <- list(incl.nbr.samples = 5, incl.replicates = 1, incl.dataset = "dataExample", incl.de.methods = NULL,
-#                    fdr.threshold = 0.05, tpr.threshold = 0.05, typeI.threshold = 0.05, ma.threshold = 0.05, fdc.maxvar = 1500, 
+#                    fdr.threshold = 0.05, tpr.threshold = 0.05, typeI.threshold = 0.05, ma.threshold = 0.05, fdc.maxvar = 1500,
 #                    overlap.threshold = 0.05, fracsign.threshold = 0.05, mcc.threshold = 0.05, nbrtpfp.threshold = 0.05,
 #                    comparisons = c("auc", "fdr", "tpr", "ma", "correlation"))
 # runComparison(file.table = file.table, parameters = params, output.directory = 'out')
