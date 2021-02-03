@@ -20,7 +20,7 @@ RUN apt-get update && \
                     man-db \
                     manpages-posix \
                     bwidget \
-                    PoissonSeq
+                    PoissonSeq \
                     -y
 
 
