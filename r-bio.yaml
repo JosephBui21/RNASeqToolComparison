@@ -12,6 +12,7 @@ dependencies:
 - bioconductor-edgeR
 - bioconductor-limma
 - bioconductor-baySeq
+- r-poissonseq
 - r-essentials
 - python=3.8
 - pip
