@@ -163,3 +163,35 @@
 22:29:31,683 root INFO Performing ttest on synthetic data #11
 22:29:40,666 root INFO Finished performing ttest on synthetic data #11
 
+12:40:11,529 root INFO Performing DESeq2 on synthetic data #6
+12:41:16,388 root INFO Finished performing DESeq2 on synthetic data #6
+12:41:16,389 root INFO Performing edgeR on synthetic data #6
+12:41:27,634 root INFO Finished performing edgeR on synthetic data #6
+12:41:27,635 root INFO Performing voom.limma on synthetic data #6
+12:41:37,56 root INFO Finished performing voom.limma on synthetic data #6
+12:41:37,56 root INFO Performing NOISeq on synthetic data #6
+12:41:43,241 root INFO Finished performing NOISeq on synthetic data #6
+12:41:43,242 root INFO Performing ttest on synthetic data #6
+12:41:53,751 root INFO Finished performing ttest on synthetic data #6
+12:41:53,751 root INFO Performing PoissonSeq on synthetic data #6
+12:42:03,493 root INFO Finished performing PoissonSeq on synthetic data #6
+12:42:03,494 root INFO Performing ABSSeq on synthetic data #6
+12:42:26,125 root INFO Finished performing ABSSeq on synthetic data #6
+12:42:26,126 root INFO Performing DESeq2 on synthetic data #7
+12:43:24,716 root INFO Finished performing DESeq2 on synthetic data #7
+12:43:24,717 root INFO Performing edgeR on synthetic data #7
+12:43:35,894 root INFO Finished performing edgeR on synthetic data #7
+12:43:35,894 root INFO Performing voom.limma on synthetic data #7
+12:43:45,586 root INFO Finished performing voom.limma on synthetic data #7
+12:43:45,587 root INFO Performing NOISeq on synthetic data #7
+12:43:52,180 root INFO Finished performing NOISeq on synthetic data #7
+12:43:52,180 root INFO Performing ttest on synthetic data #7
+12:44:02,548 root INFO Finished performing ttest on synthetic data #7
+12:44:02,548 root INFO Performing PoissonSeq on synthetic data #7
+12:44:13,889 root INFO Finished performing PoissonSeq on synthetic data #7
+12:44:13,890 root INFO Performing ABSSeq on synthetic data #7
+12:44:36,765 root INFO Finished performing ABSSeq on synthetic data #7
+12:47:40,857 root INFO Performing NOISeq on synthetic data #6
+12:47:47,283 root INFO Finished performing NOISeq on synthetic data #6
+12:47:47,284 root INFO Performing NOISeq on synthetic data #7
+12:47:53,466 root INFO Finished performing NOISeq on synthetic data #7

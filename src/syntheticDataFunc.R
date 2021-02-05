@@ -10,7 +10,7 @@ samples_per_cond <- strtoi(myArgs[3])
 rep_id <- strtoi(myArgs[4])
 num_diff_exp <- strtoi(myArgs[5])
 ratio_upregulated <- as.numeric(myArgs[6])
-dispersion_num <- strtoi(myArgs[7])
+dispersion_num <- as.numeric(myArgs[7])
 outlier_type <- myArgs[8]
 outlier_ratio <- as.numeric(myArgs[9])
 output_dir <- myArgs[10]

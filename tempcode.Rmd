@@ -1,0 +1,6 @@
+### NOISeq
+Data file: data/poisson625_625.rds
+```{r, echo = TRUE, eval = TRUE, include = TRUE, message = FALSE, error = TRUE, warning = TRUE}
+require(edgeR)
+require(NOISeq)
+cdata <- readRDS('data/poisson625_625.rds')
