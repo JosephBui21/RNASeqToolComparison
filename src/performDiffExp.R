@@ -1,7 +1,7 @@
 #command arguments from config/analysis-params.json which specifies what tool is being used & in/out file directories
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
-library('baySeq')
+#library('baySeq')
 library('ABSSeq')
 library("PoissonSeq")
 
@@ -22,7 +22,7 @@ if (tool == 'edgeR.exact') {
     }
 
 if (tool == 'voom.limma' | tool == 'ttest' | tool == 'NOISeq') {
-    #Run voom limma on synthetic data
+    #Run voom limma, ttest, or NOISeq on synthetic data
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
     }
 
