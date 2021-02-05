@@ -7,7 +7,7 @@
     "type2" : "single",
     "type3" : "random",
     "regular_dispersion" : 0,
-    "poisson_dispersion" : 6250,
+    "poisson_dispersion" : "0.5",
     "seqdepth" : "1e7",
     "outlier0" : 0,
     "n_diffexp0" : 0,
