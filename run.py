@@ -122,7 +122,7 @@ def main(targets):
 
              #Run PoissonSeq on the 11 synthetic datasets above
               logging.info("Performing ABSSeq on synthetic data #" + synthetic_num)
-              POIS = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+              ABSSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
                                             analysis_cfg.get('diffExp9'), analysis_cfg.get('Rmdfunc9'),
                                             analysis_cfg.get('ABSSeq_dir'))
               logging.info("Finished performing ABSSeq on synthetic data #" + synthetic_num)

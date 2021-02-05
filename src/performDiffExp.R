@@ -2,7 +2,7 @@
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 library('baySeq')
-#install.packages('PoissonSeq')
+library('ABSSeq')
 library("PoissonSeq")
 
 indir <- myArgs[1]
@@ -55,7 +55,7 @@ if (tool == 'PoissonSeq') {
     result_df$dif <- abs(result_df$actual - result_df$prediction)
 
     filename <- paste(substr(data, 0, nchar(data)-4),"_", tool, ".rds",sep="")
-    out <- paste(outdir, filename,  sep="/")
+    out <- paste("~/RNASeqToolComparison/out/PoissonSeq", filename,  sep="/")
     saveRDS(result_df, out)
 }
 
@@ -83,7 +83,7 @@ if (tool == 'ABSSeq') {
     result_df <- result_df[c("gene","Amean","Bmean","foldChange","pvalue","adj.pvalue","actual","prediction","dif")]
 
     filename <- paste(substr(data, 0, nchar(data)-4),"_", tool, ".rds",sep="")
-    out <- paste("~/RNASeqToolComparison", outdir, filename,  sep="/")
+    out <- paste("~/RNASeqToolComparison/out/ABSSeq", filename,  sep="/")
     saveRDS(result_df, out)
 }
 
