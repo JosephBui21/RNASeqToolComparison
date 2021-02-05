@@ -198,3 +198,8 @@
 
 12:44:13,890 root INFO Performing ABSSeq on synthetic data #7
 12:44:36,765 root INFO Finished performing ABSSeq on synthetic data #7
+
+14:21:54,223 root INFO Performing NOISeq on synthetic data #6
+14:21:57,870 root INFO Finished performing NOISeq on synthetic data #6
+14:21:57,870 root INFO Performing NOISeq on synthetic data #7
+14:22:01,253 root INFO Finished performing NOISeq on synthetic data #7
