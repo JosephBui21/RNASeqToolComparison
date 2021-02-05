@@ -13,6 +13,7 @@ dependencies:
 - bioconductor-limma
 - bioconductor-baySeq
 - bioconductor-NOISeq
+- r-rpanel
 - r-poissonseq
 - r-essentials
 - python=3.8
