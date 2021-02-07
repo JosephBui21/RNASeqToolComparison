@@ -60,7 +60,7 @@ def main(targets):
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
 
-        for i in range(6, 8, 1):
+        for i in range(1, 12):
             synthetic_num = str(i)
 
             #Run DESeq2 on the 11 synthetic datasets above
@@ -93,11 +93,11 @@ def main(targets):
 #             logging.info("Finished performing NBPSeq on synthetic data #" + synthetic_num)
 
             #Run NOISeq on the 11 synthetic datasets above
-            logging.info("Performing NOISeq on synthetic data #" + synthetic_num)
-            NOISeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
-                                          analysis_cfg.get('NOISeq_dir'))
-            logging.info("Finished performing NOISeq on synthetic data #" + synthetic_num)
+#             logging.info("Performing NOISeq on synthetic data #" + synthetic_num)
+#             NOISeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
+#                                           analysis_cfg.get('NOISeq_dir'))
+#             logging.info("Finished performing NOISeq on synthetic data #" + synthetic_num)
 
             #Run ttest on the 11 synthetic datasets above
 #             logging.info("Performing ttest on synthetic data #" + synthetic_num)
@@ -114,18 +114,18 @@ def main(targets):
 #             logging.info("Finished performing baySeq on synthetic data #" + synthetic_num)
 
             #Run PoissonSeq on the 11 synthetic datasets above
-#             logging.info("Performing PoissonSeq on synthetic data #" + synthetic_num)
-#             POIS = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-#                                            analysis_cfg.get('diffExp8'), analysis_cfg.get('Rmdfunc8'),
-#                                            analysis_cfg.get('PoissonSeq_dir'))
-#             logging.info("Finished performing PoissonSeq on synthetic data #" + synthetic_num)
+            logging.info("Performing PoissonSeq on synthetic data #" + synthetic_num)
+            POIS = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+                                           analysis_cfg.get('diffExp8'), analysis_cfg.get('Rmdfunc8'),
+                                           analysis_cfg.get('PoissonSeq_dir'))
+            logging.info("Finished performing PoissonSeq on synthetic data #" + synthetic_num)
 
              #Run ABSSeq on the 11 synthetic datasets above
-#             logging.info("Performing ABSSeq on synthetic data #" + synthetic_num)
-#             ABSSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-#                                             analysis_cfg.get('diffExp9'), analysis_cfg.get('Rmdfunc9'),
-#                                             analysis_cfg.get('ABSSeq_dir'))
-#             logging.info("Finished performing ABSSeq on synthetic data #" + synthetic_num)
+            logging.info("Performing ABSSeq on synthetic data #" + synthetic_num)
+            ABSSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+                                            analysis_cfg.get('diffExp9'), analysis_cfg.get('Rmdfunc9'),
+                                            analysis_cfg.get('ABSSeq_dir'))
+            logging.info("Finished performing ABSSeq on synthetic data #" + synthetic_num)
 
 
     if 'compare' in targets:

@@ -58,30 +58,6 @@
 17:30:48,97 root INFO Performing NOISeq on synthetic data #5
 17:32:09,471 root INFO Finished performing NOISeq on synthetic data #5
 
-17:32:09,471 root INFO Performing DESeq2 on synthetic data #6
-17:32:22,829 root INFO Finished performing DESeq2 on synthetic data #6
-
-17:32:22,830 root INFO Performing edgeR on synthetic data #6
-17:32:26,405 root INFO Finished performing edgeR on synthetic data #6
-
-17:32:26,406 root INFO Performing voom.limma on synthetic data #6
-17:32:30,474 root INFO Finished performing voom.limma on synthetic data #6
-
-17:32:38,910 root INFO Performing NOISeq on synthetic data #6
-17:32:44,305 root INFO Finished performing NOISeq on synthetic data #6
-
-17:32:44,306 root INFO Performing DESeq2 on synthetic data #7
-17:33:04,463 root INFO Finished performing DESeq2 on synthetic data #7
-
-17:33:04,464 root INFO Performing edgeR on synthetic data #7
-17:33:08,497 root INFO Finished performing edgeR on synthetic data #7
-
-17:33:08,498 root INFO Performing voom.limma on synthetic data #7
-17:33:12,368 root INFO Finished performing voom.limma on synthetic data #7
-
-17:33:22,793 root INFO Performing NOISeq on synthetic data #7
-17:33:28,575 root INFO Finished performing NOISeq on synthetic data #7
-
 17:33:28,576 root INFO Performing DESeq2 on synthetic data #8
 17:37:36,464 root INFO Finished performing DESeq2 on synthetic data #8
 
@@ -145,12 +121,6 @@
 22:28:37,395 root INFO Performing ttest on synthetic data #5
 22:28:46,218 root INFO Finished performing ttest on synthetic data #5
 
-22:28:46,218 root INFO Performing ttest on synthetic data #6
-22:28:55,30 root INFO Finished performing ttest on synthetic data #6
-
-22:28:55,30 root INFO Performing ttest on synthetic data #7
-22:29:02,811 root INFO Finished performing ttest on synthetic data #7
-
 22:29:02,812 root INFO Performing ttest on synthetic data #8
 22:29:13,24 root INFO Finished performing ttest on synthetic data #8
 
@@ -175,12 +145,6 @@
 12:41:43,242 root INFO Performing ttest on synthetic data #6
 12:41:53,751 root INFO Finished performing ttest on synthetic data #6
 
-12:41:53,751 root INFO Performing PoissonSeq on synthetic data #6
-12:42:03,493 root INFO Finished performing PoissonSeq on synthetic data #6
-
-12:42:03,494 root INFO Performing ABSSeq on synthetic data #6
-12:42:26,125 root INFO Finished performing ABSSeq on synthetic data #6
-
 12:42:26,126 root INFO Performing DESeq2 on synthetic data #7
 12:43:24,716 root INFO Finished performing DESeq2 on synthetic data #7
 
@@ -193,13 +157,74 @@
 12:43:52,180 root INFO Performing ttest on synthetic data #7
 12:44:02,548 root INFO Finished performing ttest on synthetic data #7
 
-12:44:02,548 root INFO Performing PoissonSeq on synthetic data #7
-12:44:13,889 root INFO Finished performing PoissonSeq on synthetic data #7
+10:38:44,484 root INFO Performing NOISeq on synthetic data #6
+10:39:49,951 root INFO Finished performing NOISeq on synthetic data #6
 
-12:44:13,890 root INFO Performing ABSSeq on synthetic data #7
-12:44:36,765 root INFO Finished performing ABSSeq on synthetic data #7
+10:39:49,952 root INFO Performing NOISeq on synthetic data #7
+10:41:10,644 root INFO Finished performing NOISeq on synthetic data #7
 
-14:21:54,223 root INFO Performing NOISeq on synthetic data #6
-14:21:57,870 root INFO Finished performing NOISeq on synthetic data #6
-14:21:57,870 root INFO Performing NOISeq on synthetic data #7
-14:22:01,253 root INFO Finished performing NOISeq on synthetic data #7
+10:44:36,26 root INFO Performing PoissonSeq on synthetic data #1
+10:44:43,123 root INFO Finished performing PoissonSeq on synthetic data #1
+
+10:44:43,123 root INFO Performing ABSSeq on synthetic data #1
+10:45:03,342 root INFO Finished performing ABSSeq on synthetic data #1
+
+10:45:03,342 root INFO Performing PoissonSeq on synthetic data #2
+10:45:10,832 root INFO Finished performing PoissonSeq on synthetic data #2
+
+10:45:10,832 root INFO Performing ABSSeq on synthetic data #2
+10:45:31,934 root INFO Finished performing ABSSeq on synthetic data #2
+
+10:45:31,935 root INFO Performing PoissonSeq on synthetic data #3
+10:45:39,540 root INFO Finished performing PoissonSeq on synthetic data #3
+
+10:45:39,540 root INFO Performing ABSSeq on synthetic data #3
+10:45:57,840 root INFO Finished performing ABSSeq on synthetic data #3
+
+10:45:57,840 root INFO Performing PoissonSeq on synthetic data #4
+10:46:04,920 root INFO Finished performing PoissonSeq on synthetic data #4
+
+10:46:04,921 root INFO Performing ABSSeq on synthetic data #4
+10:46:22,628 root INFO Finished performing ABSSeq on synthetic data #4
+
+10:46:22,628 root INFO Performing PoissonSeq on synthetic data #5
+10:46:29,528 root INFO Finished performing PoissonSeq on synthetic data #5
+
+10:46:29,528 root INFO Performing ABSSeq on synthetic data #5
+10:46:49,408 root INFO Finished performing ABSSeq on synthetic data #5
+
+10:46:49,409 root INFO Performing PoissonSeq on synthetic data #6
+10:46:55,844 root INFO Finished performing PoissonSeq on synthetic data #6
+
+10:46:55,844 root INFO Performing ABSSeq on synthetic data #6
+10:47:12,844 root INFO Finished performing ABSSeq on synthetic data #6
+
+10:47:12,902 root INFO Performing PoissonSeq on synthetic data #7
+10:47:19,231 root INFO Finished performing PoissonSeq on synthetic data #7
+
+10:47:19,232 root INFO Performing ABSSeq on synthetic data #7
+10:47:35,403 root INFO Finished performing ABSSeq on synthetic data #7
+
+10:47:35,403 root INFO Performing PoissonSeq on synthetic data #8
+10:47:42,533 root INFO Finished performing PoissonSeq on synthetic data #8
+
+10:47:42,534 root INFO Performing ABSSeq on synthetic data #8
+10:48:00,742 root INFO Finished performing ABSSeq on synthetic data #8
+
+10:48:00,742 root INFO Performing PoissonSeq on synthetic data #9
+10:48:07,527 root INFO Finished performing PoissonSeq on synthetic data #9
+
+10:48:07,528 root INFO Performing ABSSeq on synthetic data #9
+10:48:25,750 root INFO Finished performing ABSSeq on synthetic data #9
+
+10:48:25,751 root INFO Performing PoissonSeq on synthetic data #10
+10:48:32,930 root INFO Finished performing PoissonSeq on synthetic data #10
+
+10:48:32,930 root INFO Performing ABSSeq on synthetic data #10
+10:48:51,835 root INFO Finished performing ABSSeq on synthetic data #10
+
+10:48:51,835 root INFO Performing PoissonSeq on synthetic data #11
+10:48:59,31 root INFO Finished performing PoissonSeq on synthetic data #11
+
+10:48:59,32 root INFO Performing ABSSeq on synthetic data #11
+10:49:18,912 root INFO Finished performing ABSSeq on synthetic data #11
