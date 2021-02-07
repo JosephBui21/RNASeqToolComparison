@@ -26,15 +26,6 @@ if (tool == 'voom.limma' | tool == 'ttest' | tool == 'NOISeq') {
     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
     }
 
-if (tool == 'baySeq') {
-    #Run baySeq on synthetic data
-    runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "edgeR", equaldisp = TRUE)
-    }
-
-# if (tool == 'ttest' | tool == 'NOISeq') {
-#     runDiffExp(data.file = file.path(indir, data), result.extent = tool, Rmdfunction = rmdFunc, output.directory = file.path(outdir), norm.method = "TMM")
-#     }
-
 if (tool == 'PoissonSeq') {
     #reformat compcode data to work for PoissonSeq
     path <- paste("~/RNASeqToolComparison",indir,data, sep="/")
