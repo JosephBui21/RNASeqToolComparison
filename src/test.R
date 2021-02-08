@@ -29,7 +29,7 @@ rmdFunc5 <- myArgs[21]
 outdir <- myArgs[22]
 
 #Create a synthetic data with 100 genes differentially expressed with 50 genes expressed in condition 1 & 50 genes expressed in condition 2
-test_synthetic_data <- generateSyntheticData(dataset = data_name, n.vars = num_vars, samples.per.cond = samples_per_cond, repl.id = rep_id, seqdepth = seq_depth, n.diffexp = num_diff_exp, fraction.upregulated = ratio_upregulated, fraction.non.overdispersed = dispersion_num, between.group.diffdisp = FALSE, filter.threshold.total = rep_id, filter.threshold.mediancpm = dispersion_num, output.file = output_dir)
+test_synthetic_data <- generateSyntheticData(dataset = data_name, n.vars = num_vars, samples.per.cond = samples_per_cond, repl.id = rep_id, seqdepth = seq_depth, n.diffexp = num_diff_exp, fraction.upregulated = ratio_upregulated, fraction.non.overdispersed = dispersion_num, between.group.diffdisp = FALSE, filter.threshold.total = rep_id, filter.threshold.mediancpm = dispersion_num, output.file = file.path(indir, data))
 
 #Run DESeq2 on the synthetic dataset created above
 runDiffExp(data.file = file.path(indir, data), result.extent = tool1, Rmdfunction = rmdFunc1, output.directory = file.path(outdir), fit.type = "parametric", test = "Wald", beta.prior = TRUE, independent.filtering = TRUE, cooks.cutoff = TRUE, impute.outliers = TRUE)
