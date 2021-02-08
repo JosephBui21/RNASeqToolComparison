@@ -64,7 +64,7 @@ result_df$prediction <- ifelse(result_df$pval < 0.05, 1, 0)
 result_df$prediction[is.na(result_df$prediction)] <- 0
 result_df$dif <- abs(result_df$actual - result_df$prediction)
 
-filename <- paste(substr(data, 0, nchar(data)-4),"_", tool, ".rds",sep="")
+filename <- paste(substr(data, 0, nchar(data)-4),"_PoissonSeq.rds",sep="")
 out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
 saveRDS(result_df, out)
 
@@ -90,7 +90,6 @@ result_df$prediction[is.na(result_df$prediction)] <- 0
 result_df$dif <- abs(result_df$actual - result_df$prediction)
 result_df <- result_df[c("gene","Amean","Bmean","foldChange","pvalue","adj.pvalue","actual","prediction","dif")]
 
-filename <- paste(substr(data, 0, nchar(data)-4),"_", tool, ".rds",sep="")
+filename <- paste(substr(data, 0, nchar(data)-4),"_ABSSeq.rds",sep="")
 out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
 saveRDS(result_df, out)
-
