@@ -3,8 +3,9 @@ import sys
 import os
 import json
 sys.path.insert(0, 'src')
-from etl import run_create_data_rscript, run_rscript_test
+from etl import run_create_data_rscript
 from analysis import run_diff_exp_rscript, run_comparison_rscript
+from test import run_test_rscript
 import logging
 
 logging.basicConfig(filename="log.txt", filemode='a',
@@ -125,7 +126,7 @@ def main(targets):
     if 'test' in targets:
         with open('config/test-params.json') as fh:
             t_data_cfg = json.load(fh)
-        testing = run_rscript_test(**t_data_cfg)
+        testing = run_test_rscript(**t_data_cfg)
     return
 
 if __name__ == '__main__':
