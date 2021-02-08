@@ -256,7 +256,7 @@ random625_625_df <- data.frame(DESeq2 = c(random625_625_DESeq2_diff_exp),
                            PoissonSeq = c(random625_625_PoissonSeq_diff_exp),
                            ABSSeq = c(random625_625_ABSSeq_diff_exp))
 
-new <- rbind(baseline0_0_df, baseline1250_0_df, baseline4000_0_df, baseline2000_2000_df, poisson0_0_df, poisson625_625_df, single0_0_df, single625_625_df, random0_0_df, random625_625_df)
-rownames(new) <- c("baseline0_0", "baseline1250_0", "baseline4000_0", "baseline2000_2000", "poisson0_0", "poisson625_625", "single0_0", "single625_625", "random0_0", "random625_625")
+new <- rbind(baseline0_0_df, baseline1250_0_df, baseline625_625_df, baseline4000_0_df, baseline2000_2000_df, poisson0_0_df, poisson625_625_df, single0_0_df, single625_625_df, random0_0_df, random625_625_df)
+rownames(new) <- c("baseline0_0", "baseline1250_0", "baseline625_625", "baseline4000_0", "baseline2000_2000", "poisson0_0", "poisson625_625", "single0_0", "single625_625", "random0_0", "random625_625")
 new
 write.csv(new, file.path(myArgs[8], "num_expressed_by_tool.csv"))
