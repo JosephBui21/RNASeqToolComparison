@@ -21,7 +21,7 @@ baseline0_0_df <- data.frame(DESeq2 = c(baseline0_0_DESeq2_diff_exp),
                              edgeR = c(baseline0_0_edgeR_diff_exp),
                              NOISeq = c(baseline0_0_NOISeq_diff_exp),
                              ttest = c(baseline0_0_ttest_diff_exp),
-                             voom = c(baseline0_0_voom_diff_exp),
+                             voom.limma = c(baseline0_0_voom_diff_exp),
                              PoissonSeq = c(baseline0_0_PoissonSeq_diff_exp),
                              ABSSeq = c(baseline0_0_ABSSeq_diff_exp))
 
@@ -45,7 +45,7 @@ baseline1250_0_df <- data.frame(DESeq2 = c(baseline1250_0_DESeq2_diff_exp),
                              edgeR = c(baseline1250_0_edgeR_diff_exp),
                              NOISeq = c(baseline1250_0_NOISeq_diff_exp),
                              ttest = c(baseline1250_0_ttest_diff_exp),
-                             voom = c(baseline1250_0_voom_diff_exp),
+                             voom.limma = c(baseline1250_0_voom_diff_exp),
                              PoissonSeq = c(baseline1250_0_PoissonSeq_diff_exp),
                              ABSSeq = c(baseline1250_0_ABSSeq_diff_exp))
 
@@ -68,7 +68,7 @@ baseline625_625_df <- data.frame(DESeq2 = c(baseline625_625_DESeq2_diff_exp),
                                 edgeR = c(baseline625_625_edgeR_diff_exp),
                                 NOISeq = c(baseline625_625_NOISeq_diff_exp),
                                 ttest = c(baseline625_625_ttest_diff_exp),
-                                voom = c(baseline625_625_voom_diff_exp),
+                                voom.limma = c(baseline625_625_voom_diff_exp),
                                 PoissonSeq = c(baseline625_625_PoissonSeq_diff_exp),
                                 ABSSeq = c(baseline625_625_ABSSeq_diff_exp))
 
@@ -91,7 +91,7 @@ baseline4000_0_df <- data.frame(DESeq2 = c(baseline4000_0_DESeq2_diff_exp),
                                  edgeR = c(baseline4000_0_edgeR_diff_exp),
                                  NOISeq = c(baseline4000_0_NOISeq_diff_exp),
                                  ttest = c(baseline4000_0_ttest_diff_exp),
-                                 voom = c(baseline4000_0_voom_diff_exp),
+                                 voom.limma = c(baseline4000_0_voom_diff_exp),
                                  PoissonSeq = c(baseline4000_0_PoissonSeq_diff_exp),
                                  ABSSeq = c(baseline4000_0_ABSSeq_diff_exp))
 
@@ -114,7 +114,7 @@ baseline2000_2000_df <- data.frame(DESeq2 = c(baseline2000_2000_DESeq2_diff_exp)
                                 edgeR = c(baseline2000_2000_edgeR_diff_exp),
                                 NOISeq = c(baseline2000_2000_NOISeq_diff_exp),
                                 ttest = c(baseline2000_2000_ttest_diff_exp),
-                                voom = c(baseline2000_2000_voom_diff_exp),
+                                voom.limma = c(baseline2000_2000_voom_diff_exp),
                                 PoissonSeq = c(baseline2000_2000_PoissonSeq_diff_exp),
                                 ABSSeq = c(baseline2000_2000_ABSSeq_diff_exp))
 
@@ -137,7 +137,7 @@ poisson0_0_df <- data.frame(DESeq2 = c(poisson0_0_DESeq2_diff_exp),
                                    edgeR = c(poisson0_0_edgeR_diff_exp),
                                    NOISeq = c(poisson0_0_NOISeq_diff_exp),
                                    ttest = c(poisson0_0_ttest_diff_exp),
-                                   voom = c(poisson0_0_voom_diff_exp),
+                                   voom.limma = c(poisson0_0_voom_diff_exp),
                                    PoissonSeq = c(poisson0_0_PoissonSeq_diff_exp),
                                    ABSSeq = c(poisson0_0_ABSSeq_diff_exp))
 
@@ -160,7 +160,7 @@ poisson625_625_df <- data.frame(DESeq2 = c(poisson625_625_DESeq2_diff_exp),
                             edgeR = c(poisson625_625_edgeR_diff_exp),
                             NOISeq = c(poisson625_625_NOISeq_diff_exp),
                             ttest = c(poisson625_625_ttest_diff_exp),
-                            voom = c(poisson625_625_voom_diff_exp),
+                            voom.limma = c(poisson625_625_voom_diff_exp),
                             PoissonSeq = c(poisson625_625_PoissonSeq_diff_exp),
                             ABSSeq = c(poisson625_625_ABSSeq_diff_exp))
 
@@ -183,7 +183,7 @@ single0_0_df <- data.frame(DESeq2 = c(single0_0_DESeq2_diff_exp),
                                 edgeR = c(single0_0_edgeR_diff_exp),
                                 NOISeq = c(single0_0_NOISeq_diff_exp),
                                 ttest = c(single0_0_ttest_diff_exp),
-                                voom = c(single0_0_voom_diff_exp),
+                                voom.limma = c(single0_0_voom_diff_exp),
                                 PoissonSeq = c(single0_0_PoissonSeq_diff_exp),
                                 ABSSeq = c(single0_0_ABSSeq_diff_exp))
 
@@ -206,7 +206,7 @@ single625_625_df <- data.frame(DESeq2 = c(single625_625_DESeq2_diff_exp),
                            edgeR = c(single625_625_edgeR_diff_exp),
                            NOISeq = c(single625_625_NOISeq_diff_exp),
                            ttest = c(single625_625_ttest_diff_exp),
-                           voom = c(single625_625_voom_diff_exp),
+                           voom.limma = c(single625_625_voom_diff_exp),
                            PoissonSeq = c(single625_625_PoissonSeq_diff_exp),
                            ABSSeq = c(single625_625_ABSSeq_diff_exp))
 
@@ -229,7 +229,7 @@ random0_0_df <- data.frame(DESeq2 = c(random0_0_DESeq2_diff_exp),
                                edgeR = c(random0_0_edgeR_diff_exp),
                                NOISeq = c(random0_0_NOISeq_diff_exp),
                                ttest = c(random0_0_ttest_diff_exp),
-                               voom = c(random0_0_voom_diff_exp),
+                               voom.limma = c(random0_0_voom_diff_exp),
                                PoissonSeq = c(random0_0_PoissonSeq_diff_exp),
                                ABSSeq = c(random0_0_ABSSeq_diff_exp))
 
@@ -252,7 +252,7 @@ random625_625_df <- data.frame(DESeq2 = c(random625_625_DESeq2_diff_exp),
                            edgeR = c(random625_625_edgeR_diff_exp),
                            NOISeq = c(random625_625_NOISeq_diff_exp),
                            ttest = c(random625_625_ttest_diff_exp),
-                           voom = c(random625_625_voom_diff_exp),
+                           voom.limma = c(random625_625_voom_diff_exp),
                            PoissonSeq = c(random625_625_PoissonSeq_diff_exp),
                            ABSSeq = c(random625_625_ABSSeq_diff_exp))
 
