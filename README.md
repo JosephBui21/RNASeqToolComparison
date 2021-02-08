@@ -18,5 +18,6 @@ In this project, we want to compare distinct differential gene expression analys
 
 ## Group Contributions
 * Joseph built the dockerfile/container. He also created the starter code for building the synthetic datasets and performing differential expression analysis tools in `compcodeR` such as `DESeq2`, `edgeR`, `NOISeq`, `voom.limma`, and `ttest`. He was able to create an R script that read all the outputs from each tool mentioned previously to write out to a `num_expressed_by_tool.csv`. He also created the notebook that illustrates the timings/duration for each of the tools performed on each synthetic dataset.
+**
 * Brandon was responsible for creating the `random` outlier synthetic datasets and performing differential expression analysis tools not built-in `compcodeR`, including `ABSSeq` and `PoissonSeq`. Brandon helped write out to the `num_expressed_by_tool.csv` for his outputs produced by `ABSSeq` and `PoissonSeq`. 
 * Luigi was responsible for creating the `single` outlier and `poisson` synthetic datasets and helped perform `NOISeq` and `voom.limma` on the synthetic datasets. 
