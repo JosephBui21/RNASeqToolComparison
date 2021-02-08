@@ -69,27 +69,55 @@ out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
 saveRDS(result_df, out)
 
 #Run ABSSeq on the synthetic dataset created above
-path <- paste("~/RNASeqToolComparison",indir,data, sep="/")
-temp_data <- readRDS(path)
-groups <- c(1,1,1,1,1,2,2,2,2,2)
-absdata <- ABSDataSet(temp_data@count.matrix, groups)
+# path <- paste("~/RNASeqToolComparison",indir,data, sep="/")
+# temp_data <- readRDS(path)
+# groups <- c(1,1,1,1,1,2,2,2,2,2)
+# absdata <- ABSDataSet(temp_data@count.matrix, groups)
 
-obj <- ABSSeq(absdata, useaFold=TRUE)
-abs_res <- results(obj,c("Amean","Bmean","foldChange","pvalue","adj.pvalue"))
+# obj <- ABSSeq(absdata, useaFold=TRUE)
+# abs_res <- results(obj,c("Amean","Bmean","foldChange","pvalue","adj.pvalue"))
 
-labels <- matrix(c(temp_data@variable.annotations$differential.expression, c(1:NROW(temp_data@count.matrix))), ncol=2)
-colnames(labels) <- c("actual", "gene_number")
-abs_res <- cbind(gene = rownames(abs_res), abs_res)
-rownames(abs_res) <- 1:nrow(abs_res)
-abs_res <- cbind(gene_number = rownames(abs_res), abs_res)
-rownames(abs_res) <- 1:nrow(abs_res)
-results <- merge(x=labels, y=abs_res, by="gene_number",all.x=TRUE)
-result_df <- as.data.frame(results)
-result_df$prediction <- ifelse(result_df$adj.pval < 0.05, 1, 0)
-result_df$prediction[is.na(result_df$prediction)] <- 0
-result_df$dif <- abs(result_df$actual - result_df$prediction)
-result_df <- result_df[c("gene","Amean","Bmean","foldChange","pvalue","adj.pvalue","actual","prediction","dif")]
+# labels <- matrix(c(temp_data@variable.annotations$differential.expression, c(1:NROW(temp_data@count.matrix))), ncol=2)
+# colnames(labels) <- c("actual", "gene_number")
+# abs_res <- cbind(gene = rownames(abs_res), abs_res)
+# rownames(abs_res) <- 1:nrow(abs_res)
+# abs_res <- cbind(gene_number = rownames(abs_res), abs_res)
+# rownames(abs_res) <- 1:nrow(abs_res)
+# results <- merge(x=labels, y=abs_res, by="gene_number",all.x=TRUE)
+# result_df <- as.data.frame(results)
+# result_df$prediction <- ifelse(result_df$adj.pval < 0.05, 1, 0)
+# result_df$prediction[is.na(result_df$prediction)] <- 0
+# result_df$dif <- abs(result_df$actual - result_df$prediction)
+# result_df <- result_df[c("gene","Amean","Bmean","foldChange","pvalue","adj.pvalue","actual","prediction","dif")]
 
-filename <- paste(substr(data, 0, nchar(data)-4),"_ABSSeq.rds",sep="")
-out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
-saveRDS(result_df, out)
+# filename <- paste(substr(data, 0, nchar(data)-4),"_ABSSeq.rds",sep="")
+# out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
+# saveRDS(result_df, out)
+
+#See how many genes each tools considered are differentially expressed
+#test_ABSSeq <- readRDS(file.path(outdir, "test_ABSSeq.rds"))
+#test_ABSSeq_diff_exp <- sum(test_ABSSeq["prediction"])
+test_DESeq2 <- convertcompDataToList(readRDS(file.path(outdir, "test_DESeq2.rds")))
+test_DESeq2_diff_exp <- nrow(test_DESeq2$result.table[test_DESeq2$result.table$pvalue < 0.05,])
+test_edgeR <- convertcompDataToList(readRDS(file.path(outdir, "test_edgeR.exact.rds")))
+test_edgeR_diff_exp<- nrow(test_edgeR$result.table[test_edgeR$result.table$pvalue < 0.05,])
+test_NOISeq <- convertcompDataToList(readRDS(file.path(outdir, "test_NOISeq.rds")))
+test_NOISeq_diff_exp <- nrow(test_NOISeq$result.table[test_NOISeq$result.table$probabilities < 0.05,])
+test_ttest <- convertcompDataToList(readRDS(file.path(outdir, "test_ttest.rds")))
+test_ttest_diff_exp <- nrow(test_ttest$result.table[test_ttest$result.table$pvalue < 0.05,])
+test_PoissonSeq <- readRDS(file.path(outdir, "test_PoissonSeq.rds"))
+test_PoissonSeq_diff_exp <- sum(test_PoissonSeq["prediction"])
+test_voom <- convertcompDataToList(readRDS(file.path(outdir, "test_voom.limma.rds")))
+test_voom_diff_exp <- nrow(test_voom$result.table[test_voom$result.table$pvalue < 0.05,])
+#create a dataframe showing number of genes considered differentially expressed by each tool:
+test_df <- data.frame(DESeq2 = c(test_DESeq2_diff_exp),
+                      edgeR = c(test_edgeR_diff_exp),
+                      NOISeq = c(test_NOISeq_diff_exp),
+                      ttest = c(test_ttest_diff_exp),
+                      voom = c(test_voom_diff_exp),
+                      PoissonSeq = c(test_PoissonSeq_diff_exp))
+                             #ABSSeq = c(test_ABSSeq_diff_exp))
+print("This is how many genes each tools consider differentially expressed with alpha level = 0.05. NOTE: 100 truly differentially expressed genes")
+rownames(test_df) <- c("baseline100_0")
+test_df
+write.csv(test_df, file.path(outdir, "num_expressed_by_tool_test.csv"))
