@@ -1,12 +1,10 @@
 {
-    "dir" : "out",
-    "baseline0_0_DESeq2" : "DESeq2/baseline0_0_DESeq2.rds",
-    "baseline0_0_edgeR" : "edgeR.exact/baseline0_0_edgeR.exact.rds",
-    "baseline0_0_baySeq" : "baySeq/baseline0_0_baySeq.rds",
-    "baseline0_0_voom_limma" : "voom.limma/baseline0_0_voom.limma.rds",
-    "num_samples_per_cond" : 5,
-    "inclusive_reps" : 1,
-    "synData1" : "data/baseline0_0.rds",
-    "alpha" : "0.05",
-    "out" : "results"
+    "ABSSeq_dir" : "out/ABSSeq",
+    "DESeq_dir" : "out/DESeq2",
+    "edgeR_dir" : "out/edgeR.exact",
+    "NOISeq_dir" : "out/NOISeq",
+    "ttest_dir" : "out/ttest",
+    "PoissonSeq_dir" : "out/PoissonSeq",
+    "voom_dir" : "out/voom.limma",
+    "out_dir": "out/results"
 }

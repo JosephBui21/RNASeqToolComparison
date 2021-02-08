@@ -117,8 +117,8 @@ def main(targets):
     if 'compare' in targets:
         with open('config/comparison-params.json') as fh:
             compare_data_cfg = json.load(fh)
-        #comparison of DESeq2 & edgeR on baseline data with 0 differentially expressed
-        deseq2_edgeR_b_0_0 = run_comparison_rscript(compare_data_cfg.get('dir'), compare_data_cfg.get('baseline0_0_DESeq2'), compare_data_cfg.get('baseline0_0_edgeR'), compare_data_cfg.get('baseline0_0_baySeq'), compare_data_cfg.get('baseline0_0_voom_limma'), compare_data_cfg.get('num_samples_per_cond'), compare_data_cfg.get('inclusive_reps'), compare_data_cfg.get('synData1'), compare_data_cfg.get('alpha'), compare_data_cfg.get('out'))
+        
+        comparison = run_comparison_rscript(compare_data_cfg.get('ABSSeq_dir'), compare_data_cfg.get('DESeq_dir'), compare_data_cfg.get('edgeR_dir'), compare_data_cfg.get('NOISeq_dir'), compare_data_cfg.get('ttest_dir'), compare_data_cfg.get('PoissonSeq_dir'), compare_data_cfg.get('voom_dir'), compare_data_cfg.get('out_dir'))
 
 
 
