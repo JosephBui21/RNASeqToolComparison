@@ -2,6 +2,8 @@
 myArgs <- commandArgs(trailingOnly = TRUE)
 
 library('compcodeR')
+library('ABSSeq')
+library("PoissonSeq")
 
 data_name <- myArgs[1]
 num_vars <- strtoi(myArgs[2])
@@ -26,7 +28,7 @@ tool5 <- myArgs[20]
 rmdFunc5 <- myArgs[21]
 outdir <- myArgs[22]
 
-#Create a synthetic data with 3000 genes differentially expressed with 1500 genes expressed in condition 1 & 1500 genes expressed in condition 2
+#Create a synthetic data with 100 genes differentially expressed with 50 genes expressed in condition 1 & 50 genes expressed in condition 2
 test_synthetic_data <- generateSyntheticData(dataset = data_name, n.vars = num_vars, samples.per.cond = samples_per_cond, repl.id = rep_id, seqdepth = seq_depth, n.diffexp = num_diff_exp, fraction.upregulated = ratio_upregulated, fraction.non.overdispersed = dispersion_num, between.group.diffdisp = FALSE, filter.threshold.total = rep_id, filter.threshold.mediancpm = dispersion_num, output.file = output_dir)
 
 #Run DESeq2 on the synthetic dataset created above
