@@ -34,30 +34,6 @@
 16:52:31,619 root INFO Performing NOISeq on synthetic data #3
 16:54:12,99 root INFO Finished performing NOISeq on synthetic data #3
 
-16:54:12,99 root INFO Performing DESeq2 on synthetic data #4
-16:59:18,392 root INFO Finished performing DESeq2 on synthetic data #4
-
-16:59:18,393 root INFO Performing edgeR on synthetic data #4
-16:59:27,271 root INFO Finished performing edgeR on synthetic data #4
-
-16:59:27,271 root INFO Performing voom.limma on synthetic data #4
-16:59:34,864 root INFO Finished performing voom.limma on synthetic data #4
-
-17:12:17,731 root INFO Performing NOISeq on synthetic data #4
-17:13:39,700 root INFO Finished performing NOISeq on synthetic data #4
-
-17:13:39,701 root INFO Performing DESeq2 on synthetic data #5
-17:18:09,382 root INFO Finished performing DESeq2 on synthetic data #5
-
-17:18:09,382 root INFO Performing edgeR on synthetic data #5
-17:18:17,178 root INFO Finished performing edgeR on synthetic data #5
-
-17:18:17,179 root INFO Performing voom.limma on synthetic data #5
-17:18:23,995 root INFO Finished performing voom.limma on synthetic data #5
-
-17:30:48,97 root INFO Performing NOISeq on synthetic data #5
-17:32:09,471 root INFO Finished performing NOISeq on synthetic data #5
-
 17:33:28,576 root INFO Performing DESeq2 on synthetic data #8
 17:37:36,464 root INFO Finished performing DESeq2 on synthetic data #8
 
@@ -114,12 +90,6 @@
 
 22:28:19,189 root INFO Performing ttest on synthetic data #3
 22:28:28,575 root INFO Finished performing ttest on synthetic data #3
-
-22:28:28,575 root INFO Performing ttest on synthetic data #4
-22:28:37,395 root INFO Finished performing ttest on synthetic data #4
-
-22:28:37,395 root INFO Performing ttest on synthetic data #5
-22:28:46,218 root INFO Finished performing ttest on synthetic data #5
 
 22:29:02,812 root INFO Performing ttest on synthetic data #8
 22:29:13,24 root INFO Finished performing ttest on synthetic data #8
@@ -181,18 +151,6 @@
 10:45:39,540 root INFO Performing ABSSeq on synthetic data #3
 10:45:57,840 root INFO Finished performing ABSSeq on synthetic data #3
 
-10:45:57,840 root INFO Performing PoissonSeq on synthetic data #4
-10:46:04,920 root INFO Finished performing PoissonSeq on synthetic data #4
-
-10:46:04,921 root INFO Performing ABSSeq on synthetic data #4
-10:46:22,628 root INFO Finished performing ABSSeq on synthetic data #4
-
-10:46:22,628 root INFO Performing PoissonSeq on synthetic data #5
-10:46:29,528 root INFO Finished performing PoissonSeq on synthetic data #5
-
-10:46:29,528 root INFO Performing ABSSeq on synthetic data #5
-10:46:49,408 root INFO Finished performing ABSSeq on synthetic data #5
-
 10:46:49,409 root INFO Performing PoissonSeq on synthetic data #6
 10:46:55,844 root INFO Finished performing PoissonSeq on synthetic data #6
 
@@ -228,3 +186,45 @@
 
 10:48:59,32 root INFO Performing ABSSeq on synthetic data #11
 10:49:18,912 root INFO Finished performing ABSSeq on synthetic data #11
+
+15:58:32,343 root INFO Performing DESeq2 on synthetic data #4
+16:02:31,333 root INFO Finished performing DESeq2 on synthetic data #4
+
+16:02:31,333 root INFO Performing edgeR on synthetic data #4
+16:02:38,920 root INFO Finished performing edgeR on synthetic data #4
+
+16:02:38,921 root INFO Performing voom.limma on synthetic data #4
+16:02:45,651 root INFO Finished performing voom.limma on synthetic data #4
+
+16:02:45,651 root INFO Performing NOISeq on synthetic data #4
+16:04:16,119 root INFO Finished performing NOISeq on synthetic data #4
+
+16:04:16,120 root INFO Performing ttest on synthetic data #4
+16:04:24,639 root INFO Finished performing ttest on synthetic data #4
+
+16:04:24,640 root INFO Performing PoissonSeq on synthetic data #4
+16:04:31,528 root INFO Finished performing PoissonSeq on synthetic data #4
+
+16:04:31,529 root INFO Performing ABSSeq on synthetic data #4
+16:04:50,26 root INFO Finished performing ABSSeq on synthetic data #4
+
+16:04:50,27 root INFO Performing DESeq2 on synthetic data #5
+16:09:44,810 root INFO Finished performing DESeq2 on synthetic data #5
+
+16:09:44,810 root INFO Performing edgeR on synthetic data #5
+16:09:52,110 root INFO Finished performing edgeR on synthetic data #5
+
+16:09:52,111 root INFO Performing voom.limma on synthetic data #5
+16:09:59,242 root INFO Finished performing voom.limma on synthetic data #5
+
+16:09:59,242 root INFO Performing NOISeq on synthetic data #5
+16:11:25,945 root INFO Finished performing NOISeq on synthetic data #5
+
+16:11:25,946 root INFO Performing ttest on synthetic data #5
+16:11:34,446 root INFO Finished performing ttest on synthetic data #5
+
+16:11:34,447 root INFO Performing PoissonSeq on synthetic data #5
+16:11:41,542 root INFO Finished performing PoissonSeq on synthetic data #5
+
+16:11:41,542 root INFO Performing ABSSeq on synthetic data #5
+16:12:00,106 root INFO Finished performing ABSSeq on synthetic data #5

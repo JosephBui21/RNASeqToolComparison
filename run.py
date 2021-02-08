@@ -30,10 +30,10 @@ def main(targets):
         baseline625_625 = run_create_data_rscript(data_cfg.get('data3'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file3'), data_cfg.get('seqdepth'))
 
         #Create baseline synthetic data #4 with 1250 differentially expressed genes with 4000 upregulated in condition 1 & 0 in condition 2
-        baseline4000_0 = run_create_data_rscript(data_cfg.get('data4'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file4'), data_cfg.get('seqdepth'))
+        baseline4000_0 = run_create_data_rscript(data_cfg.get('data4'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file4'), data_cfg.get('seqdepth'))
 
-        #Create baseline synthetic data #5 with 4000 differentially expressed genes with 2000 upregulated in condition 1 & 0 in condition 2
-        baseline2000_2000 = run_create_data_rscript(data_cfg.get('data5'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file5'), data_cfg.get('seqdepth'))
+        #Create baseline synthetic data #5 with 4000 differentially expressed genes with 2000 upregulated in condition 1 & 2000 in condition 2
+        baseline2000_2000 = run_create_data_rscript(data_cfg.get('data5'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file5'), data_cfg.get('seqdepth'))
 
         #Create synthetic data #6 whose counts were drawn from poisson distribution with 0 genes differentially expressed
         poisson0_0 = run_create_data_rscript(data_cfg.get('data6'), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_file6'), data_cfg.get('seqdepth'))
