@@ -1,230 +1,121 @@
-15:55:51,619 root INFO Performing DESeq2 on synthetic data #1
-16:00:58,167 root INFO Finished performing DESeq2 on synthetic data #1
-
-16:00:58,167 root INFO Performing edgeR on synthetic data #1
-16:01:05,818 root INFO Finished performing edgeR on synthetic data #1
-
-16:01:05,819 root INFO Performing voom.limma on synthetic data #1
-16:01:12,997 root INFO Finished performing voom.limma on synthetic data #1
-
-16:14:04,631 root INFO Performing NOISeq on synthetic data #1
-16:15:31,206 root INFO Finished performing NOISeq on synthetic data #1
-
-16:15:31,206 root INFO Performing DESeq2 on synthetic data #2
-16:20:14,638 root INFO Finished performing DESeq2 on synthetic data #2
-
-16:20:14,638 root INFO Performing edgeR on synthetic data #2
-16:20:22,199 root INFO Finished performing edgeR on synthetic data #2
-
-16:20:22,199 root INFO Performing voom.limma on synthetic data #2
-16:20:29,409 root INFO Finished performing voom.limma on synthetic data #2
-
-16:32:59,233 root INFO Performing NOISeq on synthetic data #2
-16:34:41,10 root INFO Finished performing NOISeq on synthetic data #2
-
-16:34:41,10 root INFO Performing DESeq2 on synthetic data #3
-16:39:48,548 root INFO Finished performing DESeq2 on synthetic data #3
-
-16:39:48,549 root INFO Performing edgeR on synthetic data #3
-16:39:55,895 root INFO Finished performing edgeR on synthetic data #3
-
-16:39:55,896 root INFO Performing voom.limma on synthetic data #3
-16:40:03,307 root INFO Finished performing voom.limma on synthetic data #3
-
-16:52:31,619 root INFO Performing NOISeq on synthetic data #3
-16:54:12,99 root INFO Finished performing NOISeq on synthetic data #3
-
-17:33:28,576 root INFO Performing DESeq2 on synthetic data #8
-17:37:36,464 root INFO Finished performing DESeq2 on synthetic data #8
-
-17:37:36,464 root INFO Performing edgeR on synthetic data #8
-17:37:44,405 root INFO Finished performing edgeR on synthetic data #8
-
-17:37:44,406 root INFO Performing voom.limma on synthetic data #8
-17:37:51,106 root INFO Finished performing voom.limma on synthetic data #8
-
-17:50:32,820 root INFO Performing NOISeq on synthetic data #8
-17:52:09,869 root INFO Finished performing NOISeq on synthetic data #8
-
-17:52:09,870 root INFO Performing DESeq2 on synthetic data #9
-17:55:47,444 root INFO Finished performing DESeq2 on synthetic data #9
-
-17:55:47,444 root INFO Performing edgeR on synthetic data #9
-17:55:55,583 root INFO Finished performing edgeR on synthetic data #9
-
-17:55:55,584 root INFO Performing voom.limma on synthetic data #9
-17:56:02,494 root INFO Finished performing voom.limma on synthetic data #9
-
-18:08:37,788 root INFO Performing NOISeq on synthetic data #9
-18:10:17,488 root INFO Finished performing NOISeq on synthetic data #9
-
-18:10:17,489 root INFO Performing DESeq2 on synthetic data #10
-18:13:55,326 root INFO Finished performing DESeq2 on synthetic data #10
-
-18:13:55,326 root INFO Performing edgeR on synthetic data #10
-18:14:02,998 root INFO Finished performing edgeR on synthetic data #10
-
-18:14:02,999 root INFO Performing voom.limma on synthetic data #10
-18:14:10,176 root INFO Finished performing voom.limma on synthetic data #10
-
-18:27:48,890 root INFO Performing NOISeq on synthetic data #10
-18:29:15,614 root INFO Finished performing NOISeq on synthetic data #10
-
-18:29:15,615 root INFO Performing DESeq2 on synthetic data #11
-18:32:44,428 root INFO Finished performing DESeq2 on synthetic data #11
-
-18:32:44,429 root INFO Performing edgeR on synthetic data #11
-18:32:52,712 root INFO Finished performing edgeR on synthetic data #11
-
-18:32:52,713 root INFO Performing voom.limma on synthetic data #11
-18:32:59,398 root INFO Finished performing voom.limma on synthetic data #11
-
-18:46:07,697 root INFO Performing NOISeq on synthetic data #11
-18:47:34,389 root INFO Finished performing NOISeq on synthetic data #11
-
-22:28:00,947 root INFO Performing ttest on synthetic data #1
-22:28:09,982 root INFO Finished performing ttest on synthetic data #1
-
-22:28:09,983 root INFO Performing ttest on synthetic data #2
-22:28:19,189 root INFO Finished performing ttest on synthetic data #2
-
-22:28:19,189 root INFO Performing ttest on synthetic data #3
-22:28:28,575 root INFO Finished performing ttest on synthetic data #3
-
-22:29:02,812 root INFO Performing ttest on synthetic data #8
-22:29:13,24 root INFO Finished performing ttest on synthetic data #8
-
-22:29:13,24 root INFO Performing ttest on synthetic data #9
-22:29:22,633 root INFO Finished performing ttest on synthetic data #9
-
-22:29:22,633 root INFO Performing ttest on synthetic data #10
-22:29:31,683 root INFO Finished performing ttest on synthetic data #10
-
-22:29:31,683 root INFO Performing ttest on synthetic data #11
-22:29:40,666 root INFO Finished performing ttest on synthetic data #11
-
-12:40:11,529 root INFO Performing DESeq2 on synthetic data #6
-12:41:16,388 root INFO Finished performing DESeq2 on synthetic data #6
-
-12:41:16,389 root INFO Performing edgeR on synthetic data #6
-12:41:27,634 root INFO Finished performing edgeR on synthetic data #6
-
-12:41:27,635 root INFO Performing voom.limma on synthetic data #6
-12:41:37,56 root INFO Finished performing voom.limma on synthetic data #6
-
-12:41:43,242 root INFO Performing ttest on synthetic data #6
-12:41:53,751 root INFO Finished performing ttest on synthetic data #6
-
-12:42:26,126 root INFO Performing DESeq2 on synthetic data #7
-12:43:24,716 root INFO Finished performing DESeq2 on synthetic data #7
-
-12:43:24,717 root INFO Performing edgeR on synthetic data #7
-12:43:35,894 root INFO Finished performing edgeR on synthetic data #7
-
-12:43:35,894 root INFO Performing voom.limma on synthetic data #7
-12:43:45,586 root INFO Finished performing voom.limma on synthetic data #7
-
-12:43:52,180 root INFO Performing ttest on synthetic data #7
-12:44:02,548 root INFO Finished performing ttest on synthetic data #7
-
-10:38:44,484 root INFO Performing NOISeq on synthetic data #6
-10:39:49,951 root INFO Finished performing NOISeq on synthetic data #6
-
-10:39:49,952 root INFO Performing NOISeq on synthetic data #7
-10:41:10,644 root INFO Finished performing NOISeq on synthetic data #7
-
-10:44:36,26 root INFO Performing PoissonSeq on synthetic data #1
-10:44:43,123 root INFO Finished performing PoissonSeq on synthetic data #1
-
-10:44:43,123 root INFO Performing ABSSeq on synthetic data #1
-10:45:03,342 root INFO Finished performing ABSSeq on synthetic data #1
-
-10:45:03,342 root INFO Performing PoissonSeq on synthetic data #2
-10:45:10,832 root INFO Finished performing PoissonSeq on synthetic data #2
-
-10:45:10,832 root INFO Performing ABSSeq on synthetic data #2
-10:45:31,934 root INFO Finished performing ABSSeq on synthetic data #2
-
-10:45:31,935 root INFO Performing PoissonSeq on synthetic data #3
-10:45:39,540 root INFO Finished performing PoissonSeq on synthetic data #3
-
-10:45:39,540 root INFO Performing ABSSeq on synthetic data #3
-10:45:57,840 root INFO Finished performing ABSSeq on synthetic data #3
-
-10:46:49,409 root INFO Performing PoissonSeq on synthetic data #6
-10:46:55,844 root INFO Finished performing PoissonSeq on synthetic data #6
-
-10:46:55,844 root INFO Performing ABSSeq on synthetic data #6
-10:47:12,844 root INFO Finished performing ABSSeq on synthetic data #6
-
-10:47:12,902 root INFO Performing PoissonSeq on synthetic data #7
-10:47:19,231 root INFO Finished performing PoissonSeq on synthetic data #7
-
-10:47:19,232 root INFO Performing ABSSeq on synthetic data #7
-10:47:35,403 root INFO Finished performing ABSSeq on synthetic data #7
-
-10:47:35,403 root INFO Performing PoissonSeq on synthetic data #8
-10:47:42,533 root INFO Finished performing PoissonSeq on synthetic data #8
-
-10:47:42,534 root INFO Performing ABSSeq on synthetic data #8
-10:48:00,742 root INFO Finished performing ABSSeq on synthetic data #8
-
-10:48:00,742 root INFO Performing PoissonSeq on synthetic data #9
-10:48:07,527 root INFO Finished performing PoissonSeq on synthetic data #9
-
-10:48:07,528 root INFO Performing ABSSeq on synthetic data #9
-10:48:25,750 root INFO Finished performing ABSSeq on synthetic data #9
-
-10:48:25,751 root INFO Performing PoissonSeq on synthetic data #10
-10:48:32,930 root INFO Finished performing PoissonSeq on synthetic data #10
-
-10:48:32,930 root INFO Performing ABSSeq on synthetic data #10
-10:48:51,835 root INFO Finished performing ABSSeq on synthetic data #10
-
-10:48:51,835 root INFO Performing PoissonSeq on synthetic data #11
-10:48:59,31 root INFO Finished performing PoissonSeq on synthetic data #11
-
-10:48:59,32 root INFO Performing ABSSeq on synthetic data #11
-10:49:18,912 root INFO Finished performing ABSSeq on synthetic data #11
-
-15:58:32,343 root INFO Performing DESeq2 on synthetic data #4
-16:02:31,333 root INFO Finished performing DESeq2 on synthetic data #4
-
-16:02:31,333 root INFO Performing edgeR on synthetic data #4
-16:02:38,920 root INFO Finished performing edgeR on synthetic data #4
-
-16:02:38,921 root INFO Performing voom.limma on synthetic data #4
-16:02:45,651 root INFO Finished performing voom.limma on synthetic data #4
-
-16:02:45,651 root INFO Performing NOISeq on synthetic data #4
-16:04:16,119 root INFO Finished performing NOISeq on synthetic data #4
-
-16:04:16,120 root INFO Performing ttest on synthetic data #4
-16:04:24,639 root INFO Finished performing ttest on synthetic data #4
-
-16:04:24,640 root INFO Performing PoissonSeq on synthetic data #4
-16:04:31,528 root INFO Finished performing PoissonSeq on synthetic data #4
-
-16:04:31,529 root INFO Performing ABSSeq on synthetic data #4
-16:04:50,26 root INFO Finished performing ABSSeq on synthetic data #4
-
-16:04:50,27 root INFO Performing DESeq2 on synthetic data #5
-16:09:44,810 root INFO Finished performing DESeq2 on synthetic data #5
-
-16:09:44,810 root INFO Performing edgeR on synthetic data #5
-16:09:52,110 root INFO Finished performing edgeR on synthetic data #5
-
-16:09:52,111 root INFO Performing voom.limma on synthetic data #5
-16:09:59,242 root INFO Finished performing voom.limma on synthetic data #5
-
-16:09:59,242 root INFO Performing NOISeq on synthetic data #5
-16:11:25,945 root INFO Finished performing NOISeq on synthetic data #5
-
-16:11:25,946 root INFO Performing ttest on synthetic data #5
-16:11:34,446 root INFO Finished performing ttest on synthetic data #5
-
-16:11:34,447 root INFO Performing PoissonSeq on synthetic data #5
-16:11:41,542 root INFO Finished performing PoissonSeq on synthetic data #5
-
-16:11:41,542 root INFO Performing ABSSeq on synthetic data #5
-16:12:00,106 root INFO Finished performing ABSSeq on synthetic data #5
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v1 0:04:54.836519
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v2 0:04:01.437362
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v3 0:04:37.227904
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v4 0:04:33.875007
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v5 0:05:18.693427
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v6 0:04:46.873594
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v7 0:04:57.838314
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v8 0:04:37.232553
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v9 0:05:00.691579
+INFO:root:Elapsed time for DESeq2 for baseline0_0_5_v10 0:04:52.540887
+
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v1 0:04:52.166407
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v1 0:05:07.840210
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v1 0:05:13.032671
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v1 0:03:56.214762
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v1 0:01:05.559754
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v1 0:00:58.638196
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v1 0:03:52.024181
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v1 0:04:05.742411
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v1 0:04:40.506667
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v2 0:05:06.605374
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v2 0:05:38.765653
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v2 0:04:23.434150
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v2 0:04:05.883089
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v2 0:00:55.004451
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v2 0:01:02.584126
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v2 0:04:07.851230
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v2 0:04:18.783267
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v2 0:04:12.892353
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v3 0:05:03.194629
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v3 0:05:03.534437
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v3 0:04:43.723614
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v3 0:04:19.649574
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v3 0:00:57.105964
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v3 0:01:06.239728
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v3 0:04:38.326507
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v3 0:04:16.178702
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v3 0:04:12.022371
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v4 0:04:50.068611
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v4 0:04:38.310875
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v4 0:05:10.572597
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v4 0:04:56.074125
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v4 0:01:01.830497
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v4 0:00:58.371228
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v4 0:04:48.219216
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v4 0:04:31.306879
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v4 0:05:01.956229
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v5 0:05:02.674969
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v5 0:04:44.639260
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v5 0:04:10.437675
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v5 0:04:52.640624
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v5 0:00:55.418860
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v5 0:01:04.314379
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v5 0:04:53.193603
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v5 0:05:10.792304
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v5 0:04:07.603243
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v6 0:05:00.402685
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v6 0:04:46.432100
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v6 0:05:02.160982
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v6 0:04:23.942265
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v6 0:01:11.149361
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v6 0:00:59.496716
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v6 0:04:20.213369
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v6 0:04:32.288261
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v6 0:04:07.050119
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v7 0:04:47.602921
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v7 0:05:12.912868
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v7 0:04:51.085680
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v7 0:05:43.502091
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v7 0:00:58.377439
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v7 0:01:05.637243
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v7 0:04:01.832145
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v7 0:04:11.824560
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v7 0:04:33.089540
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v8 0:04:11.127285
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v8 0:05:06.357674
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v8 0:05:07.821160
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v8 0:05:04.738854
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v8 0:01:04.370221
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v8 0:01:04.147287
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v8 0:04:29.916754
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v8 0:04:59.780829
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v8 0:04:47.001288
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v9 0:04:31.764891
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v9 0:04:43.297470
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v9 0:05:39.608706
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v9 0:04:10.718699
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v9 0:00:57.396866
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v9 0:00:53.688901
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v9 0:04:06.427258
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v9 0:04:06.404447
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v9 0:04:29.045886
+INFO:root:Elapsed time for DESeq2 for baseline1250_0_5_v10 0:04:35.034016
+INFO:root:Elapsed time for DESeq2 for baseline625_625_5_v10 0:05:15.186406
+INFO:root:Elapsed time for DESeq2 for baseline4000_0_5_v10 0:05:50.038150
+INFO:root:Elapsed time for DESeq2 for baseline2000_2000_5_v10 0:04:35.568837
+INFO:root:Elapsed time for DESeq2 for poisson0_0_5_v10 0:00:59.668480
+INFO:root:Elapsed time for DESeq2 for poisson625_625_5_v10 0:01:02.928138
+INFO:root:Elapsed time for DESeq2 for single0_0_5_v10 0:04:36.413104
+
+INFO:root:Elapsed time for DESeq2 for random0_0_5_v10 0:04:15.940210
+INFO:root:Elapsed time for DESeq2 for random625_625_5_v10 0:03:55.621160
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v1 0:04:46.136888
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v2 0:04:51.103798
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v3 0:04:08.719498
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v4 0:04:15.737309
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v5 0:04:31.203157
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v6 0:06:09.593719
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v7 0:03:57.518137
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v8 0:04:45.018673
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v9 0:04:02.586502
+INFO:root:Elapsed time for DESeq2 for single625_625_5_v10 0:03:51.205480

@@ -7,11 +7,11 @@ from etl import run_create_data_rscript
 from analysis import run_diff_exp_rscript, run_comparison_rscript
 from test import run_test_rscript
 import logging
+from datetime import datetime
 
 logging.basicConfig(filename="log.txt", filemode='a',
- format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
  datefmt='%H:%M:%S',
- level=logging.DEBUG)
+ level=logging.INFO)
 
 def main(targets):
     #Create synthetic data with parameters represents different number of samples per condition, truly differentially expressed genes, etc.
@@ -62,7 +62,7 @@ def main(targets):
             print("Generating random synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 5 samples per condition")
             random0_0_5 = run_create_data_rscript(data_cfg.get('r0_0_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR0_0_5_v' + str(i)), data_cfg.get('seqdepth'))
 
-            #Create synthetic data #11 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
+#             #Create synthetic data #11 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
             print("Generating random synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 5 samples per condition")
             random625_625_5 = run_create_data_rscript(data_cfg.get('r625_625_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR625_625_5_v' + str(i)), data_cfg.get('seqdepth'))
 
@@ -73,58 +73,120 @@ def main(targets):
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
 
-        for i in range(1, 12):
-            synthetic_num = str(i)
+        for i in range(1, 11):
+            
+            #Run DESeq2 on the synthetic datasets above
+            
+            #Run DESeq2 on baseline0_0 with 5 samples per cond
+#             deseq2_b0_0_5_start = datetime.now()
+#             deseq2_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b0_0_5_dir'))
+#             deseq2_b0_0_5_end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for baseline0_0_5_v" + str(i) + " " + str(deseq2_b0_0_5_end - deseq2_b0_0_5_start))
+            
+            #Run DESeq2 on baseline1250_0 with 5 samples per cond
+#             deseq2_b1250_0_5_start = datetime.now()
+#             deseq2_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b1250_0_5_dir'))
+#             deseq2_b1250_0_5end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for baseline1250_0_5_v" + str(i) + " " + str(deseq2_b1250_0_5end - deseq2_b1250_0_5_start))
+            
+            #Run DESeq2 on baseline625_625 with 5 samples per cond
+#             deseq2_b625_625_5_start = datetime.now()
+#             deseq2_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b625_625_5_dir'))
+#             deseq2_b625_625_5end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for baseline625_625_5_v" + str(i) + " " + str(deseq2_b625_625_5end - deseq2_b625_625_5_start))
+            
+            #Run DESeq2 on baseline4000_0 with 5 samples per cond
+#             deseq2_b4000_0_5_start = datetime.now()
+#             deseq2_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b4000_0_5_dir'))
+#             deseq2_b4000_0_5end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for baseline4000_0_5_v" + str(i) + " " + str(deseq2_b4000_0_5end - deseq2_b4000_0_5_start))
+            
+            #Run DESeq2 on baseline2000_2000 with 5 samples per cond
+#             deseq2_b2000_2000_5_start = datetime.now()
+#             deseq2_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b2000_2000_5_dir'))
+#             deseq2_b2000_2000_5end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for baseline2000_2000_5_v" + str(i) + " " + str(deseq2_b2000_2000_5end - deseq2_b2000_2000_5_start))
+            
+            #Run DESeq2 on poisson0_0 with 5 samples per cond
+#             deseq2_p0_0_5_start = datetime.now()
+#             deseq2_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_p0_0_5_dir'))
+#             deseq2_p0_0_5_end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for poisson0_0_5_v" + str(i) + " " + str(deseq2_p0_0_5_end - deseq2_p0_0_5_start))
+            
+            #Run DESeq2 on poisson625_625 with 5 samples per cond
+#             deseq2_p625_625_5_start = datetime.now()
+#             deseq2_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_p625_625_5_dir'))
+#             deseq2_p625_625_5_end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for poisson625_625_5_v" + str(i) + " " + str(deseq2_p625_625_5_end - deseq2_p625_625_5_start))
+            
+            #Run DESeq2 on single0_0 with 5 samples per cond
+#             deseq2_s0_0_5_start = datetime.now()
+#             deseq2_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_s0_0_5_dir'))
+#             deseq2_s0_0_5_end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for single0_0_5_v" + str(i) + " " + str(deseq2_s0_0_5_end - deseq2_s0_0_5_start))
+            
+            #Run DESeq2 on single625_625 with 5 samples per cond
+            deseq2_s625_625_5_start = datetime.now()
+            deseq2_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_s625_625_5_dir'))
+            deseq2_s625_625_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for single625_625_5_v" + str(i) + " " + str(deseq2_s625_625_5_end - deseq2_s625_625_5_start))
+            
+            #Run DESeq2 on random0_0 with 5 samples per cond
+#             deseq2_r0_0_5_start = datetime.now()
+#             deseq2_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r0_0_5_dir'))
+#             deseq2_r0_0_5_end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for random0_0_5_v" + str(i) + " " + str(deseq2_r0_0_5_end - deseq2_r0_0_5_start))
+            
+            #Run DESeq2 on random625_625 with 5 samples per cond
+#             deseq2_r625_625_5_start = datetime.now()
+#             deseq2_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r625_625_5_dir'))
+#             deseq2_r625_625_5_end = datetime.now()
+#             logging.info("Elapsed time for DESeq2 for random625_625_5_v" + str(i) + " " + str(deseq2_r625_625_5_end - deseq2_r625_625_5_start))
+            
+            
 
-            #Run DESeq2 on the 11 synthetic datasets above
-            logging.info("Performing DESeq2 on synthetic data #" + synthetic_num)
-            deseq2 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
-                                          analysis_cfg.get('DESeq2_dir'))
-            logging.info("Finished performing DESeq2 on synthetic data #" + synthetic_num)
+#             #Run edgeR.exact on the 11 synthetic datasets above
+#             logging.info("Performing edgeR on synthetic data #" + synthetic_num)
+#             edgeR = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
+#                                           analysis_cfg.get('edgeR_dir'))
+#             logging.info("Finished performing edgeR on synthetic data #" + synthetic_num)
 
-            #Run edgeR.exact on the 11 synthetic datasets above
-            logging.info("Performing edgeR on synthetic data #" + synthetic_num)
-            edgeR = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
-                                          analysis_cfg.get('edgeR_dir'))
-            logging.info("Finished performing edgeR on synthetic data #" + synthetic_num)
+#             #Run voom.limma on the 11 synthetic datasets above
+#             logging.info("Performing voom.limma on synthetic data #" + synthetic_num)
+#             voom_limma = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'),
+#                                           analysis_cfg.get('voom_limma_dir'))
+#             logging.info("Finished performing voom.limma on synthetic data #" + synthetic_num)
 
-            #Run voom.limma on the 11 synthetic datasets above
-            logging.info("Performing voom.limma on synthetic data #" + synthetic_num)
-            voom_limma = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'),
-                                          analysis_cfg.get('voom_limma_dir'))
-            logging.info("Finished performing voom.limma on synthetic data #" + synthetic_num)
+#             #Run NOISeq on the 11 synthetic datasets above
+#             logging.info("Performing NOISeq on synthetic data #" + synthetic_num)
+#             NOISeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
+#                                           analysis_cfg.get('NOISeq_dir'))
+#             logging.info("Finished performing NOISeq on synthetic data #" + synthetic_num)
 
-            #Run NOISeq on the 11 synthetic datasets above
-            logging.info("Performing NOISeq on synthetic data #" + synthetic_num)
-            NOISeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
-                                          analysis_cfg.get('NOISeq_dir'))
-            logging.info("Finished performing NOISeq on synthetic data #" + synthetic_num)
-
-            #Run ttest on the 11 synthetic datasets above
-            logging.info("Performing ttest on synthetic data #" + synthetic_num)
-            ttest = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                          analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'),
-                                          analysis_cfg.get('ttest_dir'))
-            logging.info("Finished performing ttest on synthetic data #" + synthetic_num)
+#             #Run ttest on the 11 synthetic datasets above
+#             logging.info("Performing ttest on synthetic data #" + synthetic_num)
+#             ttest = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                           analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'),
+#                                           analysis_cfg.get('ttest_dir'))
+#             logging.info("Finished performing ttest on synthetic data #" + synthetic_num)
 
 
-            #Run PoissonSeq on the 11 synthetic datasets above
-            logging.info("Performing PoissonSeq on synthetic data #" + synthetic_num)
-            POIS = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                           analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'),
-                                           analysis_cfg.get('PoissonSeq_dir'))
-            logging.info("Finished performing PoissonSeq on synthetic data #" + synthetic_num)
+#             #Run PoissonSeq on the 11 synthetic datasets above
+#             logging.info("Performing PoissonSeq on synthetic data #" + synthetic_num)
+#             POIS = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                            analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'),
+#                                            analysis_cfg.get('PoissonSeq_dir'))
+#             logging.info("Finished performing PoissonSeq on synthetic data #" + synthetic_num)
 
-             #Run ABSSeq on the 11 synthetic datasets above
-            logging.info("Performing ABSSeq on synthetic data #" + synthetic_num)
-            ABSSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
-                                            analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'),
-                                            analysis_cfg.get('ABSSeq_dir'))
-            logging.info("Finished performing ABSSeq on synthetic data #" + synthetic_num)
+#              #Run ABSSeq on the 11 synthetic datasets above
+#             logging.info("Performing ABSSeq on synthetic data #" + synthetic_num)
+#             ABSSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('synData' + synthetic_num),
+#                                             analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'),
+#                                             analysis_cfg.get('ABSSeq_dir'))
+#             logging.info("Finished performing ABSSeq on synthetic data #" + synthetic_num)
 
 
     if 'compare' in targets:
