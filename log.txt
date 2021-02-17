@@ -566,7 +566,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v1 0:00:53.709953
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v1 0:02:58.098028
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v1 0:02:45.286040
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v1 0:03:09.092800
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v1 0:02:39.271744
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v1 0:00:05.405375
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v1 0:00:05.502912
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v1 0:00:05.302107
@@ -577,7 +577,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v1 0:00:05.408172
 INFO:root:Elapsed time for edgeR for single0_0_2_v1 0:00:06.198445
 INFO:root:Elapsed time for edgeR for single625_625_2_v1 0:00:05.492194
 INFO:root:Elapsed time for edgeR for random0_0_2_v1 0:00:06.190258
-INFO:root:Elapsed time for edgeR for random625_625_2_v1 0:00:06.417702
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v1 0:00:05.812063
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v1 0:00:05.975764
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v1 0:00:06.329704
@@ -588,7 +588,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v1 0:00:05.593608
 INFO:root:Elapsed time for voom.limma for single0_0_2_v1 0:00:05.608729
 INFO:root:Elapsed time for voom.limma for single625_625_2_v1 0:00:05.889661
 INFO:root:Elapsed time for voom.limma for random0_0_2_v1 0:00:06.390592
-INFO:root:Elapsed time for voom.limma for random625_625_2_v1 0:00:05.614176
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v1 0:00:47.103534
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v1 0:00:38.913500
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v1 0:00:43.372885
@@ -599,7 +599,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v1 0:00:42.051244
 INFO:root:Elapsed time for NOISeq for single0_0_2_v1 0:00:39.315141
 INFO:root:Elapsed time for NOISeq for single625_625_2_v1 0:00:40.319278
 INFO:root:Elapsed time for NOISeq for random0_0_2_v1 0:00:38.893899
-INFO:root:Elapsed time for NOISeq for random625_625_2_v1 0:00:36.824916
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v1 0:00:07.185176
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v1 0:00:07.701606
 INFO:root:Elapsed time for ttest for baseline625_625_2_v1 0:00:07.373258
@@ -610,7 +610,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v1 0:00:07.298738
 INFO:root:Elapsed time for ttest for single0_0_2_v1 0:00:07.593319
 INFO:root:Elapsed time for ttest for single625_625_2_v1 0:00:07.392235
 INFO:root:Elapsed time for ttest for random0_0_2_v1 0:00:08.247661
-INFO:root:Elapsed time for ttest for random625_625_2_v1 0:00:07.997926
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v2 0:03:12.044460
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v2 0:04:09.377152
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v2 0:03:38.998774
@@ -621,7 +621,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v2 0:01:00.582370
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v2 0:03:14.384282
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v2 0:02:48.279322
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v2 0:03:27.467101
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v2 0:03:07.043147
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v2 0:00:05.468911
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v2 0:00:06.810870
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v2 0:00:06.487890
@@ -632,7 +632,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v2 0:00:05.498031
 INFO:root:Elapsed time for edgeR for single0_0_2_v2 0:00:06.291880
 INFO:root:Elapsed time for edgeR for single625_625_2_v2 0:00:06.094346
 INFO:root:Elapsed time for edgeR for random0_0_2_v2 0:00:06.001011
-INFO:root:Elapsed time for edgeR for random625_625_2_v2 0:00:06.495153
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v2 0:00:06.413253
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v2 0:00:05.812390
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v2 0:00:06.294297
@@ -643,7 +643,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v2 0:00:05.819305
 INFO:root:Elapsed time for voom.limma for single0_0_2_v2 0:00:06.311445
 INFO:root:Elapsed time for voom.limma for single625_625_2_v2 0:00:06.887981
 INFO:root:Elapsed time for voom.limma for random0_0_2_v2 0:00:07.106035
-INFO:root:Elapsed time for voom.limma for random625_625_2_v2 0:00:06.398061
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v2 0:00:57.305534
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v2 0:00:48.787953
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v2 0:00:47.287184
@@ -654,7 +654,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v2 0:00:47.135844
 INFO:root:Elapsed time for NOISeq for single0_0_2_v2 0:00:40.845616
 INFO:root:Elapsed time for NOISeq for single625_625_2_v2 0:00:37.298391
 INFO:root:Elapsed time for NOISeq for random0_0_2_v2 0:00:43.272278
-INFO:root:Elapsed time for NOISeq for random625_625_2_v2 0:00:37.702936
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v2 0:00:07.535111
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v2 0:00:08.067442
 INFO:root:Elapsed time for ttest for baseline625_625_2_v2 0:00:08.112310
@@ -665,7 +665,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v2 0:00:07.882894
 INFO:root:Elapsed time for ttest for single0_0_2_v2 0:00:07.906543
 INFO:root:Elapsed time for ttest for single625_625_2_v2 0:00:09.042708
 INFO:root:Elapsed time for ttest for random0_0_2_v2 0:00:07.680857
-INFO:root:Elapsed time for ttest for random625_625_2_v2 0:00:07.620552
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v3 0:04:01.744081
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v3 0:04:38.608407
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v3 0:03:02.019883
@@ -676,7 +676,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v3 0:00:56.285993
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v3 0:02:35.432202
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v3 0:03:07.752544
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v3 0:02:44.061166
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v3 0:02:09.238359
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v3 0:00:05.724170
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v3 0:00:05.802080
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v3 0:00:05.598085
@@ -687,7 +687,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v3 0:00:05.421100
 INFO:root:Elapsed time for edgeR for single0_0_2_v3 0:00:06.493980
 INFO:root:Elapsed time for edgeR for single625_625_2_v3 0:00:05.998194
 INFO:root:Elapsed time for edgeR for random0_0_2_v3 0:00:05.588969
-INFO:root:Elapsed time for edgeR for random625_625_2_v3 0:00:07.021109
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v3 0:00:06.610366
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v3 0:00:06.199515
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v3 0:00:06.287269
@@ -698,7 +698,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v3 0:00:05.796871
 INFO:root:Elapsed time for voom.limma for single0_0_2_v3 0:00:06.009213
 INFO:root:Elapsed time for voom.limma for single625_625_2_v3 0:00:05.681054
 INFO:root:Elapsed time for voom.limma for random0_0_2_v3 0:00:06.013129
-INFO:root:Elapsed time for voom.limma for random625_625_2_v3 0:00:05.493100
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v3 0:00:53.818749
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v3 0:00:48.212397
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v3 0:00:38.797274
@@ -709,7 +709,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v3 0:00:44.882361
 INFO:root:Elapsed time for NOISeq for single0_0_2_v3 0:00:37.299720
 INFO:root:Elapsed time for NOISeq for single625_625_2_v3 0:00:38.443040
 INFO:root:Elapsed time for NOISeq for random0_0_2_v3 0:00:38.093511
-INFO:root:Elapsed time for NOISeq for random625_625_2_v3 0:00:37.284030
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v3 0:00:07.528607
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v3 0:00:08.527901
 INFO:root:Elapsed time for ttest for baseline625_625_2_v3 0:00:08.325854
@@ -720,7 +720,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v3 0:00:07.324626
 INFO:root:Elapsed time for ttest for single0_0_2_v3 0:00:08.593246
 INFO:root:Elapsed time for ttest for single625_625_2_v3 0:00:08.095484
 INFO:root:Elapsed time for ttest for random0_0_2_v3 0:00:08.320796
-INFO:root:Elapsed time for ttest for random625_625_2_v3 0:00:08.532009
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v4 0:00:56.967468
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v4 0:01:07.248598
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v4 0:03:38.924706
@@ -731,7 +731,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v4 0:00:50.626553
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v4 0:02:39.348804
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v4 0:02:40.116200
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v4 0:02:49.408323
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v4 0:03:01.157565
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v4 0:00:06.170472
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v4 0:00:06.065937
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v4 0:00:06.529129
@@ -742,7 +742,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v4 0:00:05.710317
 INFO:root:Elapsed time for edgeR for single0_0_2_v4 0:00:06.001242
 INFO:root:Elapsed time for edgeR for single625_625_2_v4 0:00:06.096336
 INFO:root:Elapsed time for edgeR for random0_0_2_v4 0:00:06.196539
-INFO:root:Elapsed time for edgeR for random625_625_2_v4 0:00:06.094075
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v4 0:00:06.101290
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v4 0:00:06.402775
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v4 0:00:06.218216
@@ -753,7 +753,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v4 0:00:06.216008
 INFO:root:Elapsed time for voom.limma for single0_0_2_v4 0:00:05.465316
 INFO:root:Elapsed time for voom.limma for single625_625_2_v4 0:00:06.514209
 INFO:root:Elapsed time for voom.limma for random0_0_2_v4 0:00:06.466021
-INFO:root:Elapsed time for voom.limma for random625_625_2_v4 0:00:05.453776
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v4 0:00:45.173953
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v4 0:00:46.117860
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v4 0:00:47.161293
@@ -764,7 +764,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v4 0:00:48.591986
 INFO:root:Elapsed time for NOISeq for single0_0_2_v4 0:00:37.236622
 INFO:root:Elapsed time for NOISeq for single625_625_2_v4 0:00:39.485645
 INFO:root:Elapsed time for NOISeq for random0_0_2_v4 0:00:38.160262
-INFO:root:Elapsed time for NOISeq for random625_625_2_v4 0:00:36.945726
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v4 0:00:08.164031
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v4 0:00:08.041539
 INFO:root:Elapsed time for ttest for baseline625_625_2_v4 0:00:08.477331
@@ -775,7 +775,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v4 0:00:07.709741
 INFO:root:Elapsed time for ttest for single0_0_2_v4 0:00:08.405346
 INFO:root:Elapsed time for ttest for single625_625_2_v4 0:00:07.971661
 INFO:root:Elapsed time for ttest for random0_0_2_v4 0:00:07.412918
-INFO:root:Elapsed time for ttest for random625_625_2_v4 0:00:08.157920
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v5 0:00:54.740928
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v5 0:03:02.654282
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v5 0:03:17.891590
@@ -786,7 +786,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v5 0:00:52.096300
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v5 0:03:09.759535
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v5 0:03:17.320223
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v5 0:02:10.564929
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v5 0:03:21.842265
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v5 0:00:05.918056
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v5 0:00:06.122394
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v5 0:00:05.494843
@@ -797,7 +797,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v5 0:00:05.168022
 INFO:root:Elapsed time for edgeR for single0_0_2_v5 0:00:06.631557
 INFO:root:Elapsed time for edgeR for single625_625_2_v5 0:00:05.995383
 INFO:root:Elapsed time for edgeR for random0_0_2_v5 0:00:07.010475
-INFO:root:Elapsed time for edgeR for random625_625_2_v5 0:00:06.585581
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v5 0:00:05.403528
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v5 0:00:06.696925
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v5 0:00:07.013522
@@ -808,7 +808,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v5 0:00:05.696490
 INFO:root:Elapsed time for voom.limma for single0_0_2_v5 0:00:06.241880
 INFO:root:Elapsed time for voom.limma for single625_625_2_v5 0:00:05.798553
 INFO:root:Elapsed time for voom.limma for random0_0_2_v5 0:00:06.691858
-INFO:root:Elapsed time for voom.limma for random625_625_2_v5 0:00:05.699433
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v5 0:00:49.831484
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v5 0:00:48.382331
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v5 0:00:48.758044
@@ -819,7 +819,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v5 0:00:46.374905
 INFO:root:Elapsed time for NOISeq for single0_0_2_v5 0:00:39.218824
 INFO:root:Elapsed time for NOISeq for single625_625_2_v5 0:00:37.523008
 INFO:root:Elapsed time for NOISeq for random0_0_2_v5 0:00:39.713135
-INFO:root:Elapsed time for NOISeq for random625_625_2_v5 0:00:36.907294
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v5 0:00:07.885164
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v5 0:00:08.867178
 INFO:root:Elapsed time for ttest for baseline625_625_2_v5 0:00:07.405806
@@ -830,7 +830,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v5 0:00:08.647248
 INFO:root:Elapsed time for ttest for single0_0_2_v5 0:00:07.884635
 INFO:root:Elapsed time for ttest for single625_625_2_v5 0:00:08.534267
 INFO:root:Elapsed time for ttest for random0_0_2_v5 0:00:08.103171
-INFO:root:Elapsed time for ttest for random625_625_2_v5 0:00:07.928323
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v6 0:03:16.399843
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v6 0:03:20.729747
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v6 0:00:54.915661
@@ -841,7 +841,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v6 0:01:03.053440
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v6 0:03:40.554515
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v6 0:02:10.076325
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v6 0:02:04.744637
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v6 0:02:33.971951
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v6 0:00:05.729618
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v6 0:00:05.804615
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v6 0:00:06.004902
@@ -852,7 +852,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v6 0:00:05.279538
 INFO:root:Elapsed time for edgeR for single0_0_2_v6 0:00:05.283531
 INFO:root:Elapsed time for edgeR for single625_625_2_v6 0:00:06.209169
 INFO:root:Elapsed time for edgeR for random0_0_2_v6 0:00:05.911001
-INFO:root:Elapsed time for edgeR for random625_625_2_v6 0:00:06.013934
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v6 0:00:06.096845
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v6 0:00:06.081680
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v6 0:00:05.972813
@@ -863,7 +863,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v6 0:00:05.928159
 INFO:root:Elapsed time for voom.limma for single0_0_2_v6 0:00:05.804674
 INFO:root:Elapsed time for voom.limma for single625_625_2_v6 0:00:06.487684
 INFO:root:Elapsed time for voom.limma for random0_0_2_v6 0:00:05.903115
-INFO:root:Elapsed time for voom.limma for random625_625_2_v6 0:00:05.295040
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v6 0:00:53.313722
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v6 0:00:45.293649
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v6 0:00:44.902881
@@ -874,7 +874,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v6 0:00:45.491944
 INFO:root:Elapsed time for NOISeq for single0_0_2_v6 0:00:37.108296
 INFO:root:Elapsed time for NOISeq for single625_625_2_v6 0:00:36.476226
 INFO:root:Elapsed time for NOISeq for random0_0_2_v6 0:00:37.220167
-INFO:root:Elapsed time for NOISeq for random625_625_2_v6 0:00:38.988550
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v6 0:00:08.814369
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v6 0:00:08.351537
 INFO:root:Elapsed time for ttest for baseline625_625_2_v6 0:00:08.166545
@@ -885,7 +885,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v6 0:00:08.106159
 INFO:root:Elapsed time for ttest for single0_0_2_v6 0:00:08.165394
 INFO:root:Elapsed time for ttest for single625_625_2_v6 0:00:08.247656
 INFO:root:Elapsed time for ttest for random0_0_2_v6 0:00:08.580631
-INFO:root:Elapsed time for ttest for random625_625_2_v6 0:00:08.574032
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v7 0:03:07.163913
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v7 0:04:13.650733
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v7 0:02:55.883108
@@ -896,7 +896,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v7 0:00:55.711225
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v7 0:03:30.361806
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v7 0:02:58.410238
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v7 0:03:28.292278
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v7 0:02:50.095173
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v7 0:00:06.290267
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v7 0:00:06.009263
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v7 0:00:06.115226
@@ -907,7 +907,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v7 0:00:05.786506
 INFO:root:Elapsed time for edgeR for single0_0_2_v7 0:00:06.299135
 INFO:root:Elapsed time for edgeR for single625_625_2_v7 0:00:06.313529
 INFO:root:Elapsed time for edgeR for random0_0_2_v7 0:00:06.109472
-INFO:root:Elapsed time for edgeR for random625_625_2_v7 0:00:06.566683
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v7 0:00:05.796015
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v7 0:00:06.213995
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v7 0:00:06.311636
@@ -918,7 +918,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v7 0:00:05.924094
 INFO:root:Elapsed time for voom.limma for single0_0_2_v7 0:00:06.392595
 INFO:root:Elapsed time for voom.limma for single625_625_2_v7 0:00:06.296013
 INFO:root:Elapsed time for voom.limma for random0_0_2_v7 0:00:06.404272
-INFO:root:Elapsed time for voom.limma for random625_625_2_v7 0:00:06.108877
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v7 0:00:47.186009
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v7 0:00:43.603953
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v7 0:00:48.513137
@@ -929,7 +929,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v7 0:00:44.894386
 INFO:root:Elapsed time for NOISeq for single0_0_2_v7 0:00:41.409851
 INFO:root:Elapsed time for NOISeq for single625_625_2_v7 0:00:38.973643
 INFO:root:Elapsed time for NOISeq for random0_0_2_v7 0:00:35.907913
-INFO:root:Elapsed time for NOISeq for random625_625_2_v7 0:00:39.816474
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v7 0:00:07.384828
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v7 0:00:07.968259
 INFO:root:Elapsed time for ttest for baseline625_625_2_v7 0:00:07.936064
@@ -940,7 +940,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v7 0:00:08.707187
 INFO:root:Elapsed time for ttest for single0_0_2_v7 0:00:08.201469
 INFO:root:Elapsed time for ttest for single625_625_2_v7 0:00:08.200227
 INFO:root:Elapsed time for ttest for random0_0_2_v7 0:00:08.218710
-INFO:root:Elapsed time for ttest for random625_625_2_v7 0:00:08.262935
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v8 0:03:30.177734
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v8 0:02:40.420735
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v8 0:02:23.159469
@@ -951,7 +951,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v8 0:01:04.412343
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v8 0:03:42.041514
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v8 0:02:28.295870
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v8 0:04:07.480506
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v8 0:02:12.375591
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v8 0:00:05.849107
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v8 0:00:05.913455
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v8 0:00:06.092182
@@ -962,7 +962,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v8 0:00:05.299228
 INFO:root:Elapsed time for edgeR for single0_0_2_v8 0:00:06.279714
 INFO:root:Elapsed time for edgeR for single625_625_2_v8 0:00:06.521398
 INFO:root:Elapsed time for edgeR for random0_0_2_v8 0:00:06.508240
-INFO:root:Elapsed time for edgeR for random625_625_2_v8 0:00:06.984183
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v8 0:00:06.015173
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v8 0:00:06.161610
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v8 0:00:06.505820
@@ -973,7 +973,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v8 0:00:05.627075
 INFO:root:Elapsed time for voom.limma for single0_0_2_v8 0:00:06.012036
 INFO:root:Elapsed time for voom.limma for single625_625_2_v8 0:00:06.695152
 INFO:root:Elapsed time for voom.limma for random0_0_2_v8 0:00:06.283768
-INFO:root:Elapsed time for voom.limma for random625_625_2_v8 0:00:05.819359
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v8 0:00:47.197604
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v8 0:00:47.705689
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v8 0:00:49.990883
@@ -984,7 +984,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v8 0:00:43.740916
 INFO:root:Elapsed time for NOISeq for single0_0_2_v8 0:00:35.490203
 INFO:root:Elapsed time for NOISeq for single625_625_2_v8 0:00:37.815656
 INFO:root:Elapsed time for NOISeq for random0_0_2_v8 0:00:35.479796
-INFO:root:Elapsed time for NOISeq for random625_625_2_v8 0:00:38.118370
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v8 0:00:07.866959
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v8 0:00:08.337060
 INFO:root:Elapsed time for ttest for baseline625_625_2_v8 0:00:08.345680
@@ -995,7 +995,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v8 0:00:08.000584
 INFO:root:Elapsed time for ttest for single0_0_2_v8 0:00:08.731964
 INFO:root:Elapsed time for ttest for single625_625_2_v8 0:00:08.254422
 INFO:root:Elapsed time for ttest for random0_0_2_v8 0:00:08.820071
-INFO:root:Elapsed time for ttest for random625_625_2_v8 0:00:07.465702
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v9 0:03:19.945351
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v9 0:02:55.817355
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v9 0:03:14.749790
@@ -1006,7 +1006,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v9 0:00:48.492008
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v9 0:02:42.897783
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v9 0:02:30.706079
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v9 0:02:05.038336
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v9 0:00:03.313262
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v9 0:00:06.491448
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v9 0:00:06.009818
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v9 0:00:05.814593
@@ -1017,7 +1017,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v9 0:00:05.481863
 INFO:root:Elapsed time for edgeR for single0_0_2_v9 0:00:05.818762
 INFO:root:Elapsed time for edgeR for single625_625_2_v9 0:00:06.383409
 INFO:root:Elapsed time for edgeR for random0_0_2_v9 0:00:06.311740
-INFO:root:Elapsed time for edgeR for random625_625_2_v9 0:00:03.189845
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v9 0:00:06.115854
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v9 0:00:06.091682
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v9 0:00:05.976445
@@ -1028,7 +1028,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v9 0:00:06.295422
 INFO:root:Elapsed time for voom.limma for single0_0_2_v9 0:00:05.595946
 INFO:root:Elapsed time for voom.limma for single625_625_2_v9 0:00:06.011348
 INFO:root:Elapsed time for voom.limma for random0_0_2_v9 0:00:05.995651
-INFO:root:Elapsed time for voom.limma for random625_625_2_v9 0:00:03.291485
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v9 0:00:45.922432
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v9 0:00:47.579201
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v9 0:00:46.682200
@@ -1039,7 +1039,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v9 0:00:42.765473
 INFO:root:Elapsed time for NOISeq for single0_0_2_v9 0:00:37.428062
 INFO:root:Elapsed time for NOISeq for single625_625_2_v9 0:00:37.301861
 INFO:root:Elapsed time for NOISeq for random0_0_2_v9 0:00:38.785301
-INFO:root:Elapsed time for NOISeq for random625_625_2_v9 0:00:03.472009
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v9 0:00:08.260395
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v9 0:00:08.049095
 INFO:root:Elapsed time for ttest for baseline625_625_2_v9 0:00:08.289686
@@ -1050,7 +1050,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v9 0:00:08.408111
 INFO:root:Elapsed time for ttest for single0_0_2_v9 0:00:08.134212
 INFO:root:Elapsed time for ttest for single625_625_2_v9 0:00:07.682851
 INFO:root:Elapsed time for ttest for random0_0_2_v9 0:00:08.433164
-INFO:root:Elapsed time for ttest for random625_625_2_v9 0:00:02.941530
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_2_v10 0:00:54.394308
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_2_v10 0:03:35.577702
 INFO:root:Elapsed time for DESeq2 for baseline625_625_2_v10 0:03:14.505449
@@ -1061,7 +1061,7 @@ INFO:root:Elapsed time for DESeq2 for poisson625_625_2_v10 0:00:53.812964
 INFO:root:Elapsed time for DESeq2 for single0_0_2_v10 0:02:38.090048
 INFO:root:Elapsed time for DESeq2 for single625_625_2_v10 0:02:32.856011
 INFO:root:Elapsed time for DESeq2 for random0_0_2_v10 0:03:28.391929
-INFO:root:Elapsed time for DESeq2 for random625_625_2_v10 0:02:33.806649
+
 INFO:root:Elapsed time for edgeR for baseline0_0_2_v10 0:00:06.504920
 INFO:root:Elapsed time for edgeR for baseline1250_0_2_v10 0:00:06.293572
 INFO:root:Elapsed time for edgeR for baseline625_625_2_v10 0:00:06.012439
@@ -1072,7 +1072,7 @@ INFO:root:Elapsed time for edgeR for poisson625_625_2_v10 0:00:05.184446
 INFO:root:Elapsed time for edgeR for single0_0_2_v10 0:00:06.212544
 INFO:root:Elapsed time for edgeR for single625_625_2_v10 0:00:06.093187
 INFO:root:Elapsed time for edgeR for random0_0_2_v10 0:00:06.303422
-INFO:root:Elapsed time for edgeR for random625_625_2_v10 0:00:06.070962
+
 INFO:root:Elapsed time for voom.limma for baseline0_0_2_v10 0:00:06.231644
 INFO:root:Elapsed time for voom.limma for baseline1250_0_2_v10 0:00:06.402997
 INFO:root:Elapsed time for voom.limma for baseline625_625_2_v10 0:00:06.099344
@@ -1083,7 +1083,7 @@ INFO:root:Elapsed time for voom.limma for poisson625_625_2_v10 0:00:06.229153
 INFO:root:Elapsed time for voom.limma for single0_0_2_v10 0:00:05.816230
 INFO:root:Elapsed time for voom.limma for single625_625_2_v10 0:00:06.304749
 INFO:root:Elapsed time for voom.limma for random0_0_2_v10 0:00:06.594771
-INFO:root:Elapsed time for voom.limma for random625_625_2_v10 0:00:05.798160
+
 INFO:root:Elapsed time for NOISeq for baseline0_0_2_v10 0:00:45.343517
 INFO:root:Elapsed time for NOISeq for baseline1250_0_2_v10 0:00:46.494232
 INFO:root:Elapsed time for NOISeq for baseline625_625_2_v10 0:00:40.491592
@@ -1094,7 +1094,7 @@ INFO:root:Elapsed time for NOISeq for poisson625_625_2_v10 0:00:44.680995
 INFO:root:Elapsed time for NOISeq for single0_0_2_v10 0:00:44.212013
 INFO:root:Elapsed time for NOISeq for single625_625_2_v10 0:00:37.990885
 INFO:root:Elapsed time for NOISeq for random0_0_2_v10 0:00:37.172687
-INFO:root:Elapsed time for NOISeq for random625_625_2_v10 0:00:37.846952
+
 INFO:root:Elapsed time for ttest for baseline0_0_2_v10 0:00:08.302366
 INFO:root:Elapsed time for ttest for baseline1250_0_2_v10 0:00:07.283188
 INFO:root:Elapsed time for ttest for baseline625_625_2_v10 0:00:08.136223
@@ -1105,7 +1105,7 @@ INFO:root:Elapsed time for ttest for poisson625_625_2_v10 0:00:08.504118
 INFO:root:Elapsed time for ttest for single0_0_2_v10 0:00:08.072448
 INFO:root:Elapsed time for ttest for single625_625_2_v10 0:00:08.556591
 INFO:root:Elapsed time for ttest for random0_0_2_v10 0:00:08.967176
-INFO:root:Elapsed time for ttest for random625_625_2_v10 0:00:08.721491
+
 INFO:root:Elapsed time for DESeq2 for baseline0_0_10_v1 0:00:00.004924
 INFO:root:Elapsed time for DESeq2 for baseline1250_0_10_v1 0:00:00.003998
 INFO:root:Elapsed time for DESeq2 for baseline625_625_10_v1 0:00:00.003864
@@ -2208,3 +2208,63 @@ INFO:root:Elapsed time for ttest for single0_0_10_v10 0:00:08.751903
 INFO:root:Elapsed time for ttest for single625_625_10_v10 0:00:08.701048
 INFO:root:Elapsed time for ttest for random0_0_10_v10 0:00:08.970481
 INFO:root:Elapsed time for ttest for random625_625_10_v10 0:00:09.380097
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v1 0:02:13.000646
+INFO:root:Elapsed time for edgeR for random625_625_2_v1 0:00:05.834262
+INFO:root:Elapsed time for voom.limma for random625_625_2_v1 0:00:05.884098
+INFO:root:Elapsed time for NOISeq for random625_625_2_v1 0:00:38.515145
+INFO:root:Elapsed time for ttest for random625_625_2_v1 0:00:08.266793
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v2 0:02:33.698618
+INFO:root:Elapsed time for edgeR for random625_625_2_v2 0:00:06.832063
+INFO:root:Elapsed time for voom.limma for random625_625_2_v2 0:00:05.198884
+INFO:root:Elapsed time for NOISeq for random625_625_2_v2 0:00:40.204963
+INFO:root:Elapsed time for ttest for random625_625_2_v2 0:00:08.110816
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v3 0:02:07.597213
+INFO:root:Elapsed time for edgeR for random625_625_2_v3 0:00:05.976440
+INFO:root:Elapsed time for voom.limma for random625_625_2_v3 0:00:06.000136
+INFO:root:Elapsed time for NOISeq for random625_625_2_v3 0:00:38.503938
+INFO:root:Elapsed time for ttest for random625_625_2_v3 0:00:08.446188
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v4 0:02:39.338164
+INFO:root:Elapsed time for edgeR for random625_625_2_v4 0:00:05.780731
+INFO:root:Elapsed time for voom.limma for random625_625_2_v4 0:00:06.216817
+INFO:root:Elapsed time for NOISeq for random625_625_2_v4 0:00:37.092996
+INFO:root:Elapsed time for ttest for random625_625_2_v4 0:00:08.048072
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v5 0:03:10.990414
+INFO:root:Elapsed time for edgeR for random625_625_2_v5 0:00:05.786182
+INFO:root:Elapsed time for voom.limma for random625_625_2_v5 0:00:05.884341
+INFO:root:Elapsed time for NOISeq for random625_625_2_v5 0:00:40.696045
+INFO:root:Elapsed time for ttest for random625_625_2_v5 0:00:07.721326
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v6 0:02:13.374694
+INFO:root:Elapsed time for edgeR for random625_625_2_v6 0:00:05.919398
+INFO:root:Elapsed time for voom.limma for random625_625_2_v6 0:00:05.994790
+INFO:root:Elapsed time for NOISeq for random625_625_2_v6 0:00:39.476455
+INFO:root:Elapsed time for ttest for random625_625_2_v6 0:00:08.091600
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v7 0:04:01.084010
+INFO:root:Elapsed time for edgeR for random625_625_2_v7 0:00:06.022210
+INFO:root:Elapsed time for voom.limma for random625_625_2_v7 0:00:06.119792
+INFO:root:Elapsed time for NOISeq for random625_625_2_v7 0:00:36.927294
+INFO:root:Elapsed time for ttest for random625_625_2_v7 0:00:08.108919
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v8 0:02:43.804623
+INFO:root:Elapsed time for edgeR for random625_625_2_v8 0:00:05.957414
+INFO:root:Elapsed time for voom.limma for random625_625_2_v8 0:00:05.906165
+INFO:root:Elapsed time for NOISeq for random625_625_2_v8 0:00:38.968991
+INFO:root:Elapsed time for ttest for random625_625_2_v8 0:00:07.742865
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v9 0:02:35.358081
+INFO:root:Elapsed time for edgeR for random625_625_2_v9 0:00:06.229192
+INFO:root:Elapsed time for voom.limma for random625_625_2_v9 0:00:05.898031
+INFO:root:Elapsed time for NOISeq for random625_625_2_v9 0:00:37.708388
+INFO:root:Elapsed time for ttest for random625_625_2_v9 0:00:06.981112
+INFO:root:Elapsed time for DESeq2 for random625_625_2_v10 0:03:07.295854
+INFO:root:Elapsed time for edgeR for random625_625_2_v10 0:00:06.022999
+INFO:root:Elapsed time for voom.limma for random625_625_2_v10 0:00:05.885671
+INFO:root:Elapsed time for NOISeq for random625_625_2_v10 0:00:38.306895
+INFO:root:Elapsed time for ttest for random625_625_2_v10 0:00:07.679010
+INFO:root:Elapsed time for voom.limma for random625_625_2_v1 0:00:05.658881
+INFO:root:Elapsed time for voom.limma for random625_625_2_v2 0:00:06.303058
+INFO:root:Elapsed time for voom.limma for random625_625_2_v3 0:00:06.007059
+INFO:root:Elapsed time for voom.limma for random625_625_2_v4 0:00:06.000272
+INFO:root:Elapsed time for voom.limma for random625_625_2_v5 0:00:06.205082
+INFO:root:Elapsed time for voom.limma for random625_625_2_v6 0:00:06.391808
+INFO:root:Elapsed time for voom.limma for random625_625_2_v7 0:00:06.398032
+INFO:root:Elapsed time for voom.limma for random625_625_2_v8 0:00:06.201718
+INFO:root:Elapsed time for voom.limma for random625_625_2_v9 0:00:05.789623
+INFO:root:Elapsed time for voom.limma for random625_625_2_v10 0:00:06.388993

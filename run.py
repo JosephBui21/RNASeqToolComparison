@@ -23,124 +23,124 @@ def main(targets):
         for i in range(1, 11):
             
             #Create baseline synthetic data #1 with 0 differentially expressed genes for 2 samples per condition 10x
-            print("Generating baseline synthetic data v" + str(i) + " with 0 differentially expressed genes for 2 samples per condition")
-            baseline0_0_2 = run_create_data_rscript(data_cfg.get("b0_0_2_v" + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get("output_fileB0_0_2_v" + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 0 differentially expressed genes for 2 samples per condition")
+#             baseline0_0_2 = run_create_data_rscript(data_cfg.get("b0_0_2_v" + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get("output_fileB0_0_2_v" + str(i)), data_cfg.get('seqdepth'))
             
             #Create baseline synthetic data #1 with 0 differentially expressed genes for 5 samples per condition 10x
 #             print("Generating baseline synthetic data v" + str(i) + " with 0 differentially expressed genes for 5 samples per condition")
 #             baseline0_0_5 = run_create_data_rscript(data_cfg.get("b0_0_5_v" + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get("output_fileB0_0_5_v" + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #1 with 0 differentially expressed genes for 10 samples per condition 10x
-            print("Generating baseline synthetic data v" + str(i) + " with 0 differentially expressed genes for 10 samples per condition")
-            baseline0_0_10 = run_create_data_rscript(data_cfg.get("b0_0_10_v" + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get("output_fileB0_0_10_v" + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 0 differentially expressed genes for 10 samples per condition")
+#             baseline0_0_10 = run_create_data_rscript(data_cfg.get("b0_0_10_v" + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get("output_fileB0_0_10_v" + str(i)), data_cfg.get('seqdepth'))
             
             #Create baseline synthetic data #2 with 1250 differentially expressed genes with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 2 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 2 samples per condition")
-            baseline1250_0_2 = run_create_data_rscript(data_cfg.get('b1250_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB1250_0_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 2 samples per condition")
+#             baseline1250_0_2 = run_create_data_rscript(data_cfg.get('b1250_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB1250_0_2_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create baseline synthetic data #2 with 1250 differentially expressed genes with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 5 samples per condition
 #             print("Generating baseline synthetic data v" + str(i) + " with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 5 samples per condition")
 #             baseline1250_0_5 = run_create_data_rscript(data_cfg.get('b1250_0_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB1250_0_5_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create baseline synthetic data #2 with 1250 differentially expressed genes with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 10 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 10 samples per condition")
-            baseline1250_0_10 = run_create_data_rscript(data_cfg.get('b1250_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB1250_0_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 1250 upregulated in condition 1 and 0 downregulated in condition 2 for 10 samples per condition")
+#             baseline1250_0_10 = run_create_data_rscript(data_cfg.get('b1250_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB1250_0_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #3 with 1250 differentially expressed genes with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 625 upregulated in condition 1 and 625 downregulated in condition 2 for 2 samples per condition")
-            baseline625_625_2 = run_create_data_rscript(data_cfg.get('b625_625_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB625_625_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 625 upregulated in condition 1 and 625 downregulated in condition 2 for 2 samples per condition")
+#             baseline625_625_2 = run_create_data_rscript(data_cfg.get('b625_625_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB625_625_2_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create baseline synthetic data #3 with 1250 differentially expressed genes with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 5 samples per condition
 #             print("Generating baseline synthetic data v" + str(i) + " with 625 upregulated in condition 1 and 625 downregulated in condition 2 for 5 samples per condition")
 #             baseline625_625_5 = run_create_data_rscript(data_cfg.get('b625_625_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB625_625_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #3 with 1250 differentially expressed genes with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 625 upregulated in condition 1 and 625 downregulated in condition 2 for 10 samples per condition")
-            baseline625_625_10 = run_create_data_rscript(data_cfg.get('b625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 625 upregulated in condition 1 and 625 downregulated in condition 2 for 10 samples per condition")
+#             baseline625_625_10 = run_create_data_rscript(data_cfg.get('b625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #4 with 4000 differentially expressed genes with 4000 upregulated in condition 1 & 0 in condition 2 for 2 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 4000 upregulated in condition 1 and 0 downregulated in condition 2 for 2 samples per condition")
-            baseline4000_0_2 = run_create_data_rscript(data_cfg.get('b4000_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB4000_0_2_v' + str(i)), data_cfg.get('seqdepth'))            
+#             print("Generating baseline synthetic data v" + str(i) + " with 4000 upregulated in condition 1 and 0 downregulated in condition 2 for 2 samples per condition")
+#             baseline4000_0_2 = run_create_data_rscript(data_cfg.get('b4000_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB4000_0_2_v' + str(i)), data_cfg.get('seqdepth'))            
             
             #Create baseline synthetic data #4 with 4000 differentially expressed genes with 4000 upregulated in condition 1 & 0 in condition 2 for 5 samples per condition
 #             print("Generating baseline synthetic data v" + str(i) + " with 4000 upregulated in condition 1 and 0 downregulated in condition 2 for 5 samples per condition")
 #             baseline4000_0_5 = run_create_data_rscript(data_cfg.get('b4000_0_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB4000_0_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #4 with 4000 differentially expressed genes with 4000 upregulated in condition 1 & 0 in condition 2 for 10 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 4000 upregulated in condition 1 and 0 downregulated in condition 2 for 10 samples per condition")
-            baseline4000_0_10 = run_create_data_rscript(data_cfg.get('b4000_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB4000_0_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 4000 upregulated in condition 1 and 0 downregulated in condition 2 for 10 samples per condition")
+#             baseline4000_0_10 = run_create_data_rscript(data_cfg.get('b4000_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB4000_0_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #5 with 4000 differentially expressed genes with 2000 upregulated in condition 1 & 2000 in condition 2 for 2 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 2000 upregulated in condition 1 & 2000 in condition 2 for 2 samples per condition")
-            baseline2000_2000_2 = run_create_data_rscript(data_cfg.get('b2000_2000_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB2000_2000_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 2000 upregulated in condition 1 & 2000 in condition 2 for 2 samples per condition")
+#             baseline2000_2000_2 = run_create_data_rscript(data_cfg.get('b2000_2000_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB2000_2000_2_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create baseline synthetic data #5 with 4000 differentially expressed genes with 2000 upregulated in condition 1 & 2000 in condition 2 for 5 samples per condition
 #             print("Generating baseline synthetic data v" + str(i) + " with 2000 upregulated in condition 1 & 2000 in condition 2 for 5 samples per condition")
 #             baseline2000_2000_5 = run_create_data_rscript(data_cfg.get('b2000_2000_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB2000_2000_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create baseline synthetic data #5 with 4000 differentially expressed genes with 2000 upregulated in condition 1 & 2000 in condition 2 for 10 samples per condition
-            print("Generating baseline synthetic data v" + str(i) + " with 2000 upregulated in condition 1 & 2000 in condition 2 for 10 samples per condition")
-            baseline2000_2000_10 = run_create_data_rscript(data_cfg.get('b2000_2000_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB2000_2000_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating baseline synthetic data v" + str(i) + " with 2000 upregulated in condition 1 & 2000 in condition 2 for 10 samples per condition")
+#             baseline2000_2000_10 = run_create_data_rscript(data_cfg.get('b2000_2000_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp4000'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileB2000_2000_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #6 whose counts were drawn from poisson distribution with 0 genes differentially expressed for 2 samples per condition
-            print("Generating poisson synthetic data v" + str(i) + " with 0 differentially expressed for 2 samples per condition")
-            poisson0_0_2 = run_create_data_rscript(data_cfg.get('p0_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP0_0_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating poisson synthetic data v" + str(i) + " with 0 differentially expressed for 2 samples per condition")
+#             poisson0_0_2 = run_create_data_rscript(data_cfg.get('p0_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP0_0_2_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create synthetic data #6 whose counts were drawn from poisson distribution with 0 genes differentially expressed for 5 samples per condition
 #             print("Generating poisson synthetic data v" + str(i) + " with 0 differentially expressed for 5 samples per condition")
 #             poisson0_0_5 = run_create_data_rscript(data_cfg.get('p0_0_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP0_0_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #6 whose counts were drawn from poisson distribution with 0 genes differentially expressed for 10 samples per condition
-            print("Generating poisson synthetic data v" + str(i) + " with 0 differentially expressed for 10 samples per condition")
-            poisson0_0_10 = run_create_data_rscript(data_cfg.get('p0_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP0_0_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating poisson synthetic data v" + str(i) + " with 0 differentially expressed for 10 samples per condition")
+#             poisson0_0_10 = run_create_data_rscript(data_cfg.get('p0_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP0_0_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #7 whose counts were drawn from poisson distribution with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition
-            print("Generating poisson synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition")
-            poisson625_625_2 = run_create_data_rscript(data_cfg.get('p625_625_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP625_625_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating poisson synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition")
+#             poisson625_625_2 = run_create_data_rscript(data_cfg.get('p625_625_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP625_625_2_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create synthetic data #7 whose counts were drawn from poisson distribution with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 5 samples per condition
 #             print("Generating poisson synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 5 samples per condition")
 #             poisson625_625_5 = run_create_data_rscript(data_cfg.get('p625_625_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP625_625_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #7 whose counts were drawn from poisson distribution with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition
-            print("Generating poisson synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition")
-            poisson625_625_10 = run_create_data_rscript(data_cfg.get('p625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating poisson synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition")
+#             poisson625_625_10 = run_create_data_rscript(data_cfg.get('p625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('poisson_dispersion'), data_cfg.get('type1'), data_cfg.get('outlier0'), data_cfg.get('output_fileP625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #8 where fraction of genes for which we selected a single sample and multiplied the corresponding count with a factor between 5 and 10 with 0 differentially expressed genes
-            print("Generating single synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 2 samples per condition")
-            single0_0_2 = run_create_data_rscript(data_cfg.get('s0_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS0_0_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating single synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 2 samples per condition")
+#             single0_0_2 = run_create_data_rscript(data_cfg.get('s0_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS0_0_2_v' + str(i)), data_cfg.get('seqdepth'))
             
             #Create synthetic data #8 where fraction of genes for which we selected a single sample and multiplied the corresponding count with a factor between 5 and 10 with 0 differentially expressed genes
 #             print("Generating single synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 5 samples per condition")
 #             single0_0_5 = run_create_data_rscript(data_cfg.get('s0_0_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS0_0_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #8 where fraction of genes for which we selected a single sample and multiplied the corresponding count with a factor between 5 and 10 with 0 differentially expressed genes
-            print("Generating single synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 10 samples per condition")
-            single0_0_10 = run_create_data_rscript(data_cfg.get('s0_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS0_0_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating single synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 10 samples per condition")
+#             single0_0_10 = run_create_data_rscript(data_cfg.get('s0_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS0_0_10_v' + str(i)), data_cfg.get('seqdepth'))
 
                 #Create synthetic data #9 where fraction of genes for which we selected a single sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
-            print("Generating single synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition")
-            single625_625_2 = run_create_data_rscript(data_cfg.get('s625_625_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS625_625_2_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating single synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition")
+#             single625_625_2 = run_create_data_rscript(data_cfg.get('s625_625_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS625_625_2_v' + str(i)), data_cfg.get('seqdepth'))
             
                 #Create synthetic data #9 where fraction of genes for which we selected a single sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
 #             print("Generating single synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 5 samples per condition")
 #             single625_625_5 = run_create_data_rscript(data_cfg.get('s625_625_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS625_625_5_v' + str(i)), data_cfg.get('seqdepth'))
 
                 #Create synthetic data #9 where fraction of genes for which we selected a single sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
-            print("Generating single synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition")
-            single625_625_10 = run_create_data_rscript(data_cfg.get('s625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating single synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition")
+#             single625_625_10 = run_create_data_rscript(data_cfg.get('s625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type2'), data_cfg.get('single_count'), data_cfg.get('output_fileS625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #10 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 0 differentially expressed genes
-            print("Generating random synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 2 samples per condition")
-            random0_0_2 = run_create_data_rscript(data_cfg.get('r0_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR0_0_2_v' + str(i)), data_cfg.get('seqdepth'))            
+#             print("Generating random synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 2 samples per condition")
+#             random0_0_2 = run_create_data_rscript(data_cfg.get('r0_0_2_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond2'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR0_0_2_v' + str(i)), data_cfg.get('seqdepth'))            
             
             #Create synthetic data #10 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 0 differentially expressed genes
 #             print("Generating random synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 5 samples per condition")
 #             random0_0_5 = run_create_data_rscript(data_cfg.get('r0_0_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR0_0_5_v' + str(i)), data_cfg.get('seqdepth'))
 
             #Create synthetic data #10 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 0 differentially expressed genes
-            print("Generating random synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 10 samples per condition")
-            random0_0_10 = run_create_data_rscript(data_cfg.get('r0_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR0_0_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating random synthetic data v" + str(i) + " with 0 upregulated in condition 1 & 0 downregulated in condition 2 for 10 samples per condition")
+#             random0_0_10 = run_create_data_rscript(data_cfg.get('r0_0_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp0'), data_cfg.get('upregulated_ratio1'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR0_0_10_v' + str(i)), data_cfg.get('seqdepth'))
 
              #Create synthetic data #11 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
             print("Generating random synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 2 samples per condition")
@@ -151,8 +151,8 @@ def main(targets):
 #             random625_625_5 = run_create_data_rscript(data_cfg.get('r625_625_5_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond5'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR625_625_5_v' + str(i)), data_cfg.get('seqdepth'))
 
              #Create synthetic data #11 where fraction of genes for which we selected a random sample and multiplied the corresponding count with a factor between 5 and 10 with 625 genes expressed in cond 1 & 625 in cond 2
-            print("Generating random synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition")
-            random625_625_10 = run_create_data_rscript(data_cfg.get('r625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
+#             print("Generating random synthetic data v" + str(i) + " with 625 upregulated in condition 1 & 625 downregulated in condition 2 for 10 samples per condition")
+#             random625_625_10 = run_create_data_rscript(data_cfg.get('r625_625_10_v' + str(i)), data_cfg.get('n_vars'), data_cfg.get('samples_per_cond10'), data_cfg.get('repl_id'), data_cfg.get('n_diffexp1250'), data_cfg.get('upregulated_ratio_half'), data_cfg.get('regular_dispersion'), data_cfg.get('type3'), data_cfg.get('random_outlier'), data_cfg.get('output_fileR625_625_10_v' + str(i)), data_cfg.get('seqdepth'))
 
 
 
@@ -161,7 +161,7 @@ def main(targets):
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
 
-        samples = [2, 5, 10]
+        samples = [2]#[2, 5, 10]
         for j in samples:
             for i in range(1, 11):
                 #Run DESeq2 on the synthetic datasets above
@@ -226,10 +226,10 @@ def main(targets):
     #             logging.info("Elapsed time for DESeq2 for random0_0_" + str(j) + "_v" + str(i) + " " + str(deseq2_r0_0_end - deseq2_r0_0_start))
 
     #             #Run DESeq2 on random625_625 with 2, 5, 10 samples per cond
-    #             deseq2_r625_625_start = datetime.now()
-    #             deseq2_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r625_625_' + str(j) + '_dir'))
-    #             deseq2_r625_625_end = datetime.now()
-    #             logging.info("Elapsed time for DESeq2 for random625_625_" + str(j) + "_v" + str(i) + " " + str(deseq2_r625_625_end - deseq2_r625_625_start))
+#                 deseq2_r625_625_start = datetime.now()
+#                 deseq2_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r625_625_' + str(j) + '_dir'))
+#                 deseq2_r625_625_end = datetime.now()
+#                 logging.info("Elapsed time for DESeq2 for random625_625_" + str(j) + "_v" + str(i) + " " + str(deseq2_r625_625_end - deseq2_r625_625_start))
 
     #             #Run edgeR on the synthetic datasets above
 
@@ -294,10 +294,10 @@ def main(targets):
     #             logging.info("Elapsed time for edgeR for random0_0_" + str(j) + "_v" + str(i) + " " + str(edgeR_r0_0_end - edgeR_r0_0_start))
 
     #             #             #Run edgeR on random625_625 with 2, 5, 10 samples per cond
-    #             edgeR_r625_625_start = datetime.now()
-    #             edgeR_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_r625_625_' + str(j) + '_dir'))
-    #             edgeR_r625_625_end = datetime.now()
-    #             logging.info("Elapsed time for edgeR for random625_625_" + str(j) + "_v" + str(i) + " " + str(edgeR_r625_625_end - edgeR_r625_625_start))
+#                 edgeR_r625_625_start = datetime.now()
+#                 edgeR_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_r625_625_' + str(j) + '_dir'))
+#                 edgeR_r625_625_end = datetime.now()
+#                 logging.info("Elapsed time for edgeR for random625_625_" + str(j) + "_v" + str(i) + " " + str(edgeR_r625_625_end - edgeR_r625_625_start))
 
 
     #             #Run voom.limma on the synthetic datasets above
@@ -363,10 +363,10 @@ def main(targets):
     #             logging.info("Elapsed time for voom.limma for random0_0_" + str(j) + " _v" + str(i) + " " + str(voom_r0_0_end - voom_r0_0_start))
 
     #             #             #Run voom.limma on random625_625 with 2, 5, 10 samples per cond
-    #             voom_r625_625_start = datetime.now()
-    #             voom_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_r625_625_' + str(j) + '_dir'))
-    #             voom_r625_625_end = datetime.now()
-    #             logging.info("Elapsed time for voom.limma for random625_625_" + str(j) + "_v" + str(i) + " " + str(voom_r625_625_end - voom_r625_625_start))
+                voom_r625_625_start = datetime.now()
+                voom_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_r625_625_' + str(j) + '_dir'))
+                voom_r625_625_end = datetime.now()
+                logging.info("Elapsed time for voom.limma for random625_625_" + str(j) + "_v" + str(i) + " " + str(voom_r625_625_end - voom_r625_625_start))
 
 
     #             #Run NOISeq on the synthetic datasets above
@@ -432,10 +432,10 @@ def main(targets):
     #             logging.info("Elapsed time for NOISeq for random0_0_" + str(j) + "_v" + str(i) + " " + str(NOISeq_r0_0_end - NOISeq_r0_0_start))
 
     #             #Run NOISeq on random625_625 with 2, 5, 10 samples per cond
-    #             NOISeq_r625_625_start = datetime.now()
-    #             NOISeq_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_r625_625_' + str(j) + '_dir'))
-    #             NOISeq_r625_625_end = datetime.now()
-    #             logging.info("Elapsed time for NOISeq for random625_625_" + str(j) + "_v" + str(i) + " " + str(NOISeq_r625_625_end - NOISeq_r625_625_start))
+#                 NOISeq_r625_625_start = datetime.now()
+#                 NOISeq_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_r625_625_' + str(j) + '_dir'))
+#                 NOISeq_r625_625_end = datetime.now()
+#                 logging.info("Elapsed time for NOISeq for random625_625_" + str(j) + "_v" + str(i) + " " + str(NOISeq_r625_625_end - NOISeq_r625_625_start))
 
 
     #             #Run ttest on the synthetic datasets above
@@ -501,10 +501,10 @@ def main(targets):
     #             logging.info("Elapsed time for ttest for random0_0_" + str(j) + "_v" + str(i) + " " + str(ttest_r0_0_end - ttest_r0_0_start))
 
     #             #Run ttest on random625_625 with 2, 5, 10 samples per cond
-    #             ttest_r625_625_start = datetime.now()
-    #             ttest_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'), analysis_cfg.get('ttest_r625_625_' + str(j) + '_dir'))
-    #             ttest_r625_625_end = datetime.now()
-    #             logging.info("Elapsed time for ttest for random625_625_" + str(j) + "_v" + str(i) + " " + str(ttest_r625_625_end - ttest_r625_625_start))
+#                 ttest_r625_625_start = datetime.now()
+#                 ttest_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'), analysis_cfg.get('ttest_r625_625_' + str(j) + '_dir'))
+#                 ttest_r625_625_end = datetime.now()
+#                 logging.info("Elapsed time for ttest for random625_625_" + str(j) + "_v" + str(i) + " " + str(ttest_r625_625_end - ttest_r625_625_start))
 
 
     #             #Run PoissonSeq on the synthetic datasets above
@@ -645,11 +645,11 @@ def main(targets):
     #             ABSSeq_r625_625_end = datetime.now()
     #             logging.info("Elapsed time for ABSSeq for random625_625_" + str(j) + "_v" + str(i) + " " + str(ABSSeq_r625_625_end - ABSSeq_r625_625_start))
 
-    if 'compare' in targets:
-        with open('config/comparison-params.json') as fh:
-            compare_data_cfg = json.load(fh)
+#     if 'compare' in targets:
+#         with open('config/comparison-params.json') as fh:
+#             compare_data_cfg = json.load(fh)
         
-        comparison = run_comparison_rscript(compare_data_cfg.get('ABSSeq_dir'), compare_data_cfg.get('DESeq_dir'), compare_data_cfg.get('edgeR_dir'), compare_data_cfg.get('NOISeq_dir'), compare_data_cfg.get('ttest_dir'), compare_data_cfg.get('PoissonSeq_dir'), compare_data_cfg.get('voom_dir'), compare_data_cfg.get('out_dir'))
+#         comparison = run_comparison_rscript(compare_data_cfg.get('ABSSeq_dir'), compare_data_cfg.get('DESeq_dir'), compare_data_cfg.get('edgeR_dir'), compare_data_cfg.get('NOISeq_dir'), compare_data_cfg.get('ttest_dir'), compare_data_cfg.get('PoissonSeq_dir'), compare_data_cfg.get('voom_dir'), compare_data_cfg.get('out_dir'))
 
 
 
