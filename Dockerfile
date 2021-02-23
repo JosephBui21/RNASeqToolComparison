@@ -22,7 +22,7 @@ RUN apt-get update && \
                     bwidget \
                     dplyr \
                     magrittr \ 
-                    cvAUC
+                    cvAUC \
                     -y
 
 
