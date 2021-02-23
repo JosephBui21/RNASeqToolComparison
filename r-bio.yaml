@@ -16,6 +16,9 @@ dependencies:
 - r-rpanel
 - r-poissonseq
 - r-essentials
+- r-dplyr
+- r-cvAUC
+- r-magrittr
 - python=3.8
 - pip
 
