@@ -20,6 +20,9 @@ RUN apt-get update && \
                     man-db \
                     manpages-posix \
                     bwidget \
+                    dplyr \
+                    magrittr \ 
+                    cvAUC
                     -y
 
 
