@@ -6,6 +6,8 @@ sys.path.insert(0, 'src')
 from etl import run_create_data_rscript
 from analysis import run_diff_exp_rscript, run_comparison_rscript
 from test import run_test_rscript
+from real import run_real_rscript
+from real import run_real_diff_exp_rscript
 import logging
 from datetime import datetime
 
@@ -75,21 +77,21 @@ def main(targets):
 
         for i in range(2, 11):
             
-            #Run DESeq2 on the synthetic datasets above
+#             Run DESeq2 on the synthetic datasets above
             
-            #Run DESeq2 on baseline0_0 with 5 samples per cond
+#             Run DESeq2 on baseline0_0 with 5 samples per cond
 #             deseq2_b0_0_5_start = datetime.now()
 #             deseq2_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b0_0_5_dir'))
 #             deseq2_b0_0_5_end = datetime.now()
 #             logging.info("Elapsed time for DESeq2 for baseline0_0_5_v" + str(i) + " " + str(deseq2_b0_0_5_end - deseq2_b0_0_5_start))
             
-            #Run DESeq2 on baseline1250_0 with 5 samples per cond
+#             Run DESeq2 on baseline1250_0 with 5 samples per cond
 #             deseq2_b1250_0_5_start = datetime.now()
 #             deseq2_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b1250_0_5_dir'))
 #             deseq2_b1250_0_5end = datetime.now()
 #             logging.info("Elapsed time for DESeq2 for baseline1250_0_5_v" + str(i) + " " + str(deseq2_b1250_0_5end - deseq2_b1250_0_5_start))
             
-            #Run DESeq2 on baseline625_625 with 5 samples per cond
+#             Run DESeq2 on baseline625_625 with 5 samples per cond
 #             deseq2_b625_625_5_start = datetime.now()
 #             deseq2_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b625_625_5_dir'))
 #             deseq2_b625_625_5end = datetime.now()
@@ -143,9 +145,9 @@ def main(targets):
 #             deseq2_r625_625_5_end = datetime.now()
 #             logging.info("Elapsed time for DESeq2 for random625_625_5_v" + str(i) + " " + str(deseq2_r625_625_5_end - deseq2_r625_625_5_start))
             
-            #Run edgeR on the synthetic datasets above
+#             Run edgeR on the synthetic datasets above
             
-            #Run edgeR on baseline0_0 with 5 samples per cond
+#             Run edgeR on baseline0_0 with 5 samples per cond
 #             edgeR_b0_0_5_start = datetime.now()
 #             edgeR_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b0_0_5_dir'))
 #             edgeR_b0_0_5_end = datetime.now()
@@ -569,7 +571,191 @@ def main(targets):
     if 'test' in targets:
         with open('config/test-params.json') as fh:
             t_data_cfg = json.load(fh)
+<<<<<<< HEAD
         testing = run_test_rscript(**t_data_cfg)
+        
+        
+        
+    if 'real' in targets:
+        with open('config/real-params.json') as fh:
+            real_data_cfg = json.load(fh)
+            
+        #Create real datasets: schizo.rds, mdd.rds and bipolar.rds
+        real = run_real_rscript(real_data_cfg["real_data_dir"])
+        
+        #Run DESeq2 on the real datasets
+
+        #Run DESeq2 on Schizophrenia dataset
+        deseq2_schizo_start = datetime.now()
+        deseq2_schizo = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('schizo'), real_data_cfg.get('diffExp1'), real_data_cfg.get('Rmdfunc1'), real_data_cfg.get('schizo_out'))
+        deseq2_schizo_end = datetime.now()
+        logging.info("Elapsed time for DESeq2 for schizo: " + str(deseq2_schizo_end - deseq2_schizo_start))
+
+        #Run DESeq2 on Major Depressive Disorder dataset
+        deseq2_mdd_start = datetime.now()
+        deseq2_mdd = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('mdd'), real_data_cfg.get('diffExp1'), real_data_cfg.get('Rmdfunc1'), real_data_cfg.get('mdd_out'))
+        deseq2_mdd_end = datetime.now()
+        logging.info("Elapsed time for DESeq2 for mdd: "  + str(deseq2_mdd_end - deseq2_mdd_start))
+
+        #Run DESeq2 on Bipolar Disorder dataset
+        deseq2_bipolar_start = datetime.now()
+        deseq2_bipolar = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('bipolar'), real_data_cfg.get('diffExp1'), real_data_cfg.get('Rmdfunc1'), real_data_cfg.get('bipolar_out'))
+        deseq2_bipolar_end = datetime.now()
+        logging.info("Elapsed time for DESeq2 for bipolar: " + str(deseq2_bipolar_end - deseq2_bipolar_start))
+        
+        
+        #Run edgeR on the synthetic datasets above
+
+        #Run edgeR on Schizophrenia dataset
+        edgeR_schizo_start = datetime.now()
+        edgeR_schizo = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('schizo'), real_data_cfg.get('diffExp2'), real_data_cfg.get('Rmdfunc2'), real_data_cfg.get('schizo_out'))
+        edgeR_schizo_end = datetime.now()
+        logging.info("Elapsed time for edgeR for schizo: " + str(edgeR_schizo_end - edgeR_schizo_start))
+
+        #Run edgeR on Major Depressive Disorder dataset
+        edgeR_mdd_start = datetime.now()
+        edgeR_mdd = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('mdd'), real_data_cfg.get('diffExp2'), real_data_cfg.get('Rmdfunc2'), real_data_cfg.get('mdd_out'))
+        edgeR_mdd_end = datetime.now()
+        logging.info("Elapsed time for edgeR for mdd: " +  str(edgeR_mdd_end - edgeR_mdd_start))
+
+        #Run edgeR on Bipolar Disorder dataset
+        edgeR_bipolar_start = datetime.now()
+        edgeR_bipolar = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('bipolar'), real_data_cfg.get('diffExp2'), real_data_cfg.get('Rmdfunc2'), real_data_cfg.get('bipolar_out'))
+        edgeR_bipolar_end = datetime.now()
+        logging.info("Elapsed time for edgeR for bipolar: " + str(edgeR_bipolar_end - edgeR_bipolar_start))
+        
+  
+        
+        #Run voom.limma on the synthetic datasets above
+            
+        #Run voom.limma on Schizophrenia dataset
+        voom_schizo_start = datetime.now()
+        voom_schizo = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('schizo'), real_data_cfg.get('diffExp3'), real_data_cfg.get('Rmdfunc3'), real_data_cfg.get('schizo_out'))
+        voom_schizo_end = datetime.now()
+        logging.info("Elapsed time for voom.limma for schizo: " + str(voom_schizo_end - voom_schizo_start))
+
+        #Run voom.limma on Major Depressive Disorder dataset
+        voom_mdd_start = datetime.now()
+        voom_mdd = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('mdd'), real_data_cfg.get('diffExp3'), real_data_cfg.get('Rmdfunc3'), real_data_cfg.get('mdd_out'))
+        voom_mdd_end = datetime.now()
+        logging.info("Elapsed time for voom.limma for : " + str(voom_mdd_end - voom_mdd_start))
+
+        #Run voom.limma on Bipolar Disorder dataset
+        voom_bipolar_start = datetime.now()
+        voom_bipolar = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('bipolar'), real_data_cfg.get('diffExp3'), real_data_cfg.get('Rmdfunc3'), real_data_cfg.get('bipolar_out'))
+        voom_bipolar_end = datetime.now()
+        logging.info("Elapsed time for voom.limma for bipolar: " + str(voom_bipolar_end - voom_bipolar_start))
+        
+        
+        
+        
+
+        #Run NOISeq on the synthetic datasets above
+            
+        #Run NOISeq on Schizophrenia dataset
+        NOISeq_schizo_start = datetime.now()
+        NOISeq_schizo = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('schizo'), real_data_cfg.get('diffExp4'), real_data_cfg.get('Rmdfunc4'), real_data_cfg.get('schizo_out'))
+        NOISeq_schizo_end = datetime.now()
+        logging.info("Elapsed time for NOISeq for schizo: " + str(NOISeq_schizo_end - NOISeq_schizo_start))
+
+        #Run NOISeq on Major Depressive Disorder dataset
+        NOISeq_mdd_start = datetime.now()
+        NOISeq_mdd = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('mdd'), real_data_cfg.get('diffExp4'), real_data_cfg.get('Rmdfunc4'), real_data_cfg.get('mdd_out'))
+        NOISeq_mdd_end = datetime.now()
+        logging.info("Elapsed time for NOISeq for mdd: " + str(NOISeq_mdd_end - NOISeq_mdd_start))
+
+        #Run NOISeq on Bipolar Disorder dataset
+        NOISeq_bipolar_start = datetime.now()
+        NOISeq_bipolar = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('bipolar'), real_data_cfg.get('diffExp4'), real_data_cfg.get('Rmdfunc4'), real_data_cfg.get('bipolar_out'))
+        NOISeq_bipolar_end = datetime.now()
+        logging.info("Elapsed time for NOISeq for bipolar: " + str(NOISeq_bipolar_end - NOISeq_bipolar_start))
+        
+        
+        
+        #Run ttest on the synthetic datasets above
+            
+        #Run ttest on Schizophrenia dataset
+        ttest_schizo_start = datetime.now()
+        ttest_schizo = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('schizo'), real_data_cfg.get('diffExp5'), real_data_cfg.get('Rmdfunc5'), real_data_cfg.get('schizo_out'))
+        ttest_schizo_end = datetime.now()
+        logging.info("Elapsed time for ttest for schizo: " + str(ttest_schizo_end - ttest_schizo_start))
+
+        #Run ttest on Major Depressive Disorder dataset
+        ttest_mdd_start = datetime.now()
+        ttest_mdd = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('mdd'), real_data_cfg.get('diffExp5'), real_data_cfg.get('Rmdfunc5'), real_data_cfg.get('mdd_out'))
+        ttest_mdd_end = datetime.now()
+        logging.info("Elapsed time for ttest for mdd: " + str(ttest_mdd_end - ttest_mdd_start))
+
+        #Run ttest on Bipolar Disorder dataset
+        ttest_bipolar_start = datetime.now()
+        ttest_bipolar = run_real_diff_exp_rscript(real_data_cfg.get('in_dir'), real_data_cfg.get('bipolar'), real_data_cfg.get('diffExp5'), real_data_cfg.get('Rmdfunc5'), real_data_cfg.get('bipolar_out'))
+        ttest_bipolar_end = datetime.now()
+        logging.info("Elapsed time for ttest for bipolar: " + str(ttest_bipolar_end - ttest_bipolar_start))
+        
+        
+        
+        #TBD PoissonSeq
+        
+        #TBD ABSeq
+=======
+
+        with open('config/analysis-params.json') as fh:
+            analysis_cfg = json.load(fh)
+
+        # Creating a test synthetic data for tools to be performed on
+        test_data = run_create_data_rscript(t_data_cfg.get('test_data'), t_data_cfg.get('n_vars'), t_data_cfg.get('samples_per_cond'), t_data_cfg.get('repl_id'), t_data_cfg.get('n_diffexp0'), t_data_cfg.get('upregulated_ratio1'), t_data_cfg.get('regular_dispersion'), t_data_cfg.get('type1'), t_data_cfg.get('outlier0'), t_data_cfg.get('output_test'), t_data_cfg.get('seqdepth'))
+        
+        #Run DESeq2 on the test data
+        logging.info("Performing DESeq2 on synthetic data test_data")
+        deseq2 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing DESeq2 on synthetic data test_data")
+
+        #Run edgeR.exact on the test data
+        logging.info("Performing edgeR on synthetic data test_data")
+        edgeR = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing edgeR on synthetic data test_data")
+
+        #Run voom.limma on the test data
+        logging.info("Performing voom.limma on synthetic data test_data")
+        voom_limma = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing voom.limma on synthetic data test_data")
+
+        #Run NOISeq on the test data
+        logging.info("Performing NOISeq on synthetic data test_data")
+        NOISeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing NOISeq on synthetic data test_data")
+
+        #Run ttest on the test data
+        logging.info("Performing ttest on synthetic data test_data")
+        ttest = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp5'), analysis_cfg.get('Rmdfunc5'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing ttest on synthetic data test_data")
+
+
+        #Run PoissonSeq on the test data
+        logging.info("Performing PoissonSeq on synthetic data test_data")
+        POIS = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing PoissonSeq on synthetic data test_data")
+
+        #Run ABSSeq on the test data
+        logging.info("Performing ABSSeq on synthetic data test_data")
+        ABSSeq = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),
+                                        analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'),
+                                        t_data_cfg.get('test_dir'))
+        logging.info("Finished performing ABSSeq on synthetic data test_data")
+        
+>>>>>>> 8ce03ec77c47d114dff36d81448f54b0ddb48681
     return
 
 if __name__ == '__main__':
