@@ -20,9 +20,8 @@ RUN apt-get update && \
                     man-db \
                     manpages-posix \
                     bwidget \
+                    plotly \
                     -y
-
-RUN pip install plotly
 
 
 # build conda environment with required r packages
