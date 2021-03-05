@@ -75,7 +75,7 @@ def main(targets):
     if 'analysis' in targets:
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
-        
+
         samples = [2, 5, 10]
         for j in samples:
             for i in range(1, 11):
@@ -558,14 +558,17 @@ def main(targets):
                 ABSSeq_r625_625_start = datetime.now()
                 ABSSeq_r625_625 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_' + str(j) + '_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_r625_625_' + str(j) + '_dir'))
                 ABSSeq_r625_625_end = datetime.now()
-                logging.info("Elapsed time for ABSSeq for random625_625_" + str(j) + "_v" + str(i) + " " + str(ABSSeq_r625_625_end - ABSSeq_r625_625_start))            
+                logging.info("Elapsed time for ABSSeq for random625_625_" + str(j) + "_v" + str(i) + " " + str(ABSSeq_r625_625_end - ABSSeq_r625_625_start))
 
 
 
 
     if 'graph' in targets:
+        with open('config/graph-params.json') as fh:
+            graphing_cfg = json.load(fh)
         #probably should make use of a config file
-        stats = run_statistics_rscript()
+        stats = run_statistics_rscript(graphing_cfg.get('diffExp1'), graphing_cfg.get('diffExp2'), graphing_cfg.get('diffExp3'), graphing_cfg.get('diffExp4'), graphing_cfg.get('diffExp5'), graphing_cfg.get('diffExp6'), graphing_cfg.get('data1'),
+                                       graphing_cfg.get('data2'), graphing_cfg.get('data3'), graphing_cfg.get('data4'), graphing_cfg.get('data5'), graphing_cfg.get('data6'), graphing_cfg.get('data7'), graphing_cfg.get('data8'), graphing_cfg.get('data9'), graphing_cfg.get('data10'), graphing_cfg.get('data11'))
         graph = generate_graphs()
 
     if 'compare' in targets:
@@ -579,7 +582,7 @@ def main(targets):
     if 'test' in targets:
         with open('config/test-params.json') as fh:
             t_data_cfg = json.load(fh)
-        
+
         testing = run_test_rscript(**t_data_cfg)
 
 
@@ -705,11 +708,11 @@ def main(targets):
         #TBD PoissonSeq
 
         #TBD ABSeq
-        
+
         # Creating a test synthetic data for tools to be performed on
 #         test_data = run_create_data_rscript(t_data_cfg.get('test_data'), t_data_cfg.get('n_vars'), t_data_cfg.get('samples_per_cond'), t_data_cfg.get('repl_id'), t_data_cfg.get('n_diffexp0'), t_data_cfg.get('upregulated_ratio1'), t_data_cfg.get('regular_dispersion'), t_data_cfg.get('type1'), t_data_cfg.get('outlier0'), t_data_cfg.get('output_test'), t_data_cfg.get('seqdepth'))
 
-        
+
 #         #Run DESeq2 on the test data
 #         logging.info("Performing DESeq2 on synthetic data test_data")
 #         deseq2 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), t_data_cfg.get('analysis_test'),

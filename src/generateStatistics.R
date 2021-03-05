@@ -1,10 +1,10 @@
+myArgs <- commandArgs(trailingOnly = TRUE)
 library('cvAUC')
 
-tools <- c('DESeq2', 'edgeR.exact', 'voom.limma', 'ttest', 'PoissonSeq', 'ABSSeq')
-data_list <- c('baseline625_625', 'baseline1250_0', 'baseline2000_2000',
-               'baseline4000_0', 'random625_625', 'poisson625_625', 'single625_625')
+tools <- c(myArgs[1], myArgs[2], myArgs[3], myArgs[4], myArgs[5], myArgs[6])
+data_list <- c(myArgs[7], myArgs[8], myArgs[9], myArgs[10], myArgs[11], myArgs[12], myArgs[13])
 
-data_0_list <- c('baseline0_0', 'poisson0_0', 'random0_0', 'single0_0')
+data_0_list <- c(myArgs[14], myArgs[15], myArgs[16], myArgs[17])
 
 sample_no <- c('2', '5', '10')
 versions <- c('v1', 'v2', 'v3', 'v4', 'v5',

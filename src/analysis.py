@@ -11,8 +11,9 @@ def run_comparison_rscript(tool_dir1, tool_dir2, tool_dir3, tool_dir4, tool_dir5
     os.system("/opt/conda/envs/r-bio/bin/Rscript src/compareTools.R " + tool_dir1 + ' ' + tool_dir2 + ' ' + tool_dir3 + ' ' + tool_dir4 + ' ' + tool_dir5 + ' ' + tool_dir6 + ' ' + tool_dir7 + ' ' + out_dir)
     return
 
-def run_statistics_rscript():
-    os.system("/opt/conda/envs/r-bio/bin/Rscript src/generateStatistics.R")
+def run_statistics_rscript(tool1, tool2, tool3, tool4, tool5, tool6, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11):
+    os.system("/opt/conda/envs/r-bio/bin/Rscript src/generateStatistics.R" + tool1 + ' ' + tool2 + ' ' + tool3 + ' ' + tool4 + ' ' + tool5 + ' ' + tool6 + ' ' + data1 + ' ' + data2 + ' ' + data3 + ' ' +
+              data4 + ' ' + data5 + ' ' + data6 + ' ' + data7 + ' ' + data8 + ' ' + data9 + ' ' + data10 + ' ' + data11)
     return
 
 def generate_graphs():
