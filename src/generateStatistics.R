@@ -11,7 +11,7 @@ versions <- c('v1', 'v2', 'v3', 'v4', 'v5',
               'v6', 'v7', 'v8', 'v9', 'v10')
 m <- matrix(ncol=9, nrow=length(tools)*length(data_list)*length(sample_no)*length(versions))
 m0 <- matrix(ncol=5, nrow=length(tools)*length(data_0_list)*length(sample_no)*length(versions))
-i<-1w
+i<-1
 j<-1
 for (tool in tools){
     for (data in data_list) {

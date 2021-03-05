@@ -69,30 +69,30 @@ out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
 saveRDS(result_df, out)
 
 #Run ABSSeq on the synthetic dataset created above
-# path <- paste("~/RNASeqToolComparison",indir,data, sep="/")
-# temp_data <- readRDS(path)
-# groups <- c(1,1,1,1,1,2,2,2,2,2)
-# absdata <- ABSDataSet(temp_data@count.matrix, groups)
+path <- paste("~/RNASeqToolComparison",indir,data, sep="/")
+temp_data <- readRDS(path)
+groups <- c(1,1,1,1,1,2,2,2,2,2)
+absdata <- ABSDataSet(temp_data@count.matrix, groups)
 
-# obj <- ABSSeq(absdata, useaFold=TRUE)
-# abs_res <- results(obj,c("Amean","Bmean","foldChange","pvalue","adj.pvalue"))
+obj <- ABSSeq(absdata, useaFold=TRUE)
+abs_res <- results(obj,c("Amean","Bmean","foldChange","pvalue","adj.pvalue"))
 
-# labels <- matrix(c(temp_data@variable.annotations$differential.expression, c(1:NROW(temp_data@count.matrix))), ncol=2)
-# colnames(labels) <- c("actual", "gene_number")
-# abs_res <- cbind(gene = rownames(abs_res), abs_res)
-# rownames(abs_res) <- 1:nrow(abs_res)
-# abs_res <- cbind(gene_number = rownames(abs_res), abs_res)
-# rownames(abs_res) <- 1:nrow(abs_res)
-# results <- merge(x=labels, y=abs_res, by="gene_number",all.x=TRUE)
-# result_df <- as.data.frame(results)
-# result_df$prediction <- ifelse(result_df$adj.pval < 0.05, 1, 0)
-# result_df$prediction[is.na(result_df$prediction)] <- 0
-# result_df$dif <- abs(result_df$actual - result_df$prediction)
-# result_df <- result_df[c("gene","Amean","Bmean","foldChange","pvalue","adj.pvalue","actual","prediction","dif")]
+labels <- matrix(c(temp_data@variable.annotations$differential.expression, c(1:NROW(temp_data@count.matrix))), ncol=2)
+colnames(labels) <- c("actual", "gene_number")
+abs_res <- cbind(gene = rownames(abs_res), abs_res)
+rownames(abs_res) <- 1:nrow(abs_res)
+abs_res <- cbind(gene_number = rownames(abs_res), abs_res)
+rownames(abs_res) <- 1:nrow(abs_res)
+results <- merge(x=labels, y=abs_res, by="gene_number",all.x=TRUE)
+result_df <- as.data.frame(results)
+result_df$prediction <- ifelse(result_df$adj.pval < 0.05, 1, 0)
+result_df$prediction[is.na(result_df$prediction)] <- 0
+result_df$dif <- abs(result_df$actual - result_df$prediction)
+result_df <- result_df[c("gene","Amean","Bmean","foldChange","pvalue","adj.pvalue","actual","prediction","dif")]
 
-# filename <- paste(substr(data, 0, nchar(data)-4),"_ABSSeq.rds",sep="")
-# out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
-# saveRDS(result_df, out)
+filename <- paste(substr(data, 0, nchar(data)-4),"_ABSSeq.rds",sep="")
+out <- paste("~/RNASeqToolComparison/out/test", filename,  sep="/")
+saveRDS(result_df, out)
 
 #See how many genes each tools considered are differentially expressed
 #test_ABSSeq <- readRDS(file.path(outdir, "test_ABSSeq.rds"))
@@ -121,3 +121,42 @@ print("This is how many genes each tools consider differentially expressed with 
 rownames(test_df) <- c("baseline100_0")
 test_df
 write.csv(test_df, file.path(outdir, "num_expressed_by_tool_test.csv"))
+
+tools <- c('DESeq2', 'edgeR.exact', 'voom.limma', 'ttest', 'PoissonSeq', 'ABSSeq')
+m <- matrix(ncol=6, nrow=length(tools))
+i<-1
+j<-1
+for (tool in tools){
+    file <- paste("test_",tool,".rds",sep="")
+    path <- paste("~/RNASeqToolComparison/out/test",file,sep="/")
+    des <- readRDS(path)
+    if ((tool != 'ABSSeq') & (tool != 'PoissonSeq')) {
+        des_table <- des@result.table
+        des_df <- as.data.frame(des_table)
+        des_df$prediction <- ifelse(des_df$pval < 0.05, 1, 0)
+        des_df$prediction[is.na(des_df$prediction)] <- 0
+        des_df$actual <- des@variable.annotations$differential.expression
+        des_df$dif <- des_df$prediction - des_df$actual
+    } else {
+        des_df <- des
+    }
+    TOTALP <- sum(des_df$prediction)
+    FP <- length(which(des_df$dif == 1))
+    FDR <- FP/TOTALP
+    TP <- length(which(des_df$actual==1 & des_df$prediction==1))
+    TN <- length(which(des_df$actual==0 & des_df$prediction==0))
+    N <- length(which(des_df$actual == 0))
+    P <- length(which(des_df$actual == 1))
+    sensitivity <- TP/P
+    specificity <- TN/N
+    accuracy <- NROW(which(des_df$dif==0)) / NROW(des_df)
+    if (length(unique(des_df$actual)) == 1) {
+        auc <- 'NULL'
+    } else {
+        auc <- cvAUC::AUC(des_df$prediction, des_df$actual)
+    }
+    m[i,] <- c(tool,FDR, sensitivity, specificity, auc, accuracy)
+    i<-i+1
+}
+colnames(m) <- c('Tool', 'FDR', 'Sensitivty', 'Specificity', 'AUC', 'Accuracy')
+write.table(m, 'out/test/statistics.csv')
