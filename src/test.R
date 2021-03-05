@@ -75,7 +75,7 @@ groups <- c(1,1,1,1,1,2,2,2,2,2)
 absdata <- ABSDataSet(temp_data@count.matrix, groups)
 
 obj <- ABSSeq(absdata, useaFold=TRUE)
-abs_res <- results(obj,c("Amean","Bmean","foldChange","pvalue","adj.pvalue"))
+abs_res <- ABSSeq::results(obj,c("Amean","Bmean","foldChange","pvalue","adj.pvalue"))
 
 labels <- matrix(c(temp_data@variable.annotations$differential.expression, c(1:NROW(temp_data@count.matrix))), ncol=2)
 colnames(labels) <- c("actual", "gene_number")
