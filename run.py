@@ -80,276 +80,208 @@ def main(targets):
 #             Run DESeq2 on the synthetic datasets above
             
 #             Run DESeq2 on baseline0_0 with 5 samples per cond
-#             deseq2_b0_0_5_start = datetime.now()
-#             deseq2_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b0_0_5_dir'))
-#             deseq2_b0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for baseline0_0_5_v" + str(i) + " " + str(deseq2_b0_0_5_end - deseq2_b0_0_5_start))
+            deseq2_b0_0_5_start = datetime.now()
+            deseq2_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b0_0_5_dir'))
+            deseq2_b0_0_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for baseline0_0_5_v" + str(i) + " " + str(deseq2_b0_0_5_end - deseq2_b0_0_5_start))
             
 #             Run DESeq2 on baseline1250_0 with 5 samples per cond
-#             deseq2_b1250_0_5_start = datetime.now()
-#             deseq2_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b1250_0_5_dir'))
-#             deseq2_b1250_0_5end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for baseline1250_0_5_v" + str(i) + " " + str(deseq2_b1250_0_5end - deseq2_b1250_0_5_start))
+            deseq2_b1250_0_5_start = datetime.now()
+            deseq2_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b1250_0_5_dir'))
+            deseq2_b1250_0_5end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for baseline1250_0_5_v" + str(i) + " " + str(deseq2_b1250_0_5end - deseq2_b1250_0_5_start))
             
 #             Run DESeq2 on baseline625_625 with 5 samples per cond
-#             deseq2_b625_625_5_start = datetime.now()
-#             deseq2_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b625_625_5_dir'))
-#             deseq2_b625_625_5end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for baseline625_625_5_v" + str(i) + " " + str(deseq2_b625_625_5end - deseq2_b625_625_5_start))
+            deseq2_b625_625_5_start = datetime.now()
+            deseq2_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b625_625_5_dir'))
+            deseq2_b625_625_5end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for baseline625_625_5_v" + str(i) + " " + str(deseq2_b625_625_5end - deseq2_b625_625_5_start))
             
             #Run DESeq2 on baseline4000_0 with 5 samples per cond
-#             deseq2_b4000_0_5_start = datetime.now()
-#             deseq2_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b4000_0_5_dir'))
-#             deseq2_b4000_0_5end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for baseline4000_0_5_v" + str(i) + " " + str(deseq2_b4000_0_5end - deseq2_b4000_0_5_start))
+            deseq2_b4000_0_5_start = datetime.now()
+            deseq2_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b4000_0_5_dir'))
+            deseq2_b4000_0_5end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for baseline4000_0_5_v" + str(i) + " " + str(deseq2_b4000_0_5end - deseq2_b4000_0_5_start))
             
             #Run DESeq2 on baseline2000_2000 with 5 samples per cond
-#             deseq2_b2000_2000_5_start = datetime.now()
-#             deseq2_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b2000_2000_5_dir'))
-#             deseq2_b2000_2000_5end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for baseline2000_2000_5_v" + str(i) + " " + str(deseq2_b2000_2000_5end - deseq2_b2000_2000_5_start))
+            deseq2_b2000_2000_5_start = datetime.now()
+            deseq2_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_b2000_2000_5_dir'))
+            deseq2_b2000_2000_5end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for baseline2000_2000_5_v" + str(i) + " " + str(deseq2_b2000_2000_5end - deseq2_b2000_2000_5_start))
             
             #Run DESeq2 on poisson0_0 with 5 samples per cond
-#             deseq2_p0_0_5_start = datetime.now()
-#             deseq2_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_p0_0_5_dir'))
-#             deseq2_p0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for poisson0_0_5_v" + str(i) + " " + str(deseq2_p0_0_5_end - deseq2_p0_0_5_start))
+            deseq2_p0_0_5_start = datetime.now()
+            deseq2_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_p0_0_5_dir'))
+            deseq2_p0_0_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for poisson0_0_5_v" + str(i) + " " + str(deseq2_p0_0_5_end - deseq2_p0_0_5_start))
             
             #Run DESeq2 on poisson625_625 with 5 samples per cond
-#             deseq2_p625_625_5_start = datetime.now()
-#             deseq2_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_p625_625_5_dir'))
-#             deseq2_p625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for poisson625_625_5_v" + str(i) + " " + str(deseq2_p625_625_5_end - deseq2_p625_625_5_start))
+            deseq2_p625_625_5_start = datetime.now()
+            deseq2_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_p625_625_5_dir'))
+            deseq2_p625_625_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for poisson625_625_5_v" + str(i) + " " + str(deseq2_p625_625_5_end - deseq2_p625_625_5_start))
             
             #Run DESeq2 on single0_0 with 5 samples per cond
-#             deseq2_s0_0_5_start = datetime.now()
-#             deseq2_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_s0_0_5_dir'))
-#             deseq2_s0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for single0_0_5_v" + str(i) + " " + str(deseq2_s0_0_5_end - deseq2_s0_0_5_start))
+            deseq2_s0_0_5_start = datetime.now()
+            deseq2_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_s0_0_5_dir'))
+            deseq2_s0_0_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for single0_0_5_v" + str(i) + " " + str(deseq2_s0_0_5_end - deseq2_s0_0_5_start))
             
             #Run DESeq2 on single625_625 with 5 samples per cond
-#             deseq2_s625_625_5_start = datetime.now()
-#             deseq2_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_s625_625_5_dir'))
-#             deseq2_s625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for single625_625_5_v" + str(i) + " " + str(deseq2_s625_625_5_end - deseq2_s625_625_5_start))
+            deseq2_s625_625_5_start = datetime.now()
+            deseq2_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_s625_625_5_dir'))
+            deseq2_s625_625_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for single625_625_5_v" + str(i) + " " + str(deseq2_s625_625_5_end - deseq2_s625_625_5_start))
             
             #Run DESeq2 on random0_0 with 5 samples per cond
-#             deseq2_r0_0_5_start = datetime.now()
-#             deseq2_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r0_0_5_dir'))
-#             deseq2_r0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for random0_0_5_v" + str(i) + " " + str(deseq2_r0_0_5_end - deseq2_r0_0_5_start))
+            deseq2_r0_0_5_start = datetime.now()
+            deseq2_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r0_0_5_dir'))
+            deseq2_r0_0_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for random0_0_5_v" + str(i) + " " + str(deseq2_r0_0_5_end - deseq2_r0_0_5_start))
             
             #Run DESeq2 on random625_625 with 5 samples per cond
-#             deseq2_r625_625_5_start = datetime.now()
-#             deseq2_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r625_625_5_dir'))
-#             deseq2_r625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for DESeq2 for random625_625_5_v" + str(i) + " " + str(deseq2_r625_625_5_end - deseq2_r625_625_5_start))
+            deseq2_r625_625_5_start = datetime.now()
+            deseq2_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp1'), analysis_cfg.get('Rmdfunc1'), analysis_cfg.get('DESeq2_r625_625_5_dir'))
+            deseq2_r625_625_5_end = datetime.now()
+            logging.info("Elapsed time for DESeq2 for random625_625_5_v" + str(i) + " " + str(deseq2_r625_625_5_end - deseq2_r625_625_5_start))
             
 #             Run edgeR on the synthetic datasets above
             
 #             Run edgeR on baseline0_0 with 5 samples per cond
-#             edgeR_b0_0_5_start = datetime.now()
-#             edgeR_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b0_0_5_dir'))
-#             edgeR_b0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for baseline0_0_5_v" + str(i) + " " + str(edgeR_b0_0_5_end - edgeR_b0_0_5_start))
+            edgeR_b0_0_5_start = datetime.now()
+            edgeR_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b0_0_5_dir'))
+            edgeR_b0_0_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for baseline0_0_5_v" + str(i) + " " + str(edgeR_b0_0_5_end - edgeR_b0_0_5_start))
             
-#             #Run edgeR on baseline1250_0 with 5 samples per cond
-#             edgeR_b1250_0_5_start = datetime.now()
-#             edgeR_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b1250_0_5_dir'))
-#             edgeR_b1250_0_5end = datetime.now()
-#             logging.info("Elapsed time for edgeR for baseline1250_0_5_v" + str(i) + " " + str(edgeR_b1250_0_5end - edgeR_b1250_0_5_start))
+            #Run edgeR on baseline1250_0 with 5 samples per cond
+            edgeR_b1250_0_5_start = datetime.now()
+            edgeR_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b1250_0_5_dir'))
+            edgeR_b1250_0_5end = datetime.now()
+            logging.info("Elapsed time for edgeR for baseline1250_0_5_v" + str(i) + " " + str(edgeR_b1250_0_5end - edgeR_b1250_0_5_start))
             
-#             #Run edgeR on baseline625_625 with 5 samples per cond
-#             edgeR_b625_625_5_start = datetime.now()
-#             edgeR_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b625_625_5_dir'))
-#             edgeR_b625_625_5end = datetime.now()
-#             logging.info("Elapsed time for edgeR for baseline625_625_5_v" + str(i) + " " + str(edgeR_b625_625_5end - edgeR_b625_625_5_start))
+            #Run edgeR on baseline625_625 with 5 samples per cond
+            edgeR_b625_625_5_start = datetime.now()
+            edgeR_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b625_625_5_dir'))
+            edgeR_b625_625_5end = datetime.now()
+            logging.info("Elapsed time for edgeR for baseline625_625_5_v" + str(i) + " " + str(edgeR_b625_625_5end - edgeR_b625_625_5_start))
             
-#             #Run edgeR on baseline4000_0 with 5 samples per cond
-#             edgeR_b4000_0_5_start = datetime.now()
-#             edgeR_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b4000_0_5_dir'))
-#             edgeR_b4000_0_5end = datetime.now()
-#             logging.info("Elapsed time for edgeR for baseline4000_0_5_v" + str(i) + " " + str(edgeR_b4000_0_5end - edgeR_b4000_0_5_start))
+            #Run edgeR on baseline4000_0 with 5 samples per cond
+            edgeR_b4000_0_5_start = datetime.now()
+            edgeR_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b4000_0_5_dir'))
+            edgeR_b4000_0_5end = datetime.now()
+            logging.info("Elapsed time for edgeR for baseline4000_0_5_v" + str(i) + " " + str(edgeR_b4000_0_5end - edgeR_b4000_0_5_start))
             
-#             #Run edgeR on baseline2000_2000 with 5 samples per cond
-#             edgeR_b2000_2000_5_start = datetime.now()
-#             edgeR_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b2000_2000_5_dir'))
-#             edgeR_b2000_2000_5end = datetime.now()
-#             logging.info("Elapsed time for edgeR for baseline2000_2000_5_v" + str(i) + " " + str(edgeR_b2000_2000_5end - edgeR_b2000_2000_5_start))
+            #Run edgeR on baseline2000_2000 with 5 samples per cond
+            edgeR_b2000_2000_5_start = datetime.now()
+            edgeR_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_b2000_2000_5_dir'))
+            edgeR_b2000_2000_5end = datetime.now()
+            logging.info("Elapsed time for edgeR for baseline2000_2000_5_v" + str(i) + " " + str(edgeR_b2000_2000_5end - edgeR_b2000_2000_5_start))
             
-#             #Run edgeR on poisson0_0 with 5 samples per cond
-#             edgeR_p0_0_5_start = datetime.now()
-#             edgeR_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_p0_0_5_dir'))
-#             edgeR_p0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for poisson0_0_5_v" + str(i) + " " + str(edgeR_p0_0_5_end - edgeR_p0_0_5_start))
+            #Run edgeR on poisson0_0 with 5 samples per cond
+            edgeR_p0_0_5_start = datetime.now()
+            edgeR_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_p0_0_5_dir'))
+            edgeR_p0_0_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for poisson0_0_5_v" + str(i) + " " + str(edgeR_p0_0_5_end - edgeR_p0_0_5_start))
             
-#             #Run edgeR on poisson625_625 with 5 samples per cond
-#             edgeR_p625_625_5_start = datetime.now()
-#             edgeR_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_p625_625_5_dir'))
-#             edgeR_p625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for poisson625_625_5_v" + str(i) + " " + str(edgeR_p625_625_5_end - edgeR_p625_625_5_start))
+            #Run edgeR on poisson625_625 with 5 samples per cond
+            edgeR_p625_625_5_start = datetime.now()
+            edgeR_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_p625_625_5_dir'))
+            edgeR_p625_625_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for poisson625_625_5_v" + str(i) + " " + str(edgeR_p625_625_5_end - edgeR_p625_625_5_start))
             
-#             #Run edgeR on single0_0 with 5 samples per cond
-#             edgeR_s0_0_5_start = datetime.now()
-#             edgeR_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_s0_0_5_dir'))
-#             edgeR_s0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for single0_0_5_v" + str(i) + " " + str(edgeR_s0_0_5_end - edgeR_s0_0_5_start))
+            #Run edgeR on single0_0 with 5 samples per cond
+            edgeR_s0_0_5_start = datetime.now()
+            edgeR_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_s0_0_5_dir'))
+            edgeR_s0_0_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for single0_0_5_v" + str(i) + " " + str(edgeR_s0_0_5_end - edgeR_s0_0_5_start))
             
-#             #Run edgeR on single625_625 with 5 samples per cond
-#             edgeR_s625_625_5_start = datetime.now()
-#             edgeR_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_s625_625_5_dir'))
-#             edgeR_s625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for single625_625_5_v" + str(i) + " " + str(edgeR_s625_625_5_end - edgeR_s625_625_5_start))
+            #Run edgeR on single625_625 with 5 samples per cond
+            edgeR_s625_625_5_start = datetime.now()
+            edgeR_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_s625_625_5_dir'))
+            edgeR_s625_625_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for single625_625_5_v" + str(i) + " " + str(edgeR_s625_625_5_end - edgeR_s625_625_5_start))
             
-#             #Run edgeR on random0_0 with 5 samples per cond
-#             edgeR_r0_0_5_start = datetime.now()
-#             edgeR_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_r0_0_5_dir'))
-#             edgeR_r0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for random0_0_5_v" + str(i) + " " + str(edgeR_r0_0_5_end - edgeR_r0_0_5_start))
+            #Run edgeR on random0_0 with 5 samples per cond
+            edgeR_r0_0_5_start = datetime.now()
+            edgeR_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_r0_0_5_dir'))
+            edgeR_r0_0_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for random0_0_5_v" + str(i) + " " + str(edgeR_r0_0_5_end - edgeR_r0_0_5_start))
             
-#             #Run edgeR on random625_625 with 5 samples per cond
-#             edgeR_r625_625_5_start = datetime.now()
-#             edgeR_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_r625_625_5_dir'))
-#             edgeR_r625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for edgeR for random625_625_5_v" + str(i) + " " + str(edgeR_r625_625_5_end - edgeR_r625_625_5_start))
+            #Run edgeR on random625_625 with 5 samples per cond
+            edgeR_r625_625_5_start = datetime.now()
+            edgeR_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp2'), analysis_cfg.get('Rmdfunc2'), analysis_cfg.get('edgeR_r625_625_5_dir'))
+            edgeR_r625_625_5_end = datetime.now()
+            logging.info("Elapsed time for edgeR for random625_625_5_v" + str(i) + " " + str(edgeR_r625_625_5_end - edgeR_r625_625_5_start))
 
 
             #Run voom.limma on the synthetic datasets above
             
             #Run voom.limma on baseline0_0 with 5 samples per cond
-#             voom_b0_0_5_start = datetime.now()
-#             voom_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b0_0_5_dir'))
-#             voom_b0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for baseline0_0_5_v" + str(i) + " " + str(voom_b0_0_5_end - voom_b0_0_5_start))
+            voom_b0_0_5_start = datetime.now()
+            voom_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b0_0_5_dir'))
+            voom_b0_0_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for baseline0_0_5_v" + str(i) + " " + str(voom_b0_0_5_end - voom_b0_0_5_start))
             
-#             #Run voom.limma on baseline1250_0 with 5 samples per cond
-#             voom_b1250_0_5_start = datetime.now()
-#             voom_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b1250_0_5_dir'))
-#             voom_b1250_0_5end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for baseline1250_0_5_v" + str(i) + " " + str(voom_b1250_0_5end - voom_b1250_0_5_start))
+            #Run voom.limma on baseline1250_0 with 5 samples per cond
+            voom_b1250_0_5_start = datetime.now()
+            voom_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b1250_0_5_dir'))
+            voom_b1250_0_5end = datetime.now()
+            logging.info("Elapsed time for voom.limma for baseline1250_0_5_v" + str(i) + " " + str(voom_b1250_0_5end - voom_b1250_0_5_start))
             
-#             #Run voom.limma on baseline625_625 with 5 samples per cond
-#             voom_b625_625_5_start = datetime.now()
-#             voom_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b625_625_5_dir'))
-#             voom_b625_625_5end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for baseline625_625_5_v" + str(i) + " " + str(voom_b625_625_5end - voom_b625_625_5_start))
+            #Run voom.limma on baseline625_625 with 5 samples per cond
+            voom_b625_625_5_start = datetime.now()
+            voom_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b625_625_5_dir'))
+            voom_b625_625_5end = datetime.now()
+            logging.info("Elapsed time for voom.limma for baseline625_625_5_v" + str(i) + " " + str(voom_b625_625_5end - voom_b625_625_5_start))
             
-#             #Run voom.limma on baseline4000_0 with 5 samples per cond
-#             voom_b4000_0_5_start = datetime.now()
-#             voom_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b4000_0_5_dir'))
-#             voom_b4000_0_5end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for baseline4000_0_5_v" + str(i) + " " + str(voom_b4000_0_5end - voom_b4000_0_5_start))
+            #Run voom.limma on baseline4000_0 with 5 samples per cond
+            voom_b4000_0_5_start = datetime.now()
+            voom_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b4000_0_5_dir'))
+            voom_b4000_0_5end = datetime.now()
+            logging.info("Elapsed time for voom.limma for baseline4000_0_5_v" + str(i) + " " + str(voom_b4000_0_5end - voom_b4000_0_5_start))
             
-#             #Run voom.limma on baseline2000_2000 with 5 samples per cond
-#             voom_b2000_2000_5_start = datetime.now()
-#             voom_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b2000_2000_5_dir'))
-#             voom_b2000_2000_5end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for baseline2000_2000_5_v" + str(i) + " " + str(voom_b2000_2000_5end - voom_b2000_2000_5_start))
+            #Run voom.limma on baseline2000_2000 with 5 samples per cond
+            voom_b2000_2000_5_start = datetime.now()
+            voom_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_b2000_2000_5_dir'))
+            voom_b2000_2000_5end = datetime.now()
+            logging.info("Elapsed time for voom.limma for baseline2000_2000_5_v" + str(i) + " " + str(voom_b2000_2000_5end - voom_b2000_2000_5_start))
             
-#             #Run voom.limma on poisson0_0 with 5 samples per cond
-#             voom_p0_0_5_start = datetime.now()
-#             voom_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_p0_0_5_dir'))
-#             voom_p0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for poisson0_0_5_v" + str(i) + " " + str(voom_p0_0_5_end - voom_p0_0_5_start))
+            #Run voom.limma on poisson0_0 with 5 samples per cond
+            voom_p0_0_5_start = datetime.now()
+            voom_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_p0_0_5_dir'))
+            voom_p0_0_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for poisson0_0_5_v" + str(i) + " " + str(voom_p0_0_5_end - voom_p0_0_5_start))
             
-#             #Run voom.limma on poisson625_625 with 5 samples per cond
-#             voom_p625_625_5_start = datetime.now()
-#             voom_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_p625_625_5_dir'))
-#             voom_p625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for poisson625_625_5_v" + str(i) + " " + str(voom_p625_625_5_end - voom_p625_625_5_start))
+            #Run voom.limma on poisson625_625 with 5 samples per cond
+            voom_p625_625_5_start = datetime.now()
+            voom_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_p625_625_5_dir'))
+            voom_p625_625_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for poisson625_625_5_v" + str(i) + " " + str(voom_p625_625_5_end - voom_p625_625_5_start))
             
-#             #Run voom.limma on single0_0 with 5 samples per cond
-#             voom_s0_0_5_start = datetime.now()
-#             voom_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_s0_0_5_dir'))
-#             voom_s0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for single0_0_5_v" + str(i) + " " + str(voom_s0_0_5_end - voom_s0_0_5_start))
+            #Run voom.limma on single0_0 with 5 samples per cond
+            voom_s0_0_5_start = datetime.now()
+            voom_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_s0_0_5_dir'))
+            voom_s0_0_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for single0_0_5_v" + str(i) + " " + str(voom_s0_0_5_end - voom_s0_0_5_start))
             
-#             #Run voom.limma on single625_625 with 5 samples per cond
-#             voom_s625_625_5_start = datetime.now()
-#             voom_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_s625_625_5_dir'))
-#             voom_s625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for single625_625_5_v" + str(i) + " " + str(voom_s625_625_5_end - voom_s625_625_5_start))
+            #Run voom.limma on single625_625 with 5 samples per cond
+            voom_s625_625_5_start = datetime.now()
+            voom_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_s625_625_5_dir'))
+            voom_s625_625_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for single625_625_5_v" + str(i) + " " + str(voom_s625_625_5_end - voom_s625_625_5_start))
             
-#             #Run voom.limma on random0_0 with 5 samples per cond
-#             voom_r0_0_5_start = datetime.now()
-#             voom_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_r0_0_5_dir'))
-#             voom_r0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for random0_0_5_v" + str(i) + " " + str(voom_r0_0_5_end - voom_r0_0_5_start))
+            #Run voom.limma on random0_0 with 5 samples per cond
+            voom_r0_0_5_start = datetime.now()
+            voom_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_r0_0_5_dir'))
+            voom_r0_0_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for random0_0_5_v" + str(i) + " " + str(voom_r0_0_5_end - voom_r0_0_5_start))
             
-#             #Run voom.limma on random625_625 with 5 samples per cond
-#             voom_r625_625_5_start = datetime.now()
-#             voom_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_r625_625_5_dir'))
-#             voom_r625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for voom.limma for random625_625_5_v" + str(i) + " " + str(voom_r625_625_5_end - voom_r625_625_5_start))
+            #Run voom.limma on random625_625 with 5 samples per cond
+            voom_r625_625_5_start = datetime.now()
+            voom_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp3'), analysis_cfg.get('Rmdfunc3'), analysis_cfg.get('voom.limma_r625_625_5_dir'))
+            voom_r625_625_5_end = datetime.now()
+            logging.info("Elapsed time for voom.limma for random625_625_5_v" + str(i) + " " + str(voom_r625_625_5_end - voom_r625_625_5_start))
 
-
-            #Run NOISeq on the synthetic datasets above
-            
-            #Run NOISeq on baseline0_0 with 5 samples per cond
-            NOISeq_b0_0_5_start = datetime.now()
-            NOISeq_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_b0_0_5_dir'))
-            NOISeq_b0_0_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for baseline0_0_5_v" + str(i) + " " + str(NOISeq_b0_0_5_end - NOISeq_b0_0_5_start))
-            
-            #Run NOISeq on baseline1250_0 with 5 samples per cond
-            NOISeq_b1250_0_5_start = datetime.now()
-            NOISeq_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_b1250_0_5_dir'))
-            NOISeq_b1250_0_5end = datetime.now()
-            logging.info("Elapsed time for NOISeq for baseline1250_0_5_v" + str(i) + " " + str(NOISeq_b1250_0_5end - NOISeq_b1250_0_5_start))
-            
-            #Run NOISeq on baseline625_625 with 5 samples per cond
-            NOISeq_b625_625_5_start = datetime.now()
-            NOISeq_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_b625_625_5_dir'))
-            NOISeq_b625_625_5end = datetime.now()
-            logging.info("Elapsed time for NOISeq for baseline625_625_5_v" + str(i) + " " + str(NOISeq_b625_625_5end - NOISeq_b625_625_5_start))
-            
-            #Run NOISeq on baseline4000_0 with 5 samples per cond
-            NOISeq_b4000_0_5_start = datetime.now()
-            NOISeq_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_b4000_0_5_dir'))
-            NOISeq_b4000_0_5end = datetime.now()
-            logging.info("Elapsed time for NOISeq for baseline4000_0_5_v" + str(i) + " " + str(NOISeq_b4000_0_5end - NOISeq_b4000_0_5_start))
-            
-            #Run NOISeq on baseline2000_2000 with 5 samples per cond
-            NOISeq_b2000_2000_5_start = datetime.now()
-            NOISeq_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_b2000_2000_5_dir'))
-            NOISeq_b2000_2000_5end = datetime.now()
-            logging.info("Elapsed time for NOISeq for baseline2000_2000_5_v" + str(i) + " " + str(NOISeq_b2000_2000_5end - NOISeq_b2000_2000_5_start))
-            
-            #Run NOISeq on poisson0_0 with 5 samples per cond
-            NOISeq_p0_0_5_start = datetime.now()
-            NOISeq_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_p0_0_5_dir'))
-            NOISeq_p0_0_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for poisson0_0_5_v" + str(i) + " " + str(NOISeq_p0_0_5_end - NOISeq_p0_0_5_start))
-            
-            #Run NOISeq on poisson625_625 with 5 samples per cond
-            NOISeq_p625_625_5_start = datetime.now()
-            NOISeq_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_p625_625_5_dir'))
-            NOISeq_p625_625_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for poisson625_625_5_v" + str(i) + " " + str(NOISeq_p625_625_5_end - NOISeq_p625_625_5_start))
-            
-            #Run NOISeq on single0_0 with 5 samples per cond
-            NOISeq_s0_0_5_start = datetime.now()
-            NOISeq_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_s0_0_5_dir'))
-            NOISeq_s0_0_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for single0_0_5_v" + str(i) + " " + str(NOISeq_s0_0_5_end - NOISeq_s0_0_5_start))
-            
-            #Run NOISeq on single625_625 with 5 samples per cond
-            NOISeq_s625_625_5_start = datetime.now()
-            NOISeq_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_s625_625_5_dir'))
-            NOISeq_s625_625_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for single625_625_5_v" + str(i) + " " + str(NOISeq_s625_625_5_end - NOISeq_s625_625_5_start))
-            
-            #Run NOISeq on random0_0 with 5 samples per cond
-            NOISeq_r0_0_5_start = datetime.now()
-            NOISeq_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_r0_0_5_dir'))
-            NOISeq_r0_0_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for random0_0_5_v" + str(i) + " " + str(NOISeq_r0_0_5_end - NOISeq_r0_0_5_start))
-            
-            #Run NOISeq on random625_625 with 5 samples per cond
-            NOISeq_r625_625_5_start = datetime.now()
-            NOISeq_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp4'), analysis_cfg.get('Rmdfunc4'), analysis_cfg.get('NOISeq_r625_625_5_dir'))
-            NOISeq_r625_625_5_end = datetime.now()
-            logging.info("Elapsed time for NOISeq for random625_625_5_v" + str(i) + " " + str(NOISeq_r625_625_5_end - NOISeq_r625_625_5_start))
 
 
             #Run ttest on the synthetic datasets above
@@ -424,140 +356,140 @@ def main(targets):
             #Run PoissonSeq on the synthetic datasets above
             
             #Run PoissonSeq on baseline0_0 with 5 samples per cond
-#             PoissonSeq_b0_0_5_start = datetime.now()
-#             PoissonSeq_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b0_0_5_dir'))
-#             PoissonSeq_b0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for baseline0_0_5_v" + str(i) + " " + str(PoissonSeq_b0_0_5_end - PoissonSeq_b0_0_5_start))
+            PoissonSeq_b0_0_5_start = datetime.now()
+            PoissonSeq_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b0_0_5_dir'))
+            PoissonSeq_b0_0_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for baseline0_0_5_v" + str(i) + " " + str(PoissonSeq_b0_0_5_end - PoissonSeq_b0_0_5_start))
             
-#             #Run PoissonSeq on baseline1250_0 with 5 samples per cond
-#             PoissonSeq_b1250_0_5_start = datetime.now()
-#             PoissonSeq_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b1250_0_5_dir'))
-#             PoissonSeq_b1250_0_5end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for baseline1250_0_5_v" + str(i) + " " + str(PoissonSeq_b1250_0_5end - PoissonSeq_b1250_0_5_start))
+            #Run PoissonSeq on baseline1250_0 with 5 samples per cond
+            PoissonSeq_b1250_0_5_start = datetime.now()
+            PoissonSeq_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b1250_0_5_dir'))
+            PoissonSeq_b1250_0_5end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for baseline1250_0_5_v" + str(i) + " " + str(PoissonSeq_b1250_0_5end - PoissonSeq_b1250_0_5_start))
             
-#             #Run PoissonSeq on baseline625_625 with 5 samples per cond
-#             PoissonSeq_b625_625_5_start = datetime.now()
-#             PoissonSeq_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b625_625_5_dir'))
-#             PoissonSeq_b625_625_5end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for baseline625_625_5_v" + str(i) + " " + str(PoissonSeq_b625_625_5end - PoissonSeq_b625_625_5_start))
+            #Run PoissonSeq on baseline625_625 with 5 samples per cond
+            PoissonSeq_b625_625_5_start = datetime.now()
+            PoissonSeq_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b625_625_5_dir'))
+            PoissonSeq_b625_625_5end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for baseline625_625_5_v" + str(i) + " " + str(PoissonSeq_b625_625_5end - PoissonSeq_b625_625_5_start))
             
-#             #Run PoissonSeq on baseline4000_0 with 5 samples per cond
-#             PoissonSeq_b4000_0_5_start = datetime.now()
-#             PoissonSeq_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b4000_0_5_dir'))
-#             PoissonSeq_b4000_0_5end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for baseline4000_0_5_v" + str(i) + " " + str(PoissonSeq_b4000_0_5end - PoissonSeq_b4000_0_5_start))
+            #Run PoissonSeq on baseline4000_0 with 5 samples per cond
+            PoissonSeq_b4000_0_5_start = datetime.now()
+            PoissonSeq_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b4000_0_5_dir'))
+            PoissonSeq_b4000_0_5end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for baseline4000_0_5_v" + str(i) + " " + str(PoissonSeq_b4000_0_5end - PoissonSeq_b4000_0_5_start))
             
-#             #Run PoissonSeq on baseline2000_2000 with 5 samples per cond
-#             PoissonSeq_b2000_2000_5_start = datetime.now()
-#             PoissonSeq_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b2000_2000_5_dir'))
-#             PoissonSeq_b2000_2000_5end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for baseline2000_2000_5_v" + str(i) + " " + str(PoissonSeq_b2000_2000_5end - PoissonSeq_b2000_2000_5_start))
+            #Run PoissonSeq on baseline2000_2000 with 5 samples per cond
+            PoissonSeq_b2000_2000_5_start = datetime.now()
+            PoissonSeq_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_b2000_2000_5_dir'))
+            PoissonSeq_b2000_2000_5end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for baseline2000_2000_5_v" + str(i) + " " + str(PoissonSeq_b2000_2000_5end - PoissonSeq_b2000_2000_5_start))
             
-#             #Run PoissonSeq on poisson0_0 with 5 samples per cond
-#             PoissonSeq_p0_0_5_start = datetime.now()
-#             PoissonSeq_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_p0_0_5_dir'))
-#             PoissonSeq_p0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for poisson0_0_5_v" + str(i) + " " + str(PoissonSeq_p0_0_5_end - PoissonSeq_p0_0_5_start))
+            #Run PoissonSeq on poisson0_0 with 5 samples per cond
+            PoissonSeq_p0_0_5_start = datetime.now()
+            PoissonSeq_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_p0_0_5_dir'))
+            PoissonSeq_p0_0_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for poisson0_0_5_v" + str(i) + " " + str(PoissonSeq_p0_0_5_end - PoissonSeq_p0_0_5_start))
             
-#             #Run PoissonSeq on poisson625_625 with 5 samples per cond
-#             PoissonSeq_p625_625_5_start = datetime.now()
-#             PoissonSeq_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_p625_625_5_dir'))
-#             PoissonSeq_p625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for poisson625_625_5_v" + str(i) + " " + str(PoissonSeq_p625_625_5_end - PoissonSeq_p625_625_5_start))
+            #Run PoissonSeq on poisson625_625 with 5 samples per cond
+            PoissonSeq_p625_625_5_start = datetime.now()
+            PoissonSeq_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_p625_625_5_dir'))
+            PoissonSeq_p625_625_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for poisson625_625_5_v" + str(i) + " " + str(PoissonSeq_p625_625_5_end - PoissonSeq_p625_625_5_start))
             
-#             #Run PoissonSeq on single0_0 with 5 samples per cond
-#             PoissonSeq_s0_0_5_start = datetime.now()
-#             PoissonSeq_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_s0_0_5_dir'))
-#             PoissonSeq_s0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for single0_0_5_v" + str(i) + " " + str(PoissonSeq_s0_0_5_end - PoissonSeq_s0_0_5_start))
+            #Run PoissonSeq on single0_0 with 5 samples per cond
+            PoissonSeq_s0_0_5_start = datetime.now()
+            PoissonSeq_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_s0_0_5_dir'))
+            PoissonSeq_s0_0_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for single0_0_5_v" + str(i) + " " + str(PoissonSeq_s0_0_5_end - PoissonSeq_s0_0_5_start))
             
-#             #Run PoissonSeq on single625_625 with 5 samples per cond
-#             PoissonSeq_s625_625_5_start = datetime.now()
-#             PoissonSeq_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_s625_625_5_dir'))
-#             PoissonSeq_s625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for single625_625_5_v" + str(i) + " " + str(PoissonSeq_s625_625_5_end - PoissonSeq_s625_625_5_start))
+            #Run PoissonSeq on single625_625 with 5 samples per cond
+            PoissonSeq_s625_625_5_start = datetime.now()
+            PoissonSeq_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_s625_625_5_dir'))
+            PoissonSeq_s625_625_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for single625_625_5_v" + str(i) + " " + str(PoissonSeq_s625_625_5_end - PoissonSeq_s625_625_5_start))
             
-#             #Run PoissonSeq on random0_0 with 5 samples per cond
-#             PoissonSeq_r0_0_5_start = datetime.now()
-#             PoissonSeq_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_r0_0_5_dir'))
-#             PoissonSeq_r0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for random0_0_5_v" + str(i) + " " + str(PoissonSeq_r0_0_5_end - PoissonSeq_r0_0_5_start))
+            #Run PoissonSeq on random0_0 with 5 samples per cond
+            PoissonSeq_r0_0_5_start = datetime.now()
+            PoissonSeq_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_r0_0_5_dir'))
+            PoissonSeq_r0_0_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for random0_0_5_v" + str(i) + " " + str(PoissonSeq_r0_0_5_end - PoissonSeq_r0_0_5_start))
             
-#             #Run PoissonSeq on random625_625 with 5 samples per cond
-#             PoissonSeq_r625_625_5_start = datetime.now()
-#             PoissonSeq_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_r625_625_5_dir'))
-#             PoissonSeq_r625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for PoissonSeq for random625_625_5_v" + str(i) + " " + str(PoissonSeq_r625_625_5_end - PoissonSeq_r625_625_5_start))
+            #Run PoissonSeq on random625_625 with 5 samples per cond
+            PoissonSeq_r625_625_5_start = datetime.now()
+            PoissonSeq_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp6'), analysis_cfg.get('Rmdfunc6'), analysis_cfg.get('PoissonSeq_r625_625_5_dir'))
+            PoissonSeq_r625_625_5_end = datetime.now()
+            logging.info("Elapsed time for PoissonSeq for random625_625_5_v" + str(i) + " " + str(PoissonSeq_r625_625_5_end - PoissonSeq_r625_625_5_start))
 
 
 
-#             #Run ABSSeq on the synthetic datasets above
+            #Run ABSSeq on the synthetic datasets above
             
-#             #Run ABSSeq on baseline0_0 with 5 samples per cond
-#             ABSSeq_b0_0_5_start = datetime.now()
-#             ABSSeq_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b0_0_5_dir'))
-#             ABSSeq_b0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for baseline0_0_5_v" + str(i) + " " + str(ABSSeq_b0_0_5_end - ABSSeq_b0_0_5_start))
+            #Run ABSSeq on baseline0_0 with 5 samples per cond
+            ABSSeq_b0_0_5_start = datetime.now()
+            ABSSeq_b0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b0_0_5_dir'))
+            ABSSeq_b0_0_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for baseline0_0_5_v" + str(i) + " " + str(ABSSeq_b0_0_5_end - ABSSeq_b0_0_5_start))
             
-#             #Run ABSSeq on baseline1250_0 with 5 samples per cond
-#             ABSSeq_b1250_0_5_start = datetime.now()
-#             ABSSeq_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b1250_0_5_dir'))
-#             ABSSeq_b1250_0_5end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for baseline1250_0_5_v" + str(i) + " " + str(ABSSeq_b1250_0_5end - ABSSeq_b1250_0_5_start))
+            #Run ABSSeq on baseline1250_0 with 5 samples per cond
+            ABSSeq_b1250_0_5_start = datetime.now()
+            ABSSeq_b1250_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b1250_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b1250_0_5_dir'))
+            ABSSeq_b1250_0_5end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for baseline1250_0_5_v" + str(i) + " " + str(ABSSeq_b1250_0_5end - ABSSeq_b1250_0_5_start))
             
-#             #Run ABSSeq on baseline625_625 with 5 samples per cond
-#             ABSSeq_b625_625_5_start = datetime.now()
-#             ABSSeq_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b625_625_5_dir'))
-#             ABSSeq_b625_625_5end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for baseline625_625_5_v" + str(i) + " " + str(ABSSeq_b625_625_5end - ABSSeq_b625_625_5_start))
+            #Run ABSSeq on baseline625_625 with 5 samples per cond
+            ABSSeq_b625_625_5_start = datetime.now()
+            ABSSeq_b625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b625_625_5_dir'))
+            ABSSeq_b625_625_5end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for baseline625_625_5_v" + str(i) + " " + str(ABSSeq_b625_625_5end - ABSSeq_b625_625_5_start))
             
-#             #Run ABSSeq on baseline4000_0 with 5 samples per cond
-#             ABSSeq_b4000_0_5_start = datetime.now()
-#             ABSSeq_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b4000_0_5_dir'))
-#             ABSSeq_b4000_0_5end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for baseline4000_0_5_v" + str(i) + " " + str(ABSSeq_b4000_0_5end - ABSSeq_b4000_0_5_start))
+            #Run ABSSeq on baseline4000_0 with 5 samples per cond
+            ABSSeq_b4000_0_5_start = datetime.now()
+            ABSSeq_b4000_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b4000_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b4000_0_5_dir'))
+            ABSSeq_b4000_0_5end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for baseline4000_0_5_v" + str(i) + " " + str(ABSSeq_b4000_0_5end - ABSSeq_b4000_0_5_start))
             
-#             #Run ABSSeq on baseline2000_2000 with 5 samples per cond
-#             ABSSeq_b2000_2000_5_start = datetime.now()
-#             ABSSeq_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b2000_2000_5_dir'))
-#             ABSSeq_b2000_2000_5end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for baseline2000_2000_5_v" + str(i) + " " + str(ABSSeq_b2000_2000_5end - ABSSeq_b2000_2000_5_start))
+            #Run ABSSeq on baseline2000_2000 with 5 samples per cond
+            ABSSeq_b2000_2000_5_start = datetime.now()
+            ABSSeq_b2000_2000_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('b2000_2000_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_b2000_2000_5_dir'))
+            ABSSeq_b2000_2000_5end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for baseline2000_2000_5_v" + str(i) + " " + str(ABSSeq_b2000_2000_5end - ABSSeq_b2000_2000_5_start))
             
-#             #Run ABSSeq on poisson0_0 with 5 samples per cond
-#             ABSSeq_p0_0_5_start = datetime.now()
-#             ABSSeq_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_p0_0_5_dir'))
-#             ABSSeq_p0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for poisson0_0_5_v" + str(i) + " " + str(ABSSeq_p0_0_5_end - ABSSeq_p0_0_5_start))
+            #Run ABSSeq on poisson0_0 with 5 samples per cond
+            ABSSeq_p0_0_5_start = datetime.now()
+            ABSSeq_p0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_p0_0_5_dir'))
+            ABSSeq_p0_0_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for poisson0_0_5_v" + str(i) + " " + str(ABSSeq_p0_0_5_end - ABSSeq_p0_0_5_start))
             
-#             #Run ABSSeq on poisson625_625 with 5 samples per cond
-#             ABSSeq_p625_625_5_start = datetime.now()
-#             ABSSeq_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_p625_625_5_dir'))
-#             ABSSeq_p625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for poisson625_625_5_v" + str(i) + " " + str(ABSSeq_p625_625_5_end - ABSSeq_p625_625_5_start))
+            #Run ABSSeq on poisson625_625 with 5 samples per cond
+            ABSSeq_p625_625_5_start = datetime.now()
+            ABSSeq_p625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('p625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_p625_625_5_dir'))
+            ABSSeq_p625_625_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for poisson625_625_5_v" + str(i) + " " + str(ABSSeq_p625_625_5_end - ABSSeq_p625_625_5_start))
             
-#             #Run ABSSeq on single0_0 with 5 samples per cond
-#             ABSSeq_s0_0_5_start = datetime.now()
-#             ABSSeq_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_s0_0_5_dir'))
-#             ABSSeq_s0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for single0_0_5_v" + str(i) + " " + str(ABSSeq_s0_0_5_end - ABSSeq_s0_0_5_start))
+            #Run ABSSeq on single0_0 with 5 samples per cond
+            ABSSeq_s0_0_5_start = datetime.now()
+            ABSSeq_s0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_s0_0_5_dir'))
+            ABSSeq_s0_0_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for single0_0_5_v" + str(i) + " " + str(ABSSeq_s0_0_5_end - ABSSeq_s0_0_5_start))
             
-#             #Run ABSSeq on single625_625 with 5 samples per cond
-#             ABSSeq_s625_625_5_start = datetime.now()
-#             ABSSeq_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_s625_625_5_dir'))
-#             ABSSeq_s625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for single625_625_5_v" + str(i) + " " + str(ABSSeq_s625_625_5_end - ABSSeq_s625_625_5_start))
+            #Run ABSSeq on single625_625 with 5 samples per cond
+            ABSSeq_s625_625_5_start = datetime.now()
+            ABSSeq_s625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('s625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_s625_625_5_dir'))
+            ABSSeq_s625_625_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for single625_625_5_v" + str(i) + " " + str(ABSSeq_s625_625_5_end - ABSSeq_s625_625_5_start))
             
-#             #Run ABSSeq on random0_0 with 5 samples per cond
-#             ABSSeq_r0_0_5_start = datetime.now()
-#             ABSSeq_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_r0_0_5_dir'))
-#             ABSSeq_r0_0_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for random0_0_5_v" + str(i) + " " + str(ABSSeq_r0_0_5_end - ABSSeq_r0_0_5_start))
+            #Run ABSSeq on random0_0 with 5 samples per cond
+            ABSSeq_r0_0_5_start = datetime.now()
+            ABSSeq_r0_0_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r0_0_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_r0_0_5_dir'))
+            ABSSeq_r0_0_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for random0_0_5_v" + str(i) + " " + str(ABSSeq_r0_0_5_end - ABSSeq_r0_0_5_start))
             
-#             #Run ABSSeq on random625_625 with 5 samples per cond
-#             ABSSeq_r625_625_5_start = datetime.now()
-#             ABSSeq_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_r625_625_5_dir'))
-#             ABSSeq_r625_625_5_end = datetime.now()
-#             logging.info("Elapsed time for ABSSeq for random625_625_5_v" + str(i) + " " + str(ABSSeq_r625_625_5_end - ABSSeq_r625_625_5_start))
+            #Run ABSSeq on random625_625 with 5 samples per cond
+            ABSSeq_r625_625_5_start = datetime.now()
+            ABSSeq_r625_625_5 = run_diff_exp_rscript(analysis_cfg.get('in_dir'), analysis_cfg.get('r625_625_5_v' + str(i)), analysis_cfg.get('diffExp7'), analysis_cfg.get('Rmdfunc7'), analysis_cfg.get('ABSSeq_r625_625_5_dir'))
+            ABSSeq_r625_625_5_end = datetime.now()
+            logging.info("Elapsed time for ABSSeq for random625_625_5_v" + str(i) + " " + str(ABSSeq_r625_625_5_end - ABSSeq_r625_625_5_start))
 
 
     if 'compare' in targets:
@@ -571,7 +503,7 @@ def main(targets):
     if 'test' in targets:
         with open('config/test-params.json') as fh:
             t_data_cfg = json.load(fh)
-<<<<<<< HEAD
+
         testing = run_test_rscript(**t_data_cfg)
         
         
@@ -697,7 +629,7 @@ def main(targets):
         #TBD PoissonSeq
         
         #TBD ABSeq
-=======
+
 
         with open('config/analysis-params.json') as fh:
             analysis_cfg = json.load(fh)
@@ -755,7 +687,7 @@ def main(targets):
                                         t_data_cfg.get('test_dir'))
         logging.info("Finished performing ABSSeq on synthetic data test_data")
         
->>>>>>> 8ce03ec77c47d114dff36d81448f54b0ddb48681
+
     return
 
 if __name__ == '__main__':

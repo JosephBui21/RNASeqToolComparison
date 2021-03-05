@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "synthetic_name" : "test",
     "num_vars" : 500,
     "samples_per_cond" : 5,
@@ -23,20 +22,3 @@
     "rmdFunc5" : "ttest.createRmd",
     "outdir" : "out/test"
 }
-=======
-    "test_data": "test_data",
-    "n_vars" : 100,
-    "samples_per_cond" : 5,
-    "repl_id" : 1,
-    "type1" : "none",
-    "regular_dispersion" : 0,
-    "seqdepth" : "1e7",
-    "outlier0" : 0,
-    "n_diffexp0" : 0,
-    "upregulated_ratio1" : 1,
-    "output_test" : "data/test_data.rds",
-
-    "analysis_test" : "test_data.rds",
-    "test_dir" : "out/test"
-}
->>>>>>> 8ce03ec77c47d114dff36d81448f54b0ddb48681
