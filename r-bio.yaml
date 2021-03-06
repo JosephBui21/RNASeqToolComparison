@@ -21,7 +21,7 @@ dependencies:
 - r-magrittr
 - r-ggplot2
 - r-devtools
-- r-ggVennDiagram
+- r-venndiagram
 - python=3.8
 - pip
 
