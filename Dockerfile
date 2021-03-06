@@ -20,7 +20,6 @@ RUN apt-get update && \
                     man-db \
                     manpages-posix \
                     bwidget \
-                    plotly \
                     -y
 
 
