@@ -4,7 +4,7 @@ myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 library('ABSSeq')
 library("PoissonSeq")
-library(ggplot2)
+library('ggplot2')
 library('cvAUC')
 
 data_name <- myArgs[1]
@@ -127,7 +127,6 @@ write.csv(test_df, file.path(outdir, "num_expressed_by_tool_test.csv"))
 tools <- c('DESeq2', 'edgeR.exact', 'voom.limma', 'ttest', 'PoissonSeq', 'ABSSeq')
 m <- matrix(ncol=6, nrow=length(tools))
 i<-1
-j<-1
 for (tool in tools){
     file <- paste("test_",tool,".rds",sep="")
     path <- paste("~/RNASeqToolComparison/out/test",file,sep="/")
@@ -161,7 +160,7 @@ for (tool in tools){
     i<-i+1
 }
 colnames(m) <- c('Tool', 'FDR', 'Sensitivty', 'Specificity', 'AUC', 'Accuracy')
-df <- as.data.frame(as.table(m))
+df <- as.data.frame(m)
 ggplot(df, aes(x=Tool, y=AUC)) + geom_boxplot()
 ggsave('out/test/test_auc_plot.png')
 
