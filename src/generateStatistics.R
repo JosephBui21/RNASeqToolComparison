@@ -86,8 +86,8 @@ for (tool in tools){
 }
 colnames(m) <- c('Tool', 'Data', 'Samples per Condition', 'Version', 'FDR', 'Sensitivty', 'Specificity', 'AUC', 'Accuracy')
 colnames(m0) <- c('Tool', 'Data', 'Samples per Condition', 'Version', 'False Positive Rate')
-df <- as.data.frame(as.table(m))
-df0 <- as.data.frame(as.table(m0))
+df <- as.data.frame(m)
+df0 <- as.data.frame(m0)
 
 for (data in data_list) {
     df$Samples.per.Condition <- factor(df$Samples.per.Condition, levels = c('2', '5', '10'))
