@@ -4,6 +4,8 @@ myArgs <- commandArgs(trailingOnly = TRUE)
 library('compcodeR')
 library('ABSSeq')
 library("PoissonSeq")
+library(ggplot2)
+library('cvAUC')
 
 data_name <- myArgs[1]
 num_vars <- strtoi(myArgs[2])
@@ -159,4 +161,8 @@ for (tool in tools){
     i<-i+1
 }
 colnames(m) <- c('Tool', 'FDR', 'Sensitivty', 'Specificity', 'AUC', 'Accuracy')
+df <- as.data.frame(as.table(m))
+ggplot(df, aes(x=Tool, y=AUC)) + geom_boxplot()
+ggsave('out/test/test_auc_plot.png')
+
 write.table(m, 'out/test/statistics.csv')

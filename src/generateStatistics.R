@@ -1,5 +1,6 @@
 myArgs <- commandArgs(trailingOnly = TRUE)
 library('cvAUC')
+library(ggplot2)
 
 tools <- c(myArgs[1], myArgs[2], myArgs[3], myArgs[4], myArgs[5], myArgs[6])
 data_list <- c(myArgs[7], myArgs[8], myArgs[9], myArgs[10], myArgs[11], myArgs[12], myArgs[13])
@@ -85,5 +86,50 @@ for (tool in tools){
 }
 colnames(m) <- c('Tool', 'Data', 'Samples per Condition', 'Version', 'FDR', 'Sensitivty', 'Specificity', 'AUC', 'Accuracy')
 colnames(m0) <- c('Tool', 'Data', 'Samples per Condition', 'Version', 'False Positive Rate')
-write.table(m, 'out/statistics.csv')
-write.table(m0, 'out/statistics_0.csv')
+df <- as.data.frame(as.table(m))
+df0 <- as.data.frame(as.table(m0))
+
+for (data in data_list) {
+    df$Samples.per.Condition <- factor(df$Samples.per.Condition, levels = c('2', '5', '10'))
+    df_base <- df[df$Data == data,]
+    ggplot(df_base, aes(x=Samples.per.Condition, y=AUC, fill=Tool)) + ggtitle(paste('AUC on ',data,sep='')) + geom_boxplot()
+    ggsave(paste('out/graphs/auc/',data,'_auc_plot.png',sep=''))
+}
+
+for (data in data_list) {
+    df$Samples.per.Condition <- factor(df$Samples.per.Condition, levels = c('2', '5', '10'))
+    df_base <- df[df$Data == data,]
+    ggplot(df_base, aes(x=Samples.per.Condition, y=Accuracy, fill=Tool)) + ggtitle(paste('Accuracy on ',data,sep='')) + geom_boxplot()
+    ggsave(paste('out/graphs/accuracy/',data,'_accuracy_plot.png',sep=''))
+}
+
+for (data in data_list) {
+    df$Samples.per.Condition <- factor(df$Samples.per.Condition, levels = c('2', '5', '10'))
+    df_base <- df[df$Data == data,]
+    ggplot(df_base, aes(x=Samples.per.Condition, y=FDR, fill=Tool)) + ggtitle(paste('FDR on ',data,sep='')) + geom_boxplot()
+    ggsave(paste('out/graphs/fdr/',data,'_fdr_plot.png',sep=''))
+}
+
+for (data in data_list) {
+    df$Samples.per.Condition <- factor(df$Samples.per.Condition, levels = c('2', '5', '10'))
+    df_base <- df[df$Data == data,]
+    ggplot(df_base, aes(x=Samples.per.Condition, y=Sensitivity, fill=Tool)) + ggtitle(paste('Sensitivity on ',data,sep='')) + geom_boxplot()
+    ggsave(paste('out/graphs/sensitivity/',data,'_sensitivity_plot.png',sep=''))
+}
+
+for (data in data_list) {
+    df$Samples.per.Condition <- factor(df$Samples.per.Condition, levels = c('2', '5', '10'))
+    df_base <- df[df$Data == data,]
+    ggplot(df_base, aes(x=Samples.per.Condition, y=Specificity, fill=Tool)) + ggtitle(paste('Specificity on ',data,sep='')) + geom_boxplot()
+    ggsave(paste('out/graphs/specificity/',data,'_specificity_plot.png',sep=''))
+}
+
+for (data in data_0_list) {
+    df0$Samples.per.Condition <- factor(df0$Samples.per.Condition, levels = c('2', '5', '10'))
+    df0_base <- df0[df0$Data == data,]
+    ggplot(df0_base, aes(x=Samples.per.Condition, y=False.Positive.Rate, fill=Tool)) + ggtitle(paste('FPR on ',data,sep='')) + geom_boxplot()
+    ggsave(paste('out/graphs/fpr/',data,'_fpr_plot.png',sep=''))
+}
+
+#write.table(m, 'out/statistics.csv')
+#write.table(m0, 'out/statistics_0.csv')
