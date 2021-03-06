@@ -569,7 +569,7 @@ def main(targets):
         #probably should make use of a config file
         stats = run_statistics_rscript(graphing_cfg.get('diffExp1'), graphing_cfg.get('diffExp2'), graphing_cfg.get('diffExp3'), graphing_cfg.get('diffExp4'), graphing_cfg.get('diffExp5'), graphing_cfg.get('diffExp6'), graphing_cfg.get('data1'),
                                        graphing_cfg.get('data2'), graphing_cfg.get('data3'), graphing_cfg.get('data4'), graphing_cfg.get('data5'), graphing_cfg.get('data6'), graphing_cfg.get('data7'), graphing_cfg.get('data8'), graphing_cfg.get('data9'), graphing_cfg.get('data10'), graphing_cfg.get('data11'))
-        graph = generate_graphs()
+        #graph = generate_graphs()
 
     if 'compare' in targets:
         with open('config/comparison-params.json') as fh:
