@@ -20,6 +20,7 @@ dependencies:
 - r-cvAUC
 - r-magrittr
 - r-ggplot2
+- r-ggplot
 - python=3.8
 - pip
 
