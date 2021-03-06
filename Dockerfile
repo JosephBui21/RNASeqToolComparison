@@ -22,8 +22,6 @@ RUN apt-get update && \
                     bwidget \
                     -y
 
-RUN pip install plotly
-
 
 # build conda environment with required r packages
 COPY r-bio.yaml /tmp
