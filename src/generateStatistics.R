@@ -15,7 +15,6 @@ m0 <- matrix(ncol=5, nrow=length(tools)*length(data_0_list)*length(sample_no)*le
 i<-1
 j<-1
 for (tool in tools){
-    print(tool)
     for (data in data_list) {
         for (sample in sample_no) {
             for (v in versions) {
@@ -96,39 +95,38 @@ df <- read.csv(file = 'out/results/statistics.csv', sep = ' ')
 df0 <- read.csv(file = 'out/results/statistics_0.csv', sep = ' ')
 df$SPC <- factor(df$SPC, levels = c('2', '5', '10'))
 df0$SPC <- factor(df0$SPC, levels = c('2', '5', '10'))
-print(head(df))
 for (data in data_list) {
     df_base <- df[df$Data == data,]
-    ggplot(df_base, aes(x=SPC, y=AUC, fill=Tool)) + ggtitle(paste('AUC on ',data,sep='')) + geom_boxplot()
+    ggplot(df_base, aes(x=SPC, y=AUC, color=Tool)) + ggtitle(paste('AUC on ',data,sep='')) + geom_boxplot()
     ggsave(paste('out/results/graphs/auc/',data,'_auc_plot.png',sep=''))
 }
 
 for (data in data_list) {
     df_base <- df[df$Data == data,]
-    ggplot(df_base, aes(x=SPC, y=Accuracy, fill=Tool)) + ggtitle(paste('Accuracy on ',data,sep='')) + geom_boxplot()
+    ggplot(df_base, aes(x=SPC, y=Accuracy, color=Tool)) + ggtitle(paste('Accuracy on ',data,sep='')) + geom_boxplot()
     ggsave(paste('out/results/graphs/accuracy/',data,'_accuracy_plot.png',sep=''))
 }
 
 for (data in data_list) {
     df_base <- df[df$Data == data,]
-    ggplot(df_base, aes(x=SPC, y=FDR, fill=Tool)) + ggtitle(paste('FDR on ',data,sep='')) + geom_boxplot()
+    ggplot(df_base, aes(x=SPC, y=FDR, color=Tool)) + ggtitle(paste('FDR on ',data,sep='')) + geom_boxplot()
     ggsave(paste('out/results/graphs/fdr/',data,'_fdr_plot.png',sep=''))
 }
 
 for (data in data_list) {
     df_base <- df[df$Data == data,]
-    ggplot(df_base, aes(x=SPC, y=Sensitivity, fill=Tool)) + ggtitle(paste('Sensitivity on ',data,sep='')) + geom_boxplot()
+    ggplot(df_base, aes(x=SPC, y=Sensitivity, color=Tool)) + ggtitle(paste('Sensitivity on ',data,sep='')) + geom_boxplot()
     ggsave(paste('out/results/graphs/sensitivity/',data,'_sensitivity_plot.png',sep=''))
 }
 
 for (data in data_list) {
     df_base <- df[df$Data == data,]
-    ggplot(df_base, aes(x=SPC, y=Specificity, fill=Tool)) + ggtitle(paste('Specificity on ',data,sep='')) + geom_boxplot()
+    ggplot(df_base, aes(x=SPC, y=Specificity, color=Tool)) + ggtitle(paste('Specificity on ',data,sep='')) + geom_boxplot()
     ggsave(paste('out/results/graphs/specificity/',data,'_specificity_plot.png',sep=''))
 }
 
 for (data in data_0_list) {
     df0_base <- df0[df0$Data == data,]
-    ggplot(df0_base, aes(x=SPC, y=FPR, fill=Tool)) + ggtitle(paste('False Positive Rate on ',data,sep='')) + geom_boxplot()
+    ggplot(df0_base, aes(x=SPC, y=FPR, color=Tool)) + ggtitle(paste('False Positive Rate on ',data,sep='')) + geom_boxplot()
     ggsave(paste('out/results/graphs/fpr/',data,'_fpr_plot.png',sep=''))
 }
