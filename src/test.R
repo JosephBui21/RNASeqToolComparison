@@ -119,10 +119,6 @@ test_df <- data.frame(DESeq2 = c(test_DESeq2_diff_exp),
                       voom = c(test_voom_diff_exp),
                       PoissonSeq = c(test_PoissonSeq_diff_exp))
                              #ABSSeq = c(test_ABSSeq_diff_exp))
-print("This is how many genes each tools consider differentially expressed with alpha level = 0.05. NOTE: 100 truly differentially expressed genes")
-rownames(test_df) <- c("baseline100_0")
-test_df
-write.csv(test_df, file.path(outdir, "num_expressed_by_tool_test.csv"))
 
 tools <- c('DESeq2', 'edgeR.exact', 'voom.limma', 'ttest', 'PoissonSeq', 'ABSSeq')
 m <- matrix(ncol=6, nrow=length(tools))
@@ -165,3 +161,5 @@ ggplot(df, aes(x=Tool, y=AUC)) + geom_boxplot()
 ggsave('out/test/test_auc_plot.png')
 
 write.table(m, 'out/test/statistics.csv')
+
+print("The tools have finished running on the test data; The AUC graph & summary of the statistics have been created in out/test folder")
