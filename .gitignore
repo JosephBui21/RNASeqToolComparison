@@ -6,3 +6,5 @@ __pycache__/
 tempcode.Rmd
 
 out/test
+
+.ipynb_checkpoints
